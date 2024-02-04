@@ -1,10 +1,17 @@
 <script setup>
-  import headerComponent from './components/header-component.vue'
+import headerComponent from './components/header-component.vue'
+
+if (
+  localStorage.theme === 'dark' ||
+  (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+) {
+  document.querySelector("html").classList.add('dark')
+} else {
+  document.querySelector("html").classList.remove('dark')
+}
 </script>
 
 <template>
-  <div id="app">
-    <headerComponent></headerComponent>
-    <router-view></router-view>
-  </div>
+  <headerComponent></headerComponent>
+  <router-view></router-view>
 </template>
