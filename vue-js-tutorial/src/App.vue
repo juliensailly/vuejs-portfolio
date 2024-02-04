@@ -3,8 +3,6 @@
 </script>
 
 <template>
-  <div id="app">
-    <headerComponent></headerComponent>
-    <router-view></router-view>
-  </div>
+  <headerComponent></headerComponent>
+  <router-view class="mt-24"></router-view>
 </template>
