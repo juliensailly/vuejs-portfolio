@@ -1,3 +1,12 @@
+<script>
+import DarkModeToggle from './dark-mode-toggle-component.vue'
+export default {
+  components: {
+    DarkModeToggle
+  }
+}
+</script>
+
 <template>
   <header>
     <nav class="dark:bg-gray-900 bg-blue sticky w-full z-20 top-0 start-0">
@@ -12,18 +21,19 @@
             >Julien Sailly</span
           >
         </router-link>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div class="flex md:order-2 gap-2 rtl:space-x-reverse">
           <a
             href="/CV_Julien_SAILLY.pdf"
             target="_blank"
-            class="text-white bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-500"
+            class="hidden xxs:block text-white bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-500"
           >
             Mon CV
           </a>
+          <DarkModeToggle class="hidden xs:block rounded-lg"></DarkModeToggle>
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -52,6 +62,15 @@
           <ul
             class="flex flex-col gap-2 p-4 md:p-0 mt-4 font-medium rounded-lg bg-blue-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900"
           >
+            <li>
+              <a
+                href="/CV_Julien_SAILLY.pdf"
+                target="_blank"
+                class="xxs:hidden block flex-1 text-white focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded px-4 py-2 dark:bg-gray-700 dark:focus:ring-blue-500"
+              >
+                Mon CV
+              </a>
+            </li>
             <li>
               <router-link to="/" class="block py-2 px-3 rounded md:p-1">Accueil</router-link>
             </li>

@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+/*eslint-env node*/
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
   purge: ['./index.html', './src/**/*.{vue,js}'],
   darkMode: 'class',
@@ -6,6 +9,11 @@ export default {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
       serif: ['Merriweather', 'serif']
+    },
+    screens: {
+      'xs': '430px',
+      'xxs': '385px',
+      ...defaultTheme.screens,
     },
     extend: {
       spacing: {
