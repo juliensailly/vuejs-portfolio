@@ -5,29 +5,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
 @layer components {
-    nav ul a:not(nav ul a[aria-current="page"]) {
-        @apply text-white;
-        @apply hover:bg-blue-200;
-        @apply md:hover:bg-transparent;
-        @apply md:hover:text-blue-100;
-        @apply md:dark:hover:text-blue-200;
-        @apply dark:text-white;
-        @apply dark:hover:bg-gray-700;
-        @apply dark:hover:text-white;
-        @apply md:dark:hover:bg-transparent;
-        @apply dark:border-gray-700;
+  @media screen and (min-width: 768px) {
+    nav ul a {
+        transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+
+      background-position:
+        100% 100%,
+        0 100%;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(#ffffff, #ffffff);
+      background-size:
+        100% 2px,
+        0 2px;
     }
 
-    nav ul a[aria-current="page"] {
-        @apply text-white;
-        @apply bg-blue-400;
-        @apply md:bg-transparent;
-        @apply md:text-blue-100;
-        @apply md:dark:text-blue-500;
-        @apply md:border-b;
-        @apply md:border-blue-100;
-        @apply md:hover:text-white;
-        @apply md:hover:border-white;
+    nav ul a:hover {
+      background-size:
+        0 2px,
+        100% 2px;
     }
+  }
+
+  nav ul a:not(nav ul a[aria-current='page']) {
+    @apply text-white;
+    @apply md:dark:hover:bg-transparent;
+    @apply md:hover:bg-transparent;
+    @apply md:text-blue-50;
+    @apply md:dark:text-blue-500;
+  }
+
+  nav ul a[aria-current='page'] {
+    @apply text-white;
+    @apply bg-blue-400;
+    @apply md:bg-transparent;
+
+    background-size:
+      0 2px,
+      100% 2px;
+  }
 }

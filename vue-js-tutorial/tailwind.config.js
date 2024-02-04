@@ -27,6 +27,7 @@ export default {
         // https://coolors.co/57b8ff-e6e6e6-fbb13c-fe6847
         blue: {
           DEFAULT: '#0078cd',
+          50: '#00101B',
           100: '#002844',
           200: '#005089',
           300: '#0078cd',

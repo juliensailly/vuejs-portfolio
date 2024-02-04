@@ -72,10 +72,10 @@ export default {
               </a>
             </li>
             <li>
-              <router-link to="/" class="block py-2 px-3 rounded md:p-1">Accueil</router-link>
+              <router-link to="/" class="block py-2 px-3 rounded">Accueil</router-link>
             </li>
             <li>
-              <router-link to="/projects" class="block py-2 px-3 rounded md:p-1"
+              <router-link to="/projects" class="block py-2 px-3 rounded"
                 >Projets</router-link
               >
             </li>
