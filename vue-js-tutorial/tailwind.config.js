@@ -16,6 +16,7 @@ export default {
         '4xl': '2rem'
       },
       colors: {
+        // https://coolors.co/57b8ff-e6e6e6-fbb13c-fe6847
         blue: {
           DEFAULT: '#0078cd',
           100: '#002844',
