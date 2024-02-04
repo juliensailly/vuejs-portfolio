@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav
-      class="dark:bg-gray-900 bg-white sticky w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+      class="dark:bg-gray-900 bg-white sticky w-full z-20 top-0 start-0"
     >
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <router-link to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -54,7 +54,7 @@
               <router-link to="/" class="block py-2 px-3 rounded md:p-0">Accueil</router-link>
             </li>
             <li>
-              <router-link to="/projects" class="block py-2 px-3 rounded md:p-0">A propos</router-link>
+              <router-link to="/projects" class="block py-2 px-3 rounded md:p-0">Projets</router-link>
             </li>
           </ul>
         </div>

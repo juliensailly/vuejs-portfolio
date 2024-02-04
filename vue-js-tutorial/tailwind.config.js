@@ -65,6 +65,10 @@ export default {
           800: '#ffc3b6',
           900: '#ffe1da'
         }
+      },
+      backgroundImage: {
+        'dark-topography': "url('/background/dark-topography.svg')",
+        'light-topography': "url('/background/light-topography.svg')"
       }
     }
   },

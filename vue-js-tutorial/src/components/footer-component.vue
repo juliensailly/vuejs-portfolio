@@ -4,7 +4,7 @@
       <div class="flex justify-center items-center gap-2">
         <a href="https://www.linkedin.com/in/saillyjulien/" target="_blank">
           <svg
-            class="w-8 h-8 text-gray-800 dark:text-white"
+            class="w-8 h-8 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -20,7 +20,7 @@
         </a>
         <a href="https://github.com/juliensailly" target="_blank">
           <svg
-            class="w-8 h-8 text-gray-800 dark:text-white"
+            class="w-8 h-8 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -38,7 +38,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-8 h-8"
+            class="w-8 h-8 text-white"
           >
             <path
               d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
