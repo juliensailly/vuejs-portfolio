@@ -11,12 +11,13 @@
           >
         </router-link>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            type="button"
-            class="text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-300 dark:hover:bg-blue-400 dark:focus:ring-blue-500"
+          <a
+            href="/CV_Julien_SAILLY.pdf"
+            target="_blank"
+            class="text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-300 dark:hover:bg-blue-400 dark:focus:ring-blue-500"
           >
             Mon CV
-          </button>
+        </a>
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
@@ -50,24 +51,10 @@
             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
           >
             <li>
-              <router-link
-                to="/"
-                class="block py-2 px-3 rounded md:p-0"
-                >Accueil</router-link
-              >
+              <router-link to="/" class="block py-2 px-3 rounded md:p-0">Accueil</router-link>
             </li>
-<!-- 
-text-white bg-blue-400 md:bg-transparent md:text-blue-400 md:p-0 md:dark:text-blue-200
-
-text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0 md:dark:hover:text-blue-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
- -->
-
             <li>
-              <router-link
-                to="/about"
-                class="block py-2 px-3 rounded md:p-0"
-                >A propos</router-link
-              >
+              <router-link to="/about" class="block py-2 px-3 rounded md:p-0">A propos</router-link>
             </li>
           </ul>
         </div>

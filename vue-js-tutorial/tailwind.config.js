@@ -4,7 +4,7 @@ export default {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Poppins', 'sans-serif'],
       serif: ['Merriweather', 'serif']
     },
     extend: {
