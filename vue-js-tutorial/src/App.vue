@@ -15,8 +15,10 @@ if (
 <template>
   <div class="flex flex-col justify-between min-h-[100vh]">
     <headerComponent></headerComponent>
-    <main class="flex-1">
-      <router-view></router-view>
+    <main class="flex-1 bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
+      <div class="grid grid-cols-6 grid-rows-5 gap-2 max-w-screen-xl m-auto">
+        <router-view></router-view>
+      </div>
     </main>
     <footerComponent></footerComponent>
   </div>

@@ -54,7 +54,7 @@
               <router-link to="/" class="block py-2 px-3 rounded md:p-0">Accueil</router-link>
             </li>
             <li>
-              <router-link to="/about" class="block py-2 px-3 rounded md:p-0">A propos</router-link>
+              <router-link to="/projects" class="block py-2 px-3 rounded md:p-0">A propos</router-link>
             </li>
           </ul>
         </div>
