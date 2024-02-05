@@ -10,14 +10,14 @@
             "projects": "Projets",
             "CV": "Mon CV"
         },
-        "pages": [
-            {
+        "pages": {
+            "homepage": {
                 "title": "Accueil"
             },
-            {
+            "projects": {
                 "title": "Projets"
             }
-        ],
+        },
         "footer": {
             "name": "Julien Sailly",
             "linkedinLink": "https://www.linkedin.com/in/saillyjulien",

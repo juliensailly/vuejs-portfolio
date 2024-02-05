@@ -11,7 +11,7 @@ export default {
 
 <template>
   <footer class="bg-blue dark:bg-gray-900">
-    <div class="max-w-screen-xl mx-auto px-4 py-8 flex flex-col gap-4">
+    <div class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col gap-2">
       <div class="flex justify-center items-center gap-2">
         <a v-bind:href="textData.fr.footer.linkedinLink" target="_blank">
           <svg
