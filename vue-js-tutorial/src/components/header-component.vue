@@ -1,8 +1,14 @@
 <script>
 import DarkModeToggle from './dark-mode-toggle-component.vue'
+import textData from '../assets/texts.json'
 export default {
   components: {
     DarkModeToggle
+  },
+  data() {
+    return {
+      textData
+    }
   }
 }
 </script>
@@ -17,8 +23,8 @@ export default {
             class="h-8 rounded-[50%] border border-white"
             alt="Julien Sailly's profile picture"
           />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white"
-            >Julien Sailly</span
+          <span class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-white"
+            >{{ textData.fr.navbar.name }}</span
           >
         </router-link>
         <div class="flex md:order-2 gap-2 rtl:space-x-reverse">
@@ -27,7 +33,7 @@ export default {
             target="_blank"
             class="hidden xxs:block text-white bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-500"
           >
-            Mon CV
+          {{ textData.fr.navbar.CV }}
           </a>
           <DarkModeToggle class="hidden xs:block rounded-lg"></DarkModeToggle>
           <button
@@ -68,15 +74,15 @@ export default {
                 target="_blank"
                 class="xxs:hidden block flex-1 text-white focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded px-4 py-2 dark:bg-gray-700 dark:focus:ring-blue-500"
               >
-                Mon CV
+              {{ textData.fr.navbar.CV }}
               </a>
             </li>
             <li>
-              <router-link to="/" class="block py-2 px-3 rounded">Accueil</router-link>
+              <router-link to="/" class="block py-2 px-3 rounded">{{ textData.fr.navbar.home }}</router-link>
             </li>
             <li>
               <router-link to="/projects" class="block py-2 px-3 rounded"
-                >Projets</router-link
+                >{{ textData.fr.navbar.projects }}</router-link
               >
             </li>
           </ul>

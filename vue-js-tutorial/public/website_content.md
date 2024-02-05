@@ -26,7 +26,11 @@
 ### Pages
 
 1. Homepage
-2. Projects
+   1. Présentation rapide
+   2. Formation
+   3. Compétences
+   4. Projets highlighted
+2. Projects (all)
 3. Alternance 2024
 4. Contact
 
