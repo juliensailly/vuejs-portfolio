@@ -28,6 +28,7 @@ export default {
           >
         </router-link>
         <div class="flex md:order-2 gap-2 rtl:space-x-reverse">
+          <DarkModeToggle class="hidden xs:block rounded-lg"></DarkModeToggle>
           <a
             href="/CV_Julien_SAILLY.pdf"
             target="_blank"
@@ -35,7 +36,6 @@ export default {
           >
           {{ textData.fr.navbar.CV }}
           </a>
-          <DarkModeToggle class="hidden xs:block rounded-lg"></DarkModeToggle>
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
@@ -66,7 +66,7 @@ export default {
           id="navbar-sticky"
         >
           <ul
-            class="flex flex-col gap-2 p-4 md:p-0 mt-4 font-medium rounded-lg bg-blue-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900"
+            class="flex flex-col gap-2 p-4 md:p-0 mt-4 font-medium rounded-lg bg-blue-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-blue dark:bg-gray-800 md:dark:bg-gray-900"
           >
             <li>
               <a
