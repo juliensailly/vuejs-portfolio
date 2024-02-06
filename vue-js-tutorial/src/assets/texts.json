@@ -17,48 +17,66 @@
             "projects": {
                 "title": "Projets",
                 "seeMore": "En savoir plus",
+                "sort": {
+                    "title": "Trier par",
+                    "relevant": "Pertinence",
+                    "recent": "Plus récent",
+                    "alphabetical": "Ordre alphabétique"
+                },
                 "values": [
                     {
                         "id": "nautilus",
                         "title": "Nautilus",
                         "description": "Application de gestion des réservations et descentes d'un club de plongée.",
                         "technologies": "PHP (Laravel), MySQL, HTML, CSS, Tailwind",
-                        "img": "/projects/nautilus.png"
+                        "img": "/projects/nautilus.png",
+                        "recentScore": 5,
+                        "relevantScore": 6
                     },
                     {
                         "id": "portfolio",
                         "title": "Portfolio",
                         "description": "Portfolio web réalisé dans le cadre de ma recherche de stage.",
                         "technologies": "VueJS, HTML, JS, Tailwind",
-                        "img": "/projects/portfolio.png"
+                        "img": "/projects/portfolio.png",
+                        "recentScore": 6,
+                        "relevantScore": 5
                     },
                     {
                         "id": "pticuisto",
                         "title": "Pti'Cuisto",
                         "description": "Application web collaborative permettant de consulter des recettes de cuisine.",
                         "technologies": "PHP, HTML, Bootstrap, JS, MySQL",
-                        "img": "/projects/pticuisto.png"
+                        "img": "/projects/pticuisto.png",
+                        "recentScore": 3,
+                        "relevantScore": 2
                     },
                     {
                         "id": "instant-weather",
                         "title": "Instant-Weather",
                         "description": "Application web météo, recherche de ville et affichage des prévisions jusqu'à 14 jours.",
                         "technologies": "HTML, CSS, JS",
-                        "img": "/projects/instant-weather.png"
+                        "img": "/projects/instant-weather.png",
+                        "recentScore": 2,
+                        "relevantScore": 3
                     },
                     {
                         "id": "jfa-bot",
                         "title": "JFA Bot",
                         "description": "Bot Discord alertant de nouvelles notes sur le dossier étudiant de l'Université de Caen Normandie.",
                         "technologies": "Python, Discord API, Selenium",
-                        "img": "/projects/jfa-bot.png"
+                        "img": "/projects/jfa-bot.png",
+                        "recentScore": 4,
+                        "relevantScore": 4
                     },
                     {
                         "id": "gribouille",
                         "title": "Gribouille",
                         "description": "Application graphique Java permettant de dessiner et d'exporter des images à la manière de Paint.",
                         "technologies": "JavaFX",
-                        "img": "/projects/gribouille.png"
+                        "img": "/projects/gribouille.png",
+                        "recentScore": 1,
+                        "relevantScore": 1
                     }
                 ]
             }
