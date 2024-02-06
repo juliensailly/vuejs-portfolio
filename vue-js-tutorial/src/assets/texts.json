@@ -21,16 +21,44 @@
                     {
                         "id": "nautilus",
                         "title": "Nautilus",
-                        "description": "Application de gestion des réservations d'un club de plongée",
+                        "description": "Application de gestion des réservations et descentes d'un club de plongée.",
                         "technologies": "PHP (Laravel), MySQL, HTML, CSS, Tailwind",
                         "img": "/projects/nautilus.png"
                     },
                     {
                         "id": "portfolio",
                         "title": "Portfolio",
-                        "description": "Portfolio web de Julien Sailly",
+                        "description": "Portfolio web réalisé dans le cadre de ma recherche de stage.",
                         "technologies": "VueJS, HTML, JS, Tailwind",
                         "img": "/projects/portfolio.png"
+                    },
+                    {
+                        "id": "pticuisto",
+                        "title": "Pti'Cuisto",
+                        "description": "Application web collaborative permettant de consulter des recettes de cuisine.",
+                        "technologies": "PHP, HTML, Bootstrap, JS, MySQL",
+                        "img": "/projects/pticuisto.png"
+                    },
+                    {
+                        "id": "instant-weather",
+                        "title": "Instant-Weather",
+                        "description": "Application web météo, recherche de ville et affichage des prévisions jusqu'à 14 jours.",
+                        "technologies": "HTML, CSS, JS",
+                        "img": "/projects/instant-weather.png"
+                    },
+                    {
+                        "id": "jfa-bot",
+                        "title": "JFA Bot",
+                        "description": "Bot Discord alertant de nouvelles notes sur le dossier étudiant de l'Université de Caen Normandie.",
+                        "technologies": "Python, Discord API, Selenium",
+                        "img": "/projects/jfa-bot.png"
+                    },
+                    {
+                        "id": "gribouille",
+                        "title": "Gribouille",
+                        "description": "Application graphique Java permettant de dessiner et d'exporter des images à la manière de Paint.",
+                        "technologies": "JavaFX",
+                        "img": "/projects/gribouille.png"
                     }
                 ]
             }
