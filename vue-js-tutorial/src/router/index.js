@@ -25,7 +25,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   document.title = textData.fr.app_title
   if (to.meta.title)
-    document.title = (to.meta.title + " – " + textData.fr.app_title) || textData.fr.app_title
+    document.title = (to.meta.title + " – " + textData.fr.app_author) || textData.fr.app_title
   next()
 })
 

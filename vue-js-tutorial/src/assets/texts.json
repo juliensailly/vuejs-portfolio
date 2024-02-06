@@ -15,7 +15,24 @@
                 "title": "Accueil"
             },
             "projects": {
-                "title": "Projets"
+                "title": "Projets",
+                "seeMore": "En savoir plus",
+                "values": [
+                    {
+                        "id": "nautilus",
+                        "title": "Nautilus",
+                        "description": "Application de gestion des réservations d'un club de plongée",
+                        "technologies": "PHP (Laravel), MySQL, HTML, CSS, Tailwind",
+                        "img": "/projects/nautilus.png"
+                    },
+                    {
+                        "id": "portfolio",
+                        "title": "Portfolio",
+                        "description": "Portfolio web de Julien Sailly",
+                        "technologies": "VueJS, HTML, JS, Tailwind",
+                        "img": "/projects/portfolio.png"
+                    }
+                ]
             }
         },
         "footer": {

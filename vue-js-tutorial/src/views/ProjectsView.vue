@@ -1,3 +1,10 @@
+<script setup>
+import ProjectCard from '../components/project-card-component.vue'
+import textData from '../assets/texts.json'
+</script>
+
 <template>
-  <h1 class="col-start-3 col-span-2 text-center row-start-3 row-span-1">Projets</h1>
+  <div class="col-start-1 col-span-6 row-start-1 row-span-5 flex gap-8">
+    <ProjectCard class="flex-[40%]" v-for="(project) in textData.fr.pages.projects.values" :key="project" :project="project"></ProjectCard>
+  </div>
 </template>
