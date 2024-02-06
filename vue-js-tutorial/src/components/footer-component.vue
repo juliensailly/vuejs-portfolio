@@ -1,10 +1,21 @@
+<script>
+import textData from '../assets/texts.json'
+export default {
+  data() {
+    return {
+      textData
+    }
+  } 
+}
+</script>
+
 <template>
   <footer class="bg-blue dark:bg-gray-900">
-    <div class="max-w-screen-xl mx-auto px-4 py-8 flex flex-col gap-4">
+    <div class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col gap-2">
       <div class="flex justify-center items-center gap-2">
-        <a href="https://www.linkedin.com/in/saillyjulien/" target="_blank">
+        <a v-bind:href="textData.fr.footer.linkedinLink" target="_blank">
           <svg
-            class="w-8 h-8 text-gray-800 dark:text-white"
+            class="w-8 h-8 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -18,9 +29,9 @@
             <path d="M7.2 8.8H4v10.7h3.2V8.8Z" />
           </svg>
         </a>
-        <a href="https://github.com/juliensailly" target="_blank">
+        <a v-bind:href="textData.fr.footer.githubLink" target="_blank">
           <svg
-            class="w-8 h-8 text-gray-800 dark:text-white"
+            class="w-8 h-8 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -33,12 +44,12 @@
             />
           </svg>
         </a>
-        <a href="mailto:juliensailly76@gmail.com" target="_blank" class="text-white ml-1">
+        <a v-bind:href="textData.fr.footer.mailLink" target="_blank" class="text-white ml-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-8 h-8"
+            class="w-8 h-8 text-white"
           >
             <path
               d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
@@ -50,7 +61,7 @@
         </a>
       </div>
       <p class="text-center text-white dark:text-gray-300">
-        Julien Sailly &copy; {{ new Date().getFullYear() }}
+        {{ textData.fr.footer.name }} &copy; {{ new Date().getFullYear() }}
       </p>
     </div>
   </footer>

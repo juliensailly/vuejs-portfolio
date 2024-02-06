@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+/*eslint-env node*/
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
   purge: ['./index.html', './src/**/*.{vue,js}'],
   darkMode: 'class',
@@ -6,6 +9,11 @@ export default {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
       serif: ['Merriweather', 'serif']
+    },
+    screens: {
+      'xs': '430px',
+      'xxs': '385px',
+      ...defaultTheme.screens,
     },
     extend: {
       spacing: {
@@ -19,6 +27,7 @@ export default {
         // https://coolors.co/57b8ff-e6e6e6-fbb13c-fe6847
         blue: {
           DEFAULT: '#0078cd',
+          50: '#00101B',
           100: '#002844',
           200: '#005089',
           300: '#0078cd',
@@ -65,6 +74,10 @@ export default {
           800: '#ffc3b6',
           900: '#ffe1da'
         }
+      },
+      backgroundImage: {
+        'dark-topography': "url('/background/dark-topography.svg')",
+        'light-topography': "url('/background/light-topography.svg')"
       }
     }
   },
