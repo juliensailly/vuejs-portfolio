@@ -2,7 +2,8 @@
 import ProjectCard from '../components/project-card-component.vue'
 import textData from '../assets/texts.json'
 import _ from 'lodash'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import { initFlowbite } from 'flowbite'
 
 const sortedOption = ref('relevant')
 const sortBtnLabel = ref(
@@ -29,6 +30,9 @@ export default {
     }
   },
   setup() {
+    onMounted(() => {
+      initFlowbite()
+    })
     return { textData, sortedOption, sortBtnLabel }
   }
 }
