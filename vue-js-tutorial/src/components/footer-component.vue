@@ -1,12 +1,5 @@
-<script>
+<script setup>
 import textData from '../assets/texts.json'
-export default {
-  data() {
-    return {
-      textData
-    }
-  } 
-}
 </script>
 
 <template>

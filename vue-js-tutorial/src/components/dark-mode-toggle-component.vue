@@ -1,38 +1,32 @@
-<script>
+<script setup>
 import { ref, watch } from 'vue'
 
-export default {
-  setup() {
-    const isDarkMode = ref(localStorage.theme === 'dark')
+const isDarkMode = ref(localStorage.theme === 'dark')
 
-    const toggleDarkMode = () => {
-      isDarkMode.value = !isDarkMode.value
-      updateUI()
-    }
+const toggleDarkMode = () => {
+  isDarkMode.value = !isDarkMode.value
+  updateUI()
+}
 
-    const updateUI = () => {
-      if (localStorage.theme == null) {
-        isDarkMode.value = true
-        localStorage.theme = 'dark'
-      }
-      if (isDarkMode.value) {
-        document.querySelector('html').classList.add('dark')
-        localStorage.theme = 'dark'
-      } else {
-        document.querySelector('html').classList.remove('dark')
-        localStorage.theme = 'light'
-      }
-    }
-
-    watch(isDarkMode, () => {
-      updateUI()
-    })
-
-    updateUI()
-
-    return { isDarkMode, toggleDarkMode }
+const updateUI = () => {
+  if (localStorage.theme == null) {
+    isDarkMode.value = true
+    localStorage.theme = 'dark'
+  }
+  if (isDarkMode.value) {
+    document.querySelector('html').classList.add('dark')
+    localStorage.theme = 'dark'
+  } else {
+    document.querySelector('html').classList.remove('dark')
+    localStorage.theme = 'light'
   }
 }
+
+watch(isDarkMode, () => {
+  updateUI()
+})
+
+updateUI()
 </script>
 
 <template>

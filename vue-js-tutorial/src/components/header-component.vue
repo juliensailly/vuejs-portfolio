@@ -1,16 +1,6 @@
-<script>
+<script setup>
 import DarkModeToggle from './dark-mode-toggle-component.vue'
 import textData from '../assets/texts.json'
-export default {
-  components: {
-    DarkModeToggle
-  },
-  data() {
-    return {
-      textData
-    }
-  }
-}
 </script>
 
 <template>
@@ -32,7 +22,7 @@ export default {
           <a
             href="/CV_Julien_SAILLY.pdf"
             target="_blank"
-            class="hidden xxs:block text-white bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-500"
+            class="hover:animate-growing_shadow hidden xxs:block text-white bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-500"
           >
           {{ textData.fr.navbar.CV }}
           </a>
