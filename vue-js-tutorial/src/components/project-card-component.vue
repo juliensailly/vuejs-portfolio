@@ -1,40 +1,39 @@
-<script>
+<script setup>
 import textData from '../assets/texts.json'
 const projectBaseURL = '/projects/'
-export default {
-  props: {
-    project: Object
-  },
-  setup() {
-    return { textData, projectBaseURL }
+const props = defineProps({
+  project: {
+    type: Object,
+    required: true
   }
-}
+})
+console.log(props.project.id)
 </script>
 
 <template>
   <div
-    @click="$router.push(projectBaseURL + project.id)"
+    @click="$router.push(projectBaseURL + props.project.id)"
     class="flex flex-col cursor-pointer bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-800 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-in-out"
   >
     <img
       class="rounded-t-lg aspect-video object-cover"
-      :src="project.img"
-      :alt="project.title + ' illustration image'"
+      :src="props.project.img"
+      :alt="props.project.title + ' illustration image'"
     />
     <div class="p-5 flex-1 flex flex-col justify-between items-baseline">
       <div>
         <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          {{ project.title }}
+          {{ props.project.title }}
         </h5>
         <p class="mb-3 font-normal italic text-gray-500 dark:text-gray-500">
-          {{ project.technologies }}
+          {{ props.project.technologies }}
         </p>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {{ project.description }}
+          {{ props.project.description }}
         </p>
       </div>
       <a
-        :href="projectBaseURL + project.id"
+        :href="projectBaseURL + props.project.id"
         class="group inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-500 dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-600"
       >
         {{ textData.fr.pages.projects.seeMore }}

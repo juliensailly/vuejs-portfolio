@@ -1,10 +1,6 @@
-<script>
+<script setup>
 import headerComponent from './components/header-component.vue'
 import footerComponent from './components/footer-component.vue'
-
-export default {
-  components: { headerComponent, footerComponent }
-}
 </script>
 
 <template>

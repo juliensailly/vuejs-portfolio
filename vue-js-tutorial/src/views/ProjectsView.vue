@@ -111,7 +111,7 @@ onMounted(() => {
         <ProjectCard
           class="flex-[100%] md:flex-[40%] lg:flex-[25%]"
           v-for="project in sortedTextData"
-          :key="project"
+          :key="project.id"
           :project="project"
         ></ProjectCard>
       </div>

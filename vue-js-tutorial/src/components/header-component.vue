@@ -1,16 +1,6 @@
-<script>
+<script setup>
 import DarkModeToggle from './dark-mode-toggle-component.vue'
 import textData from '../assets/texts.json'
-export default {
-  components: {
-    DarkModeToggle
-  },
-  data() {
-    return {
-      textData
-    }
-  }
-}
 </script>
 
 <template>
