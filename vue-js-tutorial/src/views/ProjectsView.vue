@@ -1,41 +1,48 @@
-<script>
+<script setup>
+import { computed, onMounted, ref, watch } from 'vue'
 import ProjectCard from '../components/project-card-component.vue'
 import textData from '../assets/texts.json'
 import _ from 'lodash'
-import { onMounted, ref } from 'vue'
 import { initFlowbite } from 'flowbite'
 
 const sortedOption = ref('relevant')
 const sortBtnLabel = ref(
-  textData.fr.pages.projects.sort.title + ' ' + textData.fr.pages.projects.sort.relevant
+  textData.fr.pages.projects.sort.title + ' : ' + textData.fr.pages.projects.sort.relevant
 )
+const sortingDropdownBtn = ref(null)
 
-export default {
-  components: { ProjectCard },
-  computed: {
-    sortedTextData() {
-      if (sortedOption.value === 'alphabetical') {
-        sortBtnLabel.value =
-          textData.fr.pages.projects.sort.title + ' ' + textData.fr.pages.projects.sort.alphabetical
-        return _.orderBy(textData.fr.pages.projects.values, 'title')
-      } else if (sortedOption.value === 'recent') {
-        sortBtnLabel.value =
-          textData.fr.pages.projects.sort.title + ' ' + textData.fr.pages.projects.sort.recent
-        return _.orderBy(textData.fr.pages.projects.values, 'recentScore', ['desc'])
-      } else {
-        sortBtnLabel.value =
-          textData.fr.pages.projects.sort.title + ' ' + textData.fr.pages.projects.sort.relevant
-        return _.orderBy(textData.fr.pages.projects.values, 'relevantScore', ['desc'])
-      }
-    }
-  },
-  setup() {
-    onMounted(() => {
-      initFlowbite()
-    })
-    return { textData, sortedOption, sortBtnLabel }
-  }
+const hideDropdown = () => {
+  sortingDropdownBtn.value.click()
 }
+
+const sortedTextData = computed(() => {
+  // sortingDropdown.value.classList.add('hidden')
+  // sortingDropdown.value.classList.remove('block')
+  if (sortedOption.value === 'alphabetical') {
+    return _.orderBy(textData.fr.pages.projects.values, 'title')
+  } else if (sortedOption.value === 'recent') {
+    return _.orderBy(textData.fr.pages.projects.values, 'recentScore', ['desc'])
+  } else {
+    return _.orderBy(textData.fr.pages.projects.values, 'relevantScore', ['desc'])
+  }
+})
+
+watch(sortedOption, async (oldSort, newSort) => {
+  if (newSort.value === 'alphabetical') {
+    sortBtnLabel.value =
+      textData.fr.pages.projects.sort.title + ' : ' + textData.fr.pages.projects.sort.alphabetical
+  } else if (newSort.value === 'recent') {
+    sortBtnLabel.value =
+      textData.fr.pages.projects.sort.title + ' : ' + textData.fr.pages.projects.sort.recent
+  } else {
+    sortBtnLabel.value =
+      textData.fr.pages.projects.sort.title + ' : ' + textData.fr.pages.projects.sort.relevant
+  }
+})
+
+onMounted(() => {
+  initFlowbite()
+})
 </script>
 
 <template>
@@ -45,6 +52,7 @@ export default {
     <div class="max-w-screen-xl m-auto">
       <div class="text-right px-4 pt-4 md:px-8 md:pt-8">
         <button
+          ref="sortingDropdownBtn"
           id="dropdownDefaultButton"
           data-dropdown-toggle="dropdown"
           class="group text-white bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-500"
@@ -73,6 +81,7 @@ export default {
           class="text-left z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
         >
           <ul
+            @click="hideDropdown()"
             class="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="dropdownDefaultButton"
           >
@@ -100,7 +109,7 @@ export default {
 
       <div class="flex gap-4 md:gap-8 flex-wrap justify-center p-4 md:p-8">
         <ProjectCard
-          class="flex-[100%] md:flex-[40%]"
+          class="flex-[100%] md:flex-[40%] lg:flex-[25%]"
           v-for="project in sortedTextData"
           :key="project"
           :project="project"

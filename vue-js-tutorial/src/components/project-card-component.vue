@@ -14,7 +14,7 @@ export default {
 <template>
   <div
     @click="$router.push(projectBaseURL + project.id)"
-    class="flex flex-col max-w-md md:max-w-sm cursor-pointer bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-800 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-in-out"
+    class="flex flex-col cursor-pointer bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-800 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-in-out"
   >
     <img
       class="rounded-t-lg aspect-video object-cover"

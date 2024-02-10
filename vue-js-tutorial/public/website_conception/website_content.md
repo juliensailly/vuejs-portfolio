@@ -23,6 +23,8 @@
 
 ## Content
 
+[International translation plugin](https://vue-i18n.intlify.dev/)
+
 ### Pages
 
 1. Homepage

@@ -3,7 +3,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 export default {
-  purge: ['./index.html', './src/**/*.{vue,js}'],
+  content: ['./index.html', './src/**/*.{vue,js}', './node_modules/flowbite/**/*.js'],
   darkMode: 'class',
   theme: {
     fontFamily: {
@@ -16,6 +16,15 @@ export default {
       ...defaultTheme.screens,
     },
     extend: {
+      animation: {
+        'growing_shadow': 'growing_shadow_keys 0.5s'
+      },
+      keyframes: {
+        growing_shadow_keys: {
+          '0%': { boxShadow: '0 0 0 0 #66cfff' },
+          '100%': { boxShadow: '0 0 0 10px rgba(0, 0, 0, 0)' }
+        }
+      },
       spacing: {
         128: '32rem',
         144: '36rem'
@@ -84,6 +93,5 @@ export default {
   variants: {
     extend: {}
   },
-  plugins: ['flowbite/plugin', 'tailwindcss-aria-attributes'],
-  content: ['./node_modules/flowbite/**/*.js']
+  plugins: ['flowbite/plugin', 'tailwindcss-aria-attributes']
 }
