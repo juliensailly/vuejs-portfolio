@@ -22,7 +22,7 @@ const props = defineProps({
         class="flex gap-1 items-center"
       >
         <img
-          class="max-h-5"
+          class="max-h-5 w-full"
           :src="textData.fr.assets.technologies[techKey].src"
           :alt="textData.fr.assets.technologies[techKey].title"
         />

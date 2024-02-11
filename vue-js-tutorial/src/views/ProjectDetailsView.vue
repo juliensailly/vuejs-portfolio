@@ -6,6 +6,7 @@ import textData from '../assets/texts.json'
 import Carroussel from '../components/carroussel-component.vue'
 import TechChips from '../components/project-technologies-component.vue'
 import MarkdownConverter from '../components/markdown-converter-component.vue'
+import Error404 from './Error404View.vue'
 
 const projectID = useRoute().params.id
 const project = textData.fr.pages.projectDetails[projectID]
@@ -16,7 +17,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
+  <Error404 v-if="project == undefined"></Error404>
+  <div v-else
     class="flex-1 p-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white bg-[url(/background/wiggle-light.svg)] dark:bg-[url(/background/wiggle-dark.svg)]"
   >
     <div class="max-w-screen-xl m-auto">
@@ -29,7 +31,7 @@ onMounted(() => {
           <TechChips :project="project" class="md:hidden"></TechChips>
           <p class="project-card">{{ project.description }}</p>
 
-          <div class="flex justify-center flex-col xs:flex-row gap-4 flex-wrap project-card">
+          <div class="flex justify-center flex-col xs:flex-row gap-2 flex-wrap project-card" v-if="project.links.github != '' || project.links.website != ''">
             <a
               :href="project.links.github"
               target="_blank"

@@ -29,7 +29,7 @@
                         "title": "Nautilus",
                         "description": "Application de gestion des réservations et descentes d'un club de plongée.",
                         "technologies": "PHP (Laravel), MySQL, HTML, CSS, Tailwind",
-                        "img": "/projects/nautilus.png",
+                        "img": "/projects/nautilus-1.webp",
                         "recentScore": 5,
                         "relevantScore": 6
                     },
@@ -47,7 +47,7 @@
                         "title": "Pti'Cuisto",
                         "description": "Application web collaborative permettant de consulter des recettes de cuisine.",
                         "technologies": "PHP, HTML, Bootstrap, JS, MySQL",
-                        "img": "/projects/pticuisto.png",
+                        "img": "/projects/pticuisto-1.webp",
                         "recentScore": 3,
                         "relevantScore": 2
                     },
@@ -90,29 +90,98 @@
                     "technologies": [
                         "php", "laravel", "mysql", "html", "css", "tailwind"
                     ],
-                    "textContent": "## Description \n zefui \n qzfqzf \n qfzqf \n \n fzeejp",
+                    "textContent": "## Description \n Nautilus est une application réalisé dans le cadre d'une semaine de projet en équipe permettant la gestion d'une association de plongée sous-marine. \n Elle permet en tant qu'adhérent de s'inscrire à des plongées, en rechercher, de gérer son profil, et en tant qu'administrateur de gérer les plongées, les adhérents, les sites de plongée, les bateaux, etc. \n Réalisé avec le frameword PHP Laravel et une base de données MySQL, le projet a été finalisé en 5 jours par une équipe de 10 personnes en utilisant la méthode Agile.",
                     "img": [
                         {
-                            "src": "/website_conception/image.png",
-                            "alt": "Image d'illustration",
-                            "description": "Description de l'image"
+                            "src": "/projects/nautilus-1.webp",
+                            "alt": "Page d'accueil du site",
+                            "description": "Page d'accueil de l'application"
                         },
                         {
-                            "src": "/website_conception/image.png",
-                            "alt": "Image d'illustration",
-                            "description": "Description de l'image"
+                            "src": "/projects/nautilus-2.webp",
+                            "alt": "Formulaire de connexion",
+                            "description": "Formulaire de connexion"
                         },
                         {
-                            "src": "/website_conception/image.png",
-                            "alt": "Image d'illustration",
-                            "description": "Description de l'image"
+                            "src": "/projects/nautilus-3.webp",
+                            "alt": "Tableau de bord d'un administrateur plongeur",
+                            "description": "Tableau de bord d'un administrateur plongeur"
+                        },
+                        {
+                            "src": "/projects/nautilus-4.webp",
+                            "alt": "Page de visualisation des plongées à venir",
+                            "description": "Visualisation des plongées à venir avec possibilité de les filtrer"
+                        },
+                        {
+                            "src": "/projects/nautilus-5.webp",
+                            "alt": "Formulaire d'ajout d'une nouvelle plongée",
+                            "description": "Formulaire d'ajout d'une nouvelle plongée"
+                        },
+                        {
+                            "src": "/projects/nautilus-6.webp",
+                            "alt": "Exemple de fiche de sécurité de plongée",
+                            "description": "Exemple de fiche de sécurité générée automatiquement pour une plongée"
                         }
                     ],
                     "links": {
-                        "github": "zizi",
-                        "website": "zizi"
+                        "github": "https://github.com/Tiercas/nautilus",
+                        "website": ""
+                    }
+                },
+                "pticuisto": {
+                    "title": "Pti'Cuisto",
+                    "description": "Application permettant la consultation, création et partage de recettes de cuisine.",
+                    "technologies": [
+                        "php", "html", "bootstrap", "js", "mysql"
+                    ],
+                    "textContent": "## Description \n Pti'Cuisto est une application web conçu dans le cadre de la ressource Développement WEB de 2ème année de BUT Informatique. Elle permet de créer et consulter des recettes de cuisines. \n Il est également possible d'interagir avec les autres utilisateurs en commentant, en notant ou en enregistrant les recettes. \n Finalement, l'application propose une pannel de fonction administrateur complet pour modérer les recettes, les utilisateurs ou les commentaires.",
+                    "img": [
+                        {
+                            "src": "/projects/pticuisto-1.webp",
+                            "alt": "Page d'accueil du site",
+                            "description": "Page d'accueil de l'application"
+                        },
+                        {
+                            "src": "/projects/pticuisto-2.webp",
+                            "alt": "Visualisation d'une recette",
+                            "description": "Visualisation des détails d'une recette (ingrédients, étapes, photo, commentaires, ...)"
+                        },
+                        {
+                            "src": "/projects/pticuisto-3.webp",
+                            "alt": "Recherche d'une recette selon les ingrédients",
+                            "description": "Recherche d'une recette selon les ingrédients disponibles"
+                        },
+                        {
+                            "src": "/projects/pticuisto-4.webp",
+                            "alt": "Formulaire de connexion",
+                            "description": "Formulaire de connexion"
+                        },
+                        {
+                            "src": "/projects/pticuisto-5.webp",
+                            "alt": "Page de profil d'un utilisateur",
+                            "description": "Page de profil d'un utilisateur, avec possibilité de consulter ses recettes favorites"
+                        },
+                        {
+                            "src": "/projects/pticuisto-6.webp",
+                            "alt": "Formulaire d'ajout d'une nouvelle recette",
+                            "description": "Formulaire d'ajout d'une nouvelle recette"
+                        },
+                        {
+                            "src": "/projects/pticuisto-7.webp",
+                            "alt": "Panneau de contrôle administrateur",
+                            "description": "Panneau de contrôle administrateur (gestion des utilisateurs, recettes, commentaires, ...)"
+                        }
+                    ],
+                    "links": {
+                        "github": "https://github.com/juliensailly/ptit-cuisto",
+                        "website": ""
                     }
                 }
+            },
+            "error404": {
+                "title": "Erreur 404",
+                "message": "La page que vous cherchez n'existe pas.",
+                "button": "Retour en arrière"
             }
         },
         "footer": {
@@ -152,7 +221,18 @@
                     "title": "Tailwind",
                     "src": "/technologies/tailwind.svg",
                     "url": "https://tailwindcss.com/"
+                },
+                "bootstrap": {
+                    "title": "Bootstrap",
+                    "src": "/technologies/bootstrap.svg",
+                    "url": "https://getbootstrap.com/"
+                },
+                "js": {
+                    "title": "JavaScript",
+                    "src": "/technologies/js.svg",
+                    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 }
+
             }
         }
     }

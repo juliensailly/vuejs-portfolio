@@ -61,6 +61,22 @@ Projets (classés par pertinence) :
 - JFA Bot
 - Gribouille
 
+##### Nautilus
+
+Nautilus est une application réalisé dans le cadre d'une semaine de projet en équipe permettant la gestion d'une association de plongée sous-marine.
+
+Elle permet en tant qu'adhérent de s'inscrire à des plongées, en rechercher, de gérer son profil, et en tant qu'administrateur de gérer les plongées, les adhérents, les sites de plongée, les bateaux, etc.
+
+Réalisé avec le frameword PHP Laravel et une base de données MySQL, le projet a été finalisé en 5 jours par une équipe de 10 personnes en utilisant la méthode Agile.
+
+##### Pti'Cuisto
+
+Pti'Cuisto est une application web conçu dans le cadre de la ressource Développement WEB de 2ème année de BUT Informatique. Elle permet de créer et consulter des recettes de cuisines.
+
+Il est également possible d'interagir avec les autres utilisateurs en commentant, en notant ou en enregistrant les recettes.
+
+Finalement, l'application propose une pannel de fonction administrateur complet pour modérer les recettes, les utilisateurs ou les commentaires.
+
 #### Compétences
 
 Compétences humaines (soft skills) :

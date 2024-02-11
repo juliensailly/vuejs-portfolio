@@ -20,7 +20,7 @@ const props = defineProps({
       >
         <img
           :src="imgSrc.src"
-          class="absolute block w-full aspect-video sm:aspect-[16/7] md:aspect-video object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          class="absolute block w-full rounded-lg aspect-video sm:aspect-[16/7] md:aspect-video object-cover object-top -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           :alt="imgSrc.alt"
         />
         <p
@@ -37,7 +37,7 @@ const props = defineProps({
       data-carousel-prev
     >
       <span
-        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/90 dark:bg-gray-800/90 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/80 dark:bg-gray-800/80 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
       >
         <svg
           class="w-4 h-4 text-gray-800 dark:text-white rtl:rotate-180"
@@ -63,7 +63,7 @@ const props = defineProps({
       data-carousel-next
     >
       <span
-        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/90 dark:bg-gray-800/90 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/80 dark:bg-gray-800/80 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
       >
         <svg
           class="w-4 h-4 text-gray-800 dark:text-white rtl:rotate-180"
