@@ -3,14 +3,14 @@ import textData from '../assets/texts.json'
 
 const props = defineProps({
     project: {
-    type: Array,
+    type: Object,
     required: true
   }
 })
 </script>
 
 <template>
-  <div class="flex gap-2 flex-wrap">
+  <div class="flex gap-2 flex-wrap project-card">
     <div
       class="bg-white border border-gray-800 dark:border-white-600 text-gray-900 px-1 py-0.5 rounded-md hover:shadow-md transition-shadow duration-200"
       :key="techKey"

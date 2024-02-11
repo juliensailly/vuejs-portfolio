@@ -17,11 +17,16 @@ export default {
     },
     extend: {
       animation: {
-        'growing_shadow': 'growing_shadow_keys 0.5s'
+        'growing_shadow': 'growing_shadow_keys 0.5s',
+        'growing_shadow_dark': 'growing_shadow_dark_keys 0.5s'
       },
       keyframes: {
         growing_shadow_keys: {
           '0%': { boxShadow: '0 0 0 0 #66cfff' },
+          '100%': { boxShadow: '0 0 0 10px rgba(0, 0, 0, 0)' }
+        },
+        growing_shadow_dark_keys: {
+          '0%': { boxShadow: '0 0 0 0 #0078cd' },
           '100%': { boxShadow: '0 0 0 10px rgba(0, 0, 0, 0)' }
         }
       },
