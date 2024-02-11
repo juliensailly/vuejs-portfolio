@@ -38,17 +38,11 @@
   }
 
   nav ul a:not(nav ul a[aria-current='page']) {
-    @apply text-white;
-    @apply md:dark:hover:bg-transparent;
-    @apply md:hover:bg-transparent;
-    @apply md:text-blue-50;
-    @apply md:dark:text-blue-500;
+    @apply text-white md:dark:hover:bg-transparent md:hover:bg-transparent md:text-blue-50 md:dark:text-blue-500;
   }
 
   nav ul a[aria-current='page'] {
-    @apply text-white;
-    @apply bg-blue-400;
-    @apply md:bg-transparent;
+    @apply text-white bg-blue-400 md:bg-transparent;
 
     background-size:
       0 2px,

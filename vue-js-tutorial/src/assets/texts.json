@@ -79,6 +79,40 @@
                         "relevantScore": 1
                     }
                 ]
+            },
+            "projectDetails": {
+                "title": "Détails du projet",
+                "github_link": "Consulter sur Github",
+                "website_link": "Démonstration", 
+                "nautilus": {
+                    "title": "Nautilus",
+                    "description": "Application de gestion des réservations et descentes d'un club de plongée.",
+                    "technologies": [
+                        "php", "laravel", "mysql", "html", "css", "tailwind"
+                    ],
+                    "textContent": "",
+                    "img": [
+                        {
+                            "src": "/website_conception/image.png",
+                            "alt": "Image d'illustration",
+                            "description": "Description de l'image"
+                        },
+                        {
+                            "src": "/website_conception/image.png",
+                            "alt": "Image d'illustration",
+                            "description": "Description de l'image"
+                        },
+                        {
+                            "src": "/website_conception/image.png",
+                            "alt": "Image d'illustration",
+                            "description": "Description de l'image"
+                        }
+                    ],
+                    "links": {
+                        "github": "zizi",
+                        "website": "zizi"
+                    }
+                }
             }
         },
         "footer": {
@@ -86,6 +120,40 @@
             "linkedinLink": "https://www.linkedin.com/in/saillyjulien",
             "githubLink": "https://github.com/juliensailly",
             "mailLink": "mailto:juliensailly76@gmail.com"
+        },
+        "assets": {
+            "technologies": {
+                "php": {
+                    "title": "PHP",
+                    "src": "/technologies/php.svg",
+                    "url": "https://www.php.net/"
+                },
+                "laravel": {
+                    "title": "Laravel",
+                    "src": "/technologies/laravel.svg",
+                    "url": "https://laravel.com/"
+                },
+                "mysql": {
+                    "title": "MySQL",
+                    "src": "/technologies/mysql.svg",
+                    "url": "https://www.mysql.com/"
+                },
+                "html": {
+                    "title": "HTML",
+                    "src": "/technologies/html.svg",
+                    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+                },
+                "css": {
+                    "title": "CSS",
+                    "src": "/technologies/css.svg",
+                    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+                },
+                "tailwind": {
+                    "title": "Tailwind",
+                    "src": "/technologies/tailwind.svg",
+                    "url": "https://tailwindcss.com/"
+                }
+            }
         }
     }
 }

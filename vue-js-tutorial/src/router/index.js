@@ -1,6 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import ProjectsView from '../views/ProjectsView.vue'
 import textData from '../assets/texts.json'
 
 const router = createRouter({
@@ -9,14 +7,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/HomeView.vue')
     },
     {
       path: '/projects',
       name: 'projects',
-      component: ProjectsView,
+      component: () => import('../views/ProjectsView.vue'),
       meta: {
         title: textData.fr.pages.projects.title
+      }
+    },
+    {
+      path: '/projects/:id',
+      name: 'projectDetails',
+      component: () => import('../views/ProjectDetailsView.vue'),
+      meta: {
+        title: textData.fr.pages.projectDetails.title
       }
     }
   ]

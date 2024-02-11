@@ -31,7 +31,7 @@ const props = defineProps({
           {{ props.project.description }}
         </p>
       </div>
-      <a
+      <router-link :to="projectBaseURL + props.project.id"
         :href="projectBaseURL + props.project.id"
         class="group inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-500 dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-600"
       >
@@ -51,7 +51,7 @@ const props = defineProps({
             d="M1 5h12m0 0L9 1m4 4L9 9"
           />
         </svg>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
