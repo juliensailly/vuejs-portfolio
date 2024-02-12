@@ -6,6 +6,7 @@ import textData from '../assets/texts.json'
 import Carroussel from '../components/carroussel-component.vue'
 import TechChips from '../components/project-technologies-component.vue'
 import MarkdownConverter from '../components/markdown-converter-component.vue'
+import GithubContributors from '../components/github-contributors-component.vue'
 import Error404 from './Error404View.vue'
 
 const projectID = useRoute().params.id
@@ -18,7 +19,8 @@ onMounted(() => {
 
 <template>
   <Error404 v-if="project == undefined"></Error404>
-  <div v-else
+  <div
+    v-else
     class="flex-1 p-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white bg-[url(/background/wiggle-light.svg)] dark:bg-[url(/background/wiggle-dark.svg)]"
   >
     <div class="max-w-screen-xl m-auto">
@@ -31,14 +33,17 @@ onMounted(() => {
           <TechChips :project="project" class="md:hidden"></TechChips>
           <p class="project-card">{{ project.description }}</p>
 
-          <div class="flex justify-center flex-col xs:flex-row gap-2 flex-wrap project-card" v-if="project.links.github != '' || project.links.website != ''">
+          <div
+            class="flex justify-center flex-col xs:flex-row gap-2 flex-wrap project-card"
+            v-if="project.links.github != '' || project.links.website != ''"
+          >
             <a
               :href="project.links.github"
               target="_blank"
               v-if="project.links.github != ''"
               class="flex items-center justify-center flex-1 gap-2 px-4 py-2 text-white bg-gradient-to-r from-blue-300 to-blue-400 hover:animate-growing_shadow_dark focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg"
             >
-              <img class="w-6" src="/technologies/github-white.svg" alt="Github logo"/>
+              <img class="w-6" src="/technologies/github-white.svg" alt="Github logo" />
               <p>{{ textData.fr.pages.projectDetails.github_link }}</p>
             </a>
             <a
@@ -56,6 +61,12 @@ onMounted(() => {
         <div class="flex-1 flex flex-col gap-4">
           <TechChips :project="project" class="hidden md:flex"></TechChips>
           <MarkdownConverter :md="project.textContent" class="project-card"></MarkdownConverter>
+          <div class="project-card" v-if="project.contributors != undefined">
+            <h2 class="mb-2 text-2xl font-sans font-semibold dark:text-white">
+              {{ textData.fr.pages.projectDetails.contributorsLabel }}
+            </h2>
+            <GithubContributors :contributors="project.contributors"></GithubContributors>
+          </div>
         </div>
       </div>
     </div>

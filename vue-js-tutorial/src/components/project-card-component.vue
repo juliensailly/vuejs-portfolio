@@ -10,8 +10,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <div
-    @click="$router.push(projectBaseURL + props.project.id)"
+  <router-link
+    :to="projectBaseURL + props.project.id"
     class="flex flex-col cursor-pointer bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-800 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-in-out"
   >
     <img
@@ -31,7 +31,8 @@ const props = defineProps({
           {{ props.project.description }}
         </p>
       </div>
-      <router-link :to="projectBaseURL + props.project.id"
+      <router-link
+        :to="projectBaseURL + props.project.id"
         :href="projectBaseURL + props.project.id"
         class="group inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-500 dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-600"
       >
@@ -53,5 +54,5 @@ const props = defineProps({
         </svg>
       </router-link>
     </div>
-  </div>
+  </router-link>
 </template>

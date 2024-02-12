@@ -24,6 +24,14 @@ const router = createRouter({
       meta: {
         title: textData.fr.pages.projectDetails.title
       }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: '404',
+      component: () => import('../views/Error404View.vue'),
+      meta: {
+        title: textData.fr.pages.error404.title
+      }
     }
   ]
 })

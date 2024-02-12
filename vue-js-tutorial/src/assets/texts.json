@@ -83,7 +83,8 @@
             "projectDetails": {
                 "title": "Détails du projet",
                 "github_link": "Consulter sur Github",
-                "website_link": "Démonstration", 
+                "website_link": "Démonstration",
+                "contributorsLabel": "Contributeurs",
                 "nautilus": {
                     "title": "Nautilus",
                     "description": "Application de gestion des réservations et descentes d'un club de plongée.",
@@ -126,7 +127,19 @@
                     "links": {
                         "github": "https://github.com/Tiercas/nautilus",
                         "website": ""
-                    }
+                    },
+                    "contributors": [
+                        "julienaitazzouzene",
+                        "clementbaratin",
+                        "andgelbrissaud",
+                        "cypriendharambure",
+                        "victorfriboulet",
+                        "gabrielleharang",
+                        "lucleveque",
+                        "alensolopes",
+                        "guilhemstgaudin",
+                        "juliensailly"
+                    ]
                 },
                 "pticuisto": {
                     "title": "Pti'Cuisto",
@@ -175,7 +188,13 @@
                     "links": {
                         "github": "https://github.com/juliensailly/ptit-cuisto",
                         "website": ""
-                    }
+                    },
+                    "contributors": [
+                        "guillaumebergerot",
+                        "lucleveque",
+                        "alensolopes",
+                        "juliensailly"
+                    ]
                 },
                 "instant-weather": {
                     "title": "Instant Weather",
@@ -209,7 +228,13 @@
                     "links": {
                         "github": "https://github.com/juliensailly/instant-weather",
                         "website": "https://juliensailly.github.io/instant-weather/"
-                    }
+                    },
+                    "contributors": [
+                        "guillaumebergerot",
+                        "lucleveque",
+                        "alensolopes",
+                        "juliensailly"
+                    ]
                 }
             },
             "error404": {
@@ -270,6 +295,64 @@
                     "title": "API",
                     "src": "/technologies/api.svg",
                     "url": "https://en.wikipedia.org/wiki/REST"
+                }
+
+            },
+            "contributors": {
+                "clementbaratin": {
+                    "name": "Clément Baratin",
+                    "github": "https://github.com/waterfox-dev",
+                    "avatar": "https://avatars.githubusercontent.com/u/68429041"
+                },
+                "victorfriboulet": {
+                    "name": "Victor Friboulet",
+                    "github": "https://github.com/SirSoliloque",
+                    "avatar": "https://avatars.githubusercontent.com/u/76500451"
+                },
+                "cypriendharambure": {
+                    "name": "Cyprien d'Harambure",
+                    "github": "https://github.com/Pou-1",
+                    "avatar": "https://avatars.githubusercontent.com/u/94851968"
+                },
+                "julienaitazzouzene": {
+                    "name": "Julien Ait Azzouzene",
+                    "github": "https://github.com/PetitGens",
+                    "avatar": "https://avatars.githubusercontent.com/u/76777110"
+                },
+                "guilhemstgaudin": {
+                    "name": "Guilhem Saint-Gaudin",
+                    "github": "https://github.com/Mehliug-SG",
+                    "avatar": "https://avatars.githubusercontent.com/u/46083349"
+                },
+                "lucleveque": {
+                    "name": "Luc Leveque",
+                    "github": "https://github.com/LucBUTGH",
+                    "avatar": "https://avatars.githubusercontent.com/u/123160585"
+                },
+                "juliensailly": {
+                    "name": "Julien Sailly",
+                    "github": "https://github.com/juliensailly",
+                    "avatar": "https://avatars.githubusercontent.com/u/92085668"
+                },
+                "gabrielleharang": {
+                    "name": "Gabrielle Harang",
+                    "github": "https://github.com/Elrigabel",
+                    "avatar": "https://avatars.githubusercontent.com/u/144217050"
+                },
+                "andgelbrissaud": {
+                    "name": "Andgel Brissaud",
+                    "github": "https://github.com/AndgelBrissaud",
+                    "avatar": "https://avatars.githubusercontent.com/u/105484031"
+                },
+                "alensolopes": {
+                    "name": "Alenso Lopes",
+                    "github": "https://github.com/AlensoLopes",
+                    "avatar": "https://avatars.githubusercontent.com/u/46823570"
+                },
+                "guillaumebergerot": {
+                    "name": "Guillaume Bergerot",
+                    "github": "https://github.com/moustave",
+                    "avatar": "https://avatars.githubusercontent.com/u/94120536"
                 }
             }
         }
