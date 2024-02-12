@@ -55,7 +55,7 @@
                         "id": "instant-weather",
                         "title": "Instant-Weather",
                         "description": "Application web météo, recherche de ville et affichage des prévisions jusqu'à 14 jours.",
-                        "technologies": "HTML, CSS, JS",
+                        "technologies": "HTML, CSS, JS, API",
                         "img": "/projects/instant-weather-1.png",
                         "recentScore": 2,
                         "relevantScore": 3
