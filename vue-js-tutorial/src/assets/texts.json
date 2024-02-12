@@ -56,7 +56,7 @@
                         "title": "Instant-Weather",
                         "description": "Application web météo, recherche de ville et affichage des prévisions jusqu'à 14 jours.",
                         "technologies": "HTML, CSS, JS",
-                        "img": "/projects/instant-weather.png",
+                        "img": "/projects/instant-weather-1.png",
                         "recentScore": 2,
                         "relevantScore": 3
                     },
@@ -176,6 +176,40 @@
                         "github": "https://github.com/juliensailly/ptit-cuisto",
                         "website": ""
                     }
+                },
+                "instant-weather": {
+                    "title": "Instant Weather",
+                    "description": "Application de prévision météo jusqu'à 15 jours. Possibilité de choix de la localisation, de l'emplacement préféré, et des informations affichées.",
+                    "technologies": [
+                        "html", "css", "js", "api"
+                    ],
+                    "textContent": "## Description \n Instant Weather est une application permettant de rechercher une ville afin d'en connaître les prévisions météo jusqu'à 15 jours à l'avance. \n Conçu uniquement en HTML, CSS et JavaScript vanilla, une attention particulière à été mise sur l'interface utilisateur, en rendant son utilisation la plus intuitive possible. \n Réalisée en équipe de 4 personnes, je vous invite à tester l'application en cliquant sur le lien \"Démonstration\".",
+                    "img": [
+                        {
+                            "src": "/projects/instant-weather-1.png",
+                            "alt": "Page d'accueil de l'application",
+                            "description": "Page d'accueil de l'application"
+                        },
+                        {
+                            "src": "/projects/instant-weather-2.png",
+                            "alt": "Recherche et propositions de villes",
+                            "description": "Recherche et propositions de villes"
+                        },
+                        {
+                            "src": "/projects/instant-weather-3.png",
+                            "alt": "Affichage des prévisions météos",
+                            "description": "Affichage des prévisions météos pour Paris"
+                        },
+                        {
+                            "src": "/projects/instant-weather-4.png",
+                            "alt": "Choix des informations à afficher",
+                            "description": "Choix des informations à afficher"
+                        }
+                    ],
+                    "links": {
+                        "github": "https://github.com/juliensailly/instant-weather",
+                        "website": "https://juliensailly.github.io/instant-weather/"
+                    }
                 }
             },
             "error404": {
@@ -231,8 +265,12 @@
                     "title": "JavaScript",
                     "src": "/technologies/js.svg",
                     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                },
+                "api": {
+                    "title": "API",
+                    "src": "/technologies/api.svg",
+                    "url": "https://en.wikipedia.org/wiki/REST"
                 }
-
             }
         }
     }

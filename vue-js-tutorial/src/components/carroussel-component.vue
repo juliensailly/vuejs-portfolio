@@ -37,7 +37,8 @@ const props = defineProps({
       data-carousel-prev
     >
       <span
-        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/80 dark:bg-gray-800/80 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/80 dark:bg-gray-800/80 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white 
+        dark:group-focus:ring-gray-800/70 group-focus:outline-none"
       >
         <svg
           class="w-4 h-4 text-gray-800 dark:text-white rtl:rotate-180"

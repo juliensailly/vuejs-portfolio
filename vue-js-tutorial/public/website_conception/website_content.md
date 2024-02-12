@@ -61,6 +61,8 @@ Projets (classés par pertinence) :
 - JFA Bot
 - Gribouille
 
+# Ajouter les collaborateurs
+
 ##### Nautilus
 
 Nautilus est une application réalisé dans le cadre d'une semaine de projet en équipe permettant la gestion d'une association de plongée sous-marine.
@@ -76,6 +78,14 @@ Pti'Cuisto est une application web conçu dans le cadre de la ressource Dévelop
 Il est également possible d'interagir avec les autres utilisateurs en commentant, en notant ou en enregistrant les recettes.
 
 Finalement, l'application propose une pannel de fonction administrateur complet pour modérer les recettes, les utilisateurs ou les commentaires.
+
+##### Instant Weather
+
+Instant Weather est une application permettant de rechercher une ville afin d'en connaître les prévisions météo jusqu'à 15 jours à l'avance. 
+
+Conçu uniquement en HTML, CSS et JavaScript vanilla, une attention particulière à été mise sur l'interface utilisateur, en rendant son utilisation la plus intuitive possible.
+
+Réalisée en équipe de 4 personnes, je vous invite à tester l'application en cliquant sur le lien "Démonstration". 
 
 #### Compétences
 
