@@ -87,6 +87,22 @@ Conçu uniquement en HTML, CSS et JavaScript vanilla, une attention particulièr
 
 Réalisée en équipe de 4 personnes, je vous invite à tester l'application en cliquant sur le lien "Démonstration". 
 
+##### Gribouille
+
+Gribouille est un logiciel de dessin qui, à la manière de Paint, permet de dessiner des formes sur une toile. 
+
+Il est possible de choisir la couleur, l'épaisseur du trait, de sauvegarder son dessin ou de le charger, et enfin de l'exporter en tant qu'image.
+
+Projet individuel réalisé dans le cadre de la ressource de Développement d'interface de 1ère année de BUT Informatique, Gribouille a été une première approche de la programmation orientée objet, du respect du Modèle-Vue-Contrôleur et de la conception d'interfaces.
+
+##### JFA Bot
+
+JFA Bot est un bot Discord conçu pour le serveur Discord de l'IUT de Caen. Il permet la notification de nouvelles notes sur l'ENT. 
+
+Conçu en Python, le bot est hébergé sur un serveur personnel et utilise la librairie discord.py ainsi que la librairie Selenium qui va permettre la récupération des notes en lançant un navigateur web automatisé.
+
+La création de ce bot m'a permis d'en apprendre beaucoup sur la virtualisation (Tmux) et la gestion d'un serveur distant (SSH, VPS).
+
 #### Compétences
 
 Compétences humaines (soft skills) :

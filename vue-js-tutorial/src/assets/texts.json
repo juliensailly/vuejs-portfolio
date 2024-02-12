@@ -36,7 +36,7 @@
                     {
                         "id": "portfolio",
                         "title": "Portfolio",
-                        "description": "Portfolio web réalisé dans le cadre de ma recherche de stage.",
+                        "description": "Portfolio web réalisé dans le cadre de ma recherche d'alternance'.",
                         "technologies": "VueJS, HTML, JS, Tailwind",
                         "img": "/projects/portfolio.png",
                         "recentScore": 6,
@@ -65,7 +65,7 @@
                         "title": "JFA Bot",
                         "description": "Bot Discord alertant de nouvelles notes sur le dossier étudiant de l'Université de Caen Normandie.",
                         "technologies": "Python, Discord API, Selenium",
-                        "img": "/projects/jfa-bot.png",
+                        "img": "/projects/jfa-bot-2.webp",
                         "recentScore": 4,
                         "relevantScore": 4
                     },
@@ -73,8 +73,8 @@
                         "id": "gribouille",
                         "title": "Gribouille",
                         "description": "Application graphique Java permettant de dessiner et d'exporter des images à la manière de Paint.",
-                        "technologies": "JavaFX",
-                        "img": "/projects/gribouille.png",
+                        "technologies": "Java, JavaFX",
+                        "img": "/projects/gribouille-1.webp",
                         "recentScore": 1,
                         "relevantScore": 1
                     }
@@ -235,6 +235,74 @@
                         "alensolopes",
                         "juliensailly"
                     ]
+                },
+                "gribouille": {
+                    "title": "Gribouille",
+                    "description": "Application graphique Java permettant de dessiner et d'exporter des images à la manière de Paint.",
+                    "technologies": [
+                        "java", "javafx"
+                    ],
+                    "textContent": "## Description \n Gribouille est un logiciel de dessin qui, à la manière de Paint, permet de dessiner des formes sur une toile. \n Il est possible de choisir la couleur, l'épaisseur du trait, de sauvegarder son dessin ou de le charger, et enfin de l'exporter en tant qu'image. \n Projet individuel réalisé dans le cadre de la ressource de Développement d'interface de 1ère année de BUT Informatique, Gribouille a été une première approche de la programmation orientée objet, du respect du Modèle-Vue-Contrôleur et de la conception d'interfaces.",
+                    "img": [
+                        {
+                            "src": "/projects/gribouille-1.webp",
+                            "alt": "Toile blanche au lancement de l'application",
+                            "description": "Toile blanche au lancement de l'application"
+                        },
+                        {
+                            "src": "/projects/gribouille-2.webp",
+                            "alt": "Démonstration du dessin sur la toile",
+                            "description": "Démonstration du dessin sur la toile"
+                        },
+                        {
+                            "src": "/projects/gribouille-3.webp",
+                            "alt": "Menu de choix d'outils, épaisseurs et couleurs disponibles",
+                            "description": "Menu montrant les outils, épaisseurs et couleurs disponibles"
+                        },
+                        {
+                            "src": "/projects/gribouille-4.webp",
+                            "alt": "Fichier de dessin exporté",
+                            "description": "Exemple d'exportation de la toile en tant qu'image"
+                        }
+                    ],
+                    "links": {
+                        "github": "https://github.com/juliensailly/gribouille",
+                        "website": ""
+                    }
+                },
+                "jfa-bot": {
+                    "title": "JFA Bot",
+                    "description": "Bot Discord alertant de nouvelles notes sur le dossier étudiant de l'Université de Caen Normandie.",
+                    "technologies": [
+                        "python", "discordapi", "selenium"
+                    ],
+                    "textContent": "## Description \n JFA Bot est un bot Discord conçu pour le serveur Discord de l'IUT de Caen. Il permet la notification de nouvelles notes sur l'ENT. \n Conçu en Python, le bot est hébergé sur un serveur personnel et utilise la librairie discord.py ainsi que la librairie Selenium qui va permettre la récupération des notes en lançant un navigateur web automatisé. \n La création de ce bot m'a permis d'en apprendre beaucoup sur la virtualisation (Tmux) et la gestion d'un serveur distant (SSH, VPS).",
+                    "img": [
+                        {
+                            "src": "/projects/jfa-bot-1.webp",
+                            "alt": "Page web de l'ENT de l'Université",
+                            "description": "Page web de l'ENT de l'Université de Caen Normandie où le bot va récupérer les notes"
+                        },
+                        {
+                            "src": "/projects/jfa-bot-2.webp",
+                            "alt": "Message d'annonce de nouvelle note",
+                            "description": "Exemple de message d'annonce de nouvelle note sur le serveur Discord"
+                        },
+                        {
+                            "src": "/projects/jfa-bot-1.webp",
+                            "alt": "Page web de l'ENT de l'Université",
+                            "description": "Page web de l'ENT de l'Université de Caen Normandie où le bot va récupérer les notes"
+                        },
+                        {
+                            "src": "/projects/jfa-bot-2.webp",
+                            "alt": "Message d'annonce de nouvelle note",
+                            "description": "Exemple de message d'annonce de nouvelle note sur le serveur Discord"
+                        }
+                    ],
+                    "links": {
+                        "github": "",
+                        "website": ""
+                    }
                 }
             },
             "error404": {
@@ -295,8 +363,32 @@
                     "title": "API",
                     "src": "/technologies/api.svg",
                     "url": "https://en.wikipedia.org/wiki/REST"
+                },
+                "java": {
+                    "title": "Java",
+                    "src": "/technologies/java.svg",
+                    "url": "https://www.java.com/"
+                },
+                "javafx": {
+                    "title": "JavaFX",
+                    "src": "/technologies/javafx.png",
+                    "url": "https://openjfx.io/"
+                },
+                "python": {
+                    "title": "Python",
+                    "src": "/technologies/python.svg",
+                    "url": "https://www.python.org/"
+                },
+                "discordapi": {
+                    "title": "DiscordAPI",
+                    "src": "/technologies/discord.svg",
+                    "url": "https://discord.com/developers/docs/intro"
+                },
+                "selenium": {
+                    "title": "Selenium",
+                    "src": "/technologies/selenium.svg",
+                    "url": "https://www.selenium.dev/"
                 }
-
             },
             "contributors": {
                 "clementbaratin": {
