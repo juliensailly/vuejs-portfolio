@@ -15,9 +15,11 @@ const updateUI = () => {
   }
   if (isDarkMode.value) {
     document.querySelector('html').classList.add('dark')
+    document.documentElement.style.setProperty('color-scheme', 'dark');
     localStorage.theme = 'dark'
   } else {
     document.querySelector('html').classList.remove('dark')
+    document.documentElement.style.setProperty('color-scheme', 'light');
     localStorage.theme = 'light'
   }
 }

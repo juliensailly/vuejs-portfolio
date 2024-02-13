@@ -8,7 +8,7 @@ import ProjectSelection from '../components/homepage/project-selection-component
   >
     <div class="max-w-screen-xl m-auto py-4 md:py-8">
       <h1 class="px-4 md:px-8 text-center">Home</h1>
-      <ProjectSelection class="px-4 md:px-8 bg-gray-900 dark:bg-blue-400"></ProjectSelection>
+      <ProjectSelection class="px-4 md:px-8"></ProjectSelection>
     </div>
   </div>
 </template>
