@@ -14,13 +14,106 @@
             "homepage": {
                 "title": "Accueil",
                 "projectsTitle": "Projets",
-                "projects": ["nautilus", "pticuisto"],
+                "projects": [
+                    "nautilus",
+                    "pticuisto"
+                ],
                 "projectsViewMore": "Voir plus",
                 "skillsTitle": "Compétences",
                 "skills": {
-                    "soft": {"title": "Compétences humaines", "list": ["autonomous", "curious", "creative", "positivity"]},
-                    "hard": {"title": "Compétences techniques", "list": []},
-                    "both": {"title": "Compétences transversales", "list": ["english", "law", "management", "communication"]}
+                    "soft": {
+                        "title": "Compétences humaines",
+                        "list": [
+                            "Autonome",
+                            "Curieux",
+                            "Créatif",
+                            "Attitude positive",
+                            "Esprit d'équipe"
+                        ]
+                    },
+                    "hard": {
+                        "title": "Compétences techniques",
+                        "list": [
+                            {
+                                "title": "Développement Web",
+                                "list": [
+                                    "html",
+                                    "css",
+                                    "js",
+                                    "nodejs",
+                                    "vuejs",
+                                    "php",
+                                    "laravel",
+                                    "tailwind",
+                                    "bootstrap"
+                                ]
+                            },
+                            {
+                                "title": "Développement Mobile",
+                                "list": [
+                                    "kotlin",
+                                    "compose",
+                                    "material_design"
+                                ]
+                            },
+                            {
+                                "title": "Gestion de Base de données",
+                                "list": [
+                                    "sql",
+                                    "plsql",
+                                    "oraclesql",
+                                    "mysql",
+                                    "sqlite"
+                                ]
+                            },
+                            {
+                                "title": "Langages de programmation",
+                                "list": [
+                                    "c",
+                                    "java",
+                                    "js",
+                                    "php",
+                                    "kotlin",
+                                    "python",
+                                    "c#"
+                                ]
+                            },
+                            {
+                                "title": "Gestion de projet",
+                                "list": [
+                                    "git",
+                                    "github",
+                                    "trello",
+                                    "agile"
+                                ]
+                            },
+                            {
+                                "title": "Administration système",
+                                "list": [
+                                    "linux",
+                                    "windows"
+                                ]
+                            },
+                            {
+                                "title": "Virtualisation",
+                                "list": [
+                                    "proxmox",
+                                    "docker",
+                                    "vagrant",
+                                    "virtualbox"
+                                ]
+                            }
+                        ]
+                    },
+                    "both": {
+                        "title": "Compétences transversales",
+                        "list": [
+                            "Anglais",
+                            "Droit",
+                            "Gestion",
+                            "Communication"
+                        ]
+                    }
                 }
             },
             "projects": {
@@ -98,7 +191,12 @@
                     "title": "Nautilus",
                     "description": "Application de gestion des réservations et descentes d'un club de plongée.",
                     "technologies": [
-                        "php", "laravel", "mysql", "html", "css", "tailwind"
+                        "php",
+                        "laravel",
+                        "mysql",
+                        "html",
+                        "css",
+                        "tailwind"
                     ],
                     "textContent": "## Description \n Nautilus est une application réalisé dans le cadre d'une semaine de projet en équipe permettant la gestion d'une association de plongée sous-marine. \n Elle permet en tant qu'adhérent de s'inscrire à des plongées, en rechercher, de gérer son profil, et en tant qu'administrateur de gérer les plongées, les adhérents, les sites de plongée, les bateaux, etc. \n Réalisé avec le frameword PHP Laravel et une base de données MySQL, le projet a été finalisé en 5 jours par une équipe de 10 personnes en utilisant la méthode Agile.",
                     "img": [
@@ -154,7 +252,11 @@
                     "title": "Pti'Cuisto",
                     "description": "Application permettant la consultation, création et partage de recettes de cuisine.",
                     "technologies": [
-                        "php", "html", "bootstrap", "js", "mysql"
+                        "php",
+                        "html",
+                        "bootstrap",
+                        "js",
+                        "mysql"
                     ],
                     "textContent": "## Description \n Pti'Cuisto est une application web conçu dans le cadre de la ressource Développement WEB de 2ème année de BUT Informatique. Elle permet de créer et consulter des recettes de cuisines. \n Il est également possible d'interagir avec les autres utilisateurs en commentant, en notant ou en enregistrant les recettes. \n Finalement, l'application propose une pannel de fonction administrateur complet pour modérer les recettes, les utilisateurs ou les commentaires.",
                     "img": [
@@ -209,7 +311,10 @@
                     "title": "Instant Weather",
                     "description": "Application de prévision météo jusqu'à 15 jours. Possibilité de choix de la localisation, de l'emplacement préféré, et des informations affichées.",
                     "technologies": [
-                        "html", "css", "js", "api"
+                        "html",
+                        "css",
+                        "js",
+                        "api"
                     ],
                     "textContent": "## Description \n Instant Weather est une application permettant de rechercher une ville afin d'en connaître les prévisions météo jusqu'à 15 jours à l'avance. \n Conçu uniquement en HTML, CSS et JavaScript vanilla, une attention particulière à été mise sur l'interface utilisateur, en rendant son utilisation la plus intuitive possible. \n Réalisée en équipe de 4 personnes, je vous invite à tester l'application en cliquant sur le lien \"Démonstration\".",
                     "img": [
@@ -249,7 +354,8 @@
                     "title": "Gribouille",
                     "description": "Application graphique Java permettant de dessiner et d'exporter des images à la manière de Paint.",
                     "technologies": [
-                        "java", "javafx"
+                        "java",
+                        "javafx"
                     ],
                     "textContent": "## Description \n Gribouille est un logiciel de dessin qui, à la manière de Paint, permet de dessiner des formes sur une toile. \n Il est possible de choisir la couleur, l'épaisseur du trait, de sauvegarder son dessin ou de le charger, et enfin de l'exporter en tant qu'image. \n Projet individuel réalisé dans le cadre de la ressource de Développement d'interface de 1ère année de BUT Informatique, Gribouille a été une première approche de la programmation orientée objet, du respect du Modèle-Vue-Contrôleur et de la conception d'interfaces.",
                     "img": [
@@ -283,7 +389,9 @@
                     "title": "JFA Bot",
                     "description": "Bot Discord alertant de nouvelles notes sur le dossier étudiant de l'Université de Caen Normandie.",
                     "technologies": [
-                        "python", "discordapi", "selenium"
+                        "python",
+                        "discordapi",
+                        "selenium"
                     ],
                     "textContent": "## Description \n JFA Bot est un bot Discord conçu pour le serveur Discord de l'IUT de Caen. Il permet la notification de nouvelles notes sur l'ENT. \n Conçu en Python, le bot est hébergé sur un serveur personnel et utilise la librairie discord.py ainsi que la librairie Selenium qui va permettre la récupération des notes en lançant un navigateur web automatisé. \n La création de ce bot m'a permis d'en apprendre beaucoup sur la virtualisation (Tmux) et la gestion d'un serveur distant (SSH, VPS).",
                     "img": [
@@ -398,6 +506,111 @@
                     "title": "Selenium",
                     "src": "/technologies/selenium.svg",
                     "url": "https://www.selenium.dev/"
+                },
+                "nodejs": {
+                    "title": "NodeJS",
+                    "src": "/technologies/nodejs.svg",
+                    "url": "https://nodejs.org/"
+                },
+                "vuejs": {
+                    "title": "VueJS",
+                    "src": "/technologies/vuejs.svg",
+                    "url": "https://vuejs.org/"
+                },
+                "kotlin": {
+                    "title": "Kotlin",
+                    "src": "/technologies/kotlin.svg",
+                    "url": "https://kotlinlang.org/"
+                },
+                "compose": {
+                    "title": "Compose",
+                    "src": "/technologies/compose.png",
+                    "url": "https://developer.android.com/jetpack/compose"
+                },
+                "material_design": {
+                    "title": "Material Design",
+                    "src": "/technologies/material_design.svg",
+                    "url": "https://material.io/design"
+                },
+                "plsql": {
+                    "title": "PL/SQL",
+                    "src": "/technologies/plsql.svg",
+                    "url": "https://www.oracle.com/database/technologies/appdev/plsql.html"
+                },
+                "sql": {
+                    "title": "SQL",
+                    "src": "/technologies/sql.svg",
+                    "url": "https://en.wikipedia.org/wiki/SQL"
+                },
+                "oraclesql": {
+                    "title": "OracleSQL",
+                    "src": "/technologies/oraclesql.svg",
+                    "url": "https://www.oracle.com/database/"
+                },
+                "sqlite": {
+                    "title": "SQLite",
+                    "src": "/technologies/sqlite.svg",
+                    "url": "https://www.sqlite.org"
+                },
+                "c": {
+                    "title": "C",
+                    "src": "/technologies/c.svg",
+                    "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+                },
+                "c#": {
+                    "title": "C#",
+                    "src": "/technologies/c#.svg",
+                    "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+                },
+                "git": {
+                    "title": "Git",
+                    "src": "/technologies/git.svg",
+                    "url": "https://git-scm.com/"
+                },
+                "github": {
+                    "title": "Github",
+                    "src": "/technologies/github.svg",
+                    "url": "https://github.com"
+                },
+                "trello": {
+                    "title": "Trello",
+                    "src": "/technologies/trello.svg",
+                    "url": "https://trello.com"
+                },
+                "agile": {
+                    "title": "Agile",
+                    "src": "/technologies/agile.svg",
+                    "url": "https://en.wikipedia.org/wiki/Agile_software_development"
+                },
+                "linux": {
+                    "title": "Linux",
+                    "src": "/technologies/linux.svg",
+                    "url": "https://www.linux.org/"
+                },
+                "windows": {
+                    "title": "Windows",
+                    "src": "/technologies/windows.svg",
+                    "url": "https://www.microsoft.com/windows"
+                },
+                "proxmox": {
+                    "title": "Proxmox",
+                    "src": "/technologies/proxmox.svg",
+                    "url": "https://www.proxmox.com/"
+                },
+                "docker": {
+                    "title": "Docker",
+                    "src": "/technologies/docker.svg",
+                    "url": "https://www.docker.com/"
+                },
+                "vagrant": {
+                    "title": "Vagrant",
+                    "src": "/technologies/vagrant.svg",
+                    "url": "https://www.vagrantup.com/"
+                },
+                "virtualbox": {
+                    "title": "VirtualBox",
+                    "src": "/technologies/virtualbox.svg",
+                    "url": "https://www.virtualbox.org/"
                 }
             },
             "contributors": {
