@@ -21,7 +21,7 @@ onMounted(() => {
   <Error404 v-if="project == undefined"></Error404>
   <div
     v-else
-    class="flex-1 p-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white bg-[url(/background/wiggle-light.svg)] dark:bg-[url(/background/wiggle-dark.svg)]"
+    class="flex-1 p-4 md:p-8 bg-white dark:bg-gray-800 text-gray-900 dark:text-white bg-[url(/background/endless-clouds-light.svg)] dark:bg-[url(/background/endless-clouds-dark.svg)]"
   >
     <div class="max-w-screen-xl m-auto">
       <h1 class="text-4xl font-sans font-extrabold dark:text-white">
