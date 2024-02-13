@@ -36,6 +36,7 @@
                         "list": [
                             {
                                 "title": "Développement Web",
+                                "iconURL": "/icons/web.svg",
                                 "list": [
                                     "html",
                                     "css",
@@ -50,6 +51,7 @@
                             },
                             {
                                 "title": "Développement Mobile",
+                                "iconURL": "/icons/mobile.svg",
                                 "list": [
                                     "kotlin",
                                     "compose",
@@ -58,6 +60,7 @@
                             },
                             {
                                 "title": "Gestion de Base de données",
+                                "iconURL": "/icons/database.svg",
                                 "list": [
                                     "sql",
                                     "plsql",
@@ -68,6 +71,7 @@
                             },
                             {
                                 "title": "Langages de programmation",
+                                "iconURL": "/icons/computer.svg",
                                 "list": [
                                     "c",
                                     "java",
@@ -80,6 +84,7 @@
                             },
                             {
                                 "title": "Gestion de projet",
+                                "iconURL": "/icons/user-group.svg",
                                 "list": [
                                     "git",
                                     "github",
@@ -89,6 +94,7 @@
                             },
                             {
                                 "title": "Administration système",
+                                "iconURL": "/icons/command-line.svg",
                                 "list": [
                                     "linux",
                                     "windows"
@@ -96,6 +102,7 @@
                             },
                             {
                                 "title": "Virtualisation",
+                                "iconURL": "/icons/square-stack.svg",
                                 "list": [
                                     "proxmox",
                                     "docker",
@@ -559,7 +566,7 @@
                 },
                 "c#": {
                     "title": "C#",
-                    "src": "/technologies/c#.svg",
+                    "src": "/technologies/csharp.svg",
                     "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
                 },
                 "git": {
