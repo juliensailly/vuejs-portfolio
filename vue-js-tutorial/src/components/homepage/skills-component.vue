@@ -58,7 +58,7 @@ onMounted(() => {
               :id="skillType.id"
               v-for="skillType in hardSkills"
               :key="skillType.id"
-              class="grid grid-cols-[repeat(auto-fit,minmax(auto,100px))] gap-4 justify-around p-6 mx-auto text-medium text-gray-700 w-full"
+              class="grid grid-cols-[repeat(auto-fit,minmax(auto,150px))] gap-4 justify-around p-6 mx-auto text-medium text-gray-700 w-full"
             >
               <div
                 class="flex-1 flex bg-white-500 p-2 rounded shadow-lg min-w-28"
