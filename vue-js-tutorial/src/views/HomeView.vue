@@ -1,5 +1,6 @@
 <script setup>
 import ProjectSelection from '../components/homepage/project-selection-component.vue'
+import Skills from '../components/homepage/skills-component.vue'
 </script>
 
 <template>
@@ -8,7 +9,8 @@ import ProjectSelection from '../components/homepage/project-selection-component
   >
     <div class="max-w-screen-xl m-auto py-4 md:py-8">
       <h1 class="px-4 md:px-8 text-center">Home</h1>
-      <ProjectSelection class="px-4 md:px-8"></ProjectSelection>
+      <ProjectSelection></ProjectSelection>
+      <Skills></Skills>
     </div>
   </div>
 </template>

@@ -120,12 +120,6 @@ Compétences techniques (hard skills) :
 - Développement mobile :
    - Kotlin
    - Jetpack Compose
-- Gestion de projet :
-   - Git
-   - Méthodes agiles
-- Administration système :
-   - Linux
-   - Windows
 - Gestion de bases de données :
    - MySQL
    - Oracle SQL
@@ -134,11 +128,16 @@ Compétences techniques (hard skills) :
    - Java
    - C/C#
    - Python
+- Gestion de projet :
+   - Git
+   - Méthodes Agiles
+- Administration système :
+   - Linux
+   - Windows
 - Virtualisation :
    - Proxmox
    - Vagrant
    - Docker
-
 
 Compétences transversales :
 - Anglais

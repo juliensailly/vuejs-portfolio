@@ -15,7 +15,13 @@
                 "title": "Accueil",
                 "projectsTitle": "Projets",
                 "projects": ["nautilus", "pticuisto"],
-                "projectsViewMore": "Voir plus"
+                "projectsViewMore": "Voir plus",
+                "skillsTitle": "Compétences",
+                "skills": {
+                    "soft": {"title": "Compétences humaines", "list": ["autonomous", "curious", "creative", "positivity"]},
+                    "hard": {"title": "Compétences techniques", "list": []},
+                    "both": {"title": "Compétences transversales", "list": ["english", "law", "management", "communication"]}
+                }
             },
             "projects": {
                 "title": "Projets",
