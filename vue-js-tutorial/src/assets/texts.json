@@ -306,9 +306,10 @@
                 }
             },
             "error404": {
-                "title": "Erreur 404",
+                "title": "404",
                 "message": "La page que vous cherchez n'existe pas.",
-                "button": "Retour en arrière"
+                "btnLabel": "Cliquez ci-dessous pour revenir en arrière",
+                "button": "Retour"
             }
         },
         "footer": {
