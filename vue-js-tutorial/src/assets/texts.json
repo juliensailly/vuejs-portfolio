@@ -72,13 +72,13 @@
                                 "title": "Langages de programmation",
                                 "iconURL": "/icons/computer.svg",
                                 "list": [
-                                    "c",
-                                    "java",
                                     "js",
+                                    "java",
                                     "php",
                                     "kotlin",
-                                    "python",
-                                    "c#"
+                                    "c",
+                                    "c#",
+                                    "python"
                                 ]
                             },
                             {
@@ -584,7 +584,7 @@
                     "url": "https://trello.com"
                 },
                 "agile": {
-                    "title": "Agile",
+                    "title": "Méthode Agiles",
                     "src": "/technologies/agile.svg",
                     "url": "https://en.wikipedia.org/wiki/Agile_software_development"
                 },
