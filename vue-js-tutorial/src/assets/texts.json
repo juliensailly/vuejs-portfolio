@@ -62,9 +62,8 @@
                                 "title": "Gestion de Base de données",
                                 "iconURL": "/icons/database.svg",
                                 "list": [
-                                    "sql",
-                                    "plsql",
                                     "oraclesql",
+                                    "plsql",
                                     "mysql",
                                     "sqlite"
                                 ]
@@ -601,7 +600,7 @@
                 },
                 "proxmox": {
                     "title": "Proxmox",
-                    "src": "/technologies/proxmox.svg",
+                    "src": "/technologies/proxmox.png",
                     "url": "https://www.proxmox.com/"
                 },
                 "docker": {
