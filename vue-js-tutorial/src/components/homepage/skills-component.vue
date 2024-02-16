@@ -73,6 +73,7 @@ onMounted(() => {
                 <a
                   :href="techUsed[skill].url"
                   class="flex-1 flex flex-col items-center justify-between gap-4"
+                  target="_blank"
                 >
                   <img
                     :src="techUsed[skill].src"

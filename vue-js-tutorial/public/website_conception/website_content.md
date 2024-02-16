@@ -48,6 +48,10 @@ Je suis Julien Sailly, étudiant en BUT Informatique à Caen. Je suis passionné
 - Logo IUT ou image campus (avec lien vers site + puce comme notifs iPhone indiquant la date de début et de fin)
 ![alt text](image.png)
 
+- Description de la formation
+
+Je suis actuellement étudiant en 2ème année de BUT Informatique à l'IUT de Caen, parcours Réalisation d'applications. Cette formation de 3 ans me permet d'acquérir des compétences en développement web, mobile, en administration système, en gestion de bases de données et en gestion de projet.
+
 #### Projets highlighted
 
 Présentation sous forme de carte (image + titre + description + lien vers page projet)

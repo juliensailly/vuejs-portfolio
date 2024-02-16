@@ -1,6 +1,7 @@
 <script setup>
 import ProjectSelection from '../components/homepage/project-selection-component.vue'
 import Skills from '../components/homepage/skills-component.vue'
+import Studies from '../components/homepage/studies-component.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Skills from '../components/homepage/skills-component.vue'
   >
     <div class="max-w-screen-xl m-auto py-4 md:py-8">
       <h1 class="px-4 md:px-8 text-center">Home</h1>
+      <Studies></Studies>
       <ProjectSelection></ProjectSelection>
       <Skills></Skills>
     </div>
