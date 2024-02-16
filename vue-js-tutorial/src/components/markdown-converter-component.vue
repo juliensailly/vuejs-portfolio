@@ -7,7 +7,7 @@ const props = defineProps({
 
 var md = props.md
 
-if (md == "" || md == null) md = "# Default Title\n\nDefault text"
+if (md == '' || md == null) md = '# Default Title\n\nDefault text'
 
 md = md.match(/[^\n]+/g)
 var textIndications = {}
@@ -31,7 +31,10 @@ md.forEach((line) => {
       <h1 class="text-4xl font-sans font-extrabold dark:text-white" v-if="line.type == 'h1'">
         {{ line.text }}
       </h1>
-      <h2 class="mb-2 text-2xl font-sans font-semibold dark:text-white" v-else-if="line.type == 'h2'">
+      <h2
+        class="mb-2 text-2xl font-sans font-semibold dark:text-white"
+        v-else-if="line.type == 'h2'"
+      >
         {{ line.text }}
       </h2>
       <p class="mb-2 text-justify" v-else-if="line.type == 'p'">{{ line.text }}</p>
