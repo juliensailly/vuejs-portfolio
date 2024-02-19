@@ -3,14 +3,17 @@ import textData from '../../assets/texts.json'
 </script>
 
 <template>
-  <section class="flex flex-col justify-between items-center gap-4 p-4 md:p-8 min-h-[80vh]">
+  <section
+    class="flex flex-col justify-between items-center gap-4 p-4 md:p-8 min-h-[calc(100vh-6rem)]"
+  >
     <div></div>
     <div class="flex flex-col items-center justify-between gap-4 md:gap-8 md:flex-row">
       <img
         :src="textData.fr.pages.homepage.welcome.img"
         alt="Julien Sailly's profile picture"
-        class="object-cover aspect-square max-w-64 w-48 md:w-64 rounded-full shadow-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out"
+        class="object-cover aspect-square max-w-64 w-48 md:w-64 rounded-full shadow-lg hover:-translate-y-2 transition-transform duration-300 ease-in-out ring ring-blue-400"
       />
+
       <div class="flex flex-col justify-center items-start gap-2">
         <div class="flex gap-2 mb-4">
           <h2 class="text-5xl font-extrabold dark:text-white">
@@ -55,9 +58,7 @@ import textData from '../../assets/texts.json'
     </div>
     <div class="text-black dark:text-white hidden md:block">
       <svg
-        onclick="document.getElementById('studies').scrollIntoView({ behavior: 'smooth', block: 'end' })"
-        width="40px"
-        height="100%"
+        onclick="document.getElementById('studies').scrollIntoView({ behavior: 'smooth', block: 'center' })"
         viewBox="0 0 247 390"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +70,7 @@ import textData from '../../assets/texts.json'
           stroke-linejoin: round;
           stroke-miterlimit: 1.5;
         "
-        class="cursor-pointer"
+        class="cursor-pointer h-full min-w-10"
       >
         <path
           id="wheel"
