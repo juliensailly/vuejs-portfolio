@@ -3,6 +3,7 @@ import ProjectSelection from '../components/homepage/project-selection-component
 import Skills from '../components/homepage/skills-component.vue'
 import Studies from '../components/homepage/studies-component.vue'
 import Welcome from '../components/homepage/welcome-component.vue'
+import Contact from '../components/homepage/contact-component.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Welcome from '../components/homepage/welcome-component.vue'
       <Studies id="studies"></Studies>
       <ProjectSelection></ProjectSelection>
       <Skills></Skills>
+      <Contact></Contact>
     </div>
   </div>
 </template>

@@ -7,7 +7,7 @@ const projects = projectsKeys.map((key) => textData.fr.pages.projects.values[key
 </script>
 
 <template>
-  <section class="flex flex-col gap-4 p-4 md:p-8 backdrop-blur-[2px]">
+  <section class="flex flex-col gap-4 p-4 md:p-8">
     <h2 class="mb-2 text-3xl font-sans font-semibold">
       {{ textData.fr.pages.homepage.projectsTitle }}
     </h2>

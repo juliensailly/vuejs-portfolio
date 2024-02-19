@@ -2,6 +2,10 @@
 const props = defineProps({
   md: {
     type: String
+  },
+  disableHash: {
+    type: Boolean,
+    default: false
   }
 })
 
@@ -17,9 +21,9 @@ var index = 0
 
 md.forEach((line) => {
   if (line.startsWith('##')) {
-    textIndications[index] = { type: 'h2', text: line.replace('##', '#').trim() }
+    textIndications[index] = { type: 'h2', text: line.replace('##', (props.disableHash ? '' : '#')).trim() }
   } else if (line.startsWith('#')) {
-    textIndications[index] = { type: 'h1', text: line.replace('#', '#').trim() }
+    textIndications[index] = { type: 'h1', text: line.replace('#', (props.disableHash ? '' : '#')).trim() }
   } else {
     textIndications[index] = { type: 'p', text: line.trim() }
   }

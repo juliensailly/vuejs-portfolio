@@ -137,7 +137,9 @@
                             "Communication"
                         ]
                     }
-                }
+                },
+                "contactTitle": "Contact",
+                "contactDescription": "## Vous souhaitez me contacter pour une proposition de stage, d'alternance ou de mission freelance ? \n N'hésitez pas à me joindre via Linkedin, Github ou par mail."
             },
             "projects": {
                 "title": "Projets",
@@ -454,9 +456,23 @@
         },
         "footer": {
             "name": "Julien Sailly",
-            "linkedinLink": "https://www.linkedin.com/in/saillyjulien",
-            "githubLink": "https://github.com/juliensailly",
-            "mailLink": "mailto:juliensailly76@gmail.com"
+            "contactLinks": {
+                "linkedin": {
+                    "title": "Linkedin",
+                    "src": "/icons/linkedin.svg",
+                    "url": "https://www.linkedin.com/in/saillyjulien"
+                },
+                "github": {
+                    "title": "Github",
+                    "src": "/technologies/github-white.svg",
+                    "url": "https://github.com/juliensailly"
+                },
+                "mail": {
+                    "title": "Mail",
+                    "src": "/icons/mail.svg",
+                    "url": "mailto:juliensailly76@gmail.com"
+                }
+            }
         },
         "assets": {
             "technologies": {
