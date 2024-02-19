@@ -4,7 +4,7 @@ import textData from '../assets/texts.json'
 </script>
 
 <template>
-  <header>
+  <header class="sticky top-0 z-40">
     <nav class="dark:bg-gray-900 bg-blue sticky w-full z-20 top-0 start-0">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <router-link to="/" class="flex items-center space-x-3 rtl:space-x-reverse">

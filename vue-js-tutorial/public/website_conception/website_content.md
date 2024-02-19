@@ -41,12 +41,24 @@
 
 - Photo
 Bonjour 👋
-Je suis Julien Sailly, étudiant en BUT Informatique à Caen. Je suis passionné par le développement web et mobile, et je recherche actuellement une alternance pour septembre 2024 [_lien vers page alternance_].
+Julien Sailly, étudiant en BUT Informatique à Caen. 
+Passionné par le développement web et mobile.
+Recherche actuellement une alternance pour septembre 2024 [_lien vers CV_] [_lien vers mail_].
 
 #### Formation
 
 - Logo IUT ou image campus (avec lien vers site + puce comme notifs iPhone indiquant la date de début et de fin)
 ![alt text](image.png)
+
+- Description de la formation
+
+Je suis actuellement étudiant en 2<sup>ème</sup> année de **BUT Informatique** à l'IUT de Caen, parcours Réalisation d'applications. Cette formation de 3 ans est technique par les technologies apprises, mais également professionnalisante par les projets réalisés.
+\n
+Une attention particulière est portée sur l'utilisation des **Méthodes Agiles**, ainsi que la qualité de développement et la gestion de projet. Des concepts essentiels afin de travailler en équipe et de s'adapter aux besoins des clients.
+\n
+Finalement, le BUT Informatique est également professionnalisant puisqu'un total de 24 semaines de stage sont prévues, et que **la 3<sup>ème</sup> année est en alternance**. 
+
+METTRE EN GRAS DES TRUCS IMPORTANTS
 
 #### Projets highlighted
 
@@ -120,12 +132,6 @@ Compétences techniques (hard skills) :
 - Développement mobile :
    - Kotlin
    - Jetpack Compose
-- Gestion de projet :
-   - Git
-   - Méthodes agiles
-- Administration système :
-   - Linux
-   - Windows
 - Gestion de bases de données :
    - MySQL
    - Oracle SQL
@@ -134,11 +140,16 @@ Compétences techniques (hard skills) :
    - Java
    - C/C#
    - Python
+- Gestion de projet :
+   - Git
+   - Méthodes Agiles
+- Administration système :
+   - Linux
+   - Windows
 - Virtualisation :
    - Proxmox
    - Vagrant
    - Docker
-
 
 Compétences transversales :
 - Anglais
