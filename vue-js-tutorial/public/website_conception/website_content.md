@@ -41,7 +41,9 @@
 
 - Photo
 Bonjour 👋
-Je suis Julien Sailly, étudiant en BUT Informatique à Caen. Je suis passionné par le développement web et mobile, et je recherche actuellement une alternance pour septembre 2024 [_lien vers page alternance_].
+Julien Sailly, étudiant en BUT Informatique à Caen. 
+Passionné par le développement web et mobile.
+Recherche actuellement une alternance pour septembre 2024 [_lien vers CV_] [_lien vers mail_].
 
 #### Formation
 

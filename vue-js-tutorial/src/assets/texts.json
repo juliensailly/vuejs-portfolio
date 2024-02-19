@@ -13,6 +13,15 @@
         "pages": {
             "homepage": {
                 "title": "Accueil",
+                "welcome": {
+                    "img": "/pp.jpg",
+                    "waveEmoji": "/icons/waving_hand.png",
+                    "title": "Bonjour",
+                    "line1A": "Je suis ",
+                    "line1B": ", étudiant en BUT Informatique à Caen.",
+                    "line2": "Passionné par le développement web et mobile, je recherche activement une alternance pour septembre 2024.",
+                    "cvBtn": "Consulter mon CV"
+                },
                 "studiesTitle": "Formation",
                 "studiesIllustration": "/iut-caen.jpg",
                 "studiesName": "BUT Informatique",
@@ -151,7 +160,7 @@
                     },
                     "portfolio": {
                         "id": "portfolio",
-                        "title": "Portfolio",
+                        "title": "Portfolio (page en construction)",
                         "description": "Portfolio web réalisé dans le cadre de ma recherche d'alternance'.",
                         "technologies": "VueJS, HTML, JS, Tailwind",
                         "img": "/projects/portfolio.png",
