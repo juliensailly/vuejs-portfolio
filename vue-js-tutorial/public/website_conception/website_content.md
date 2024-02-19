@@ -50,11 +50,11 @@ Je suis Julien Sailly, étudiant en BUT Informatique à Caen. Je suis passionné
 
 - Description de la formation
 
-Je suis actuellement étudiant en 2ème année de BUT Informatique à l'IUT de Caen, parcours Réalisation d'applications. Cette formation de 3 ans est technique par les technologies apprises, mais également professionnalisante par les projets réalisés.
-
-Une attention particulière est portée sur l'utilisation des Méthodes Agile, ainsi que la qualité de développement et la gestion de projet. Des concepts essentiels afin de travailler en équipe et de s'adapter aux besoins des clients.
-
-Finalement, le BUT Informatique est également professionnalisant puisqu'un total de 24 semaines de stage sont prévues, et que la 3ème année peut se réaliser en alternance. 
+Je suis actuellement étudiant en 2<sup>ème</sup> année de **BUT Informatique** à l'IUT de Caen, parcours Réalisation d'applications. Cette formation de 3 ans est technique par les technologies apprises, mais également professionnalisante par les projets réalisés.
+\n
+Une attention particulière est portée sur l'utilisation des **Méthodes Agiles**, ainsi que la qualité de développement et la gestion de projet. Des concepts essentiels afin de travailler en équipe et de s'adapter aux besoins des clients.
+\n
+Finalement, le BUT Informatique est également professionnalisant puisqu'un total de 24 semaines de stage sont prévues, et que **la 3<sup>ème</sup> année est en alternance**. 
 
 METTRE EN GRAS DES TRUCS IMPORTANTS
 
