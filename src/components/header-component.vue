@@ -1,6 +1,13 @@
 <script setup>
 import DarkModeToggle from './dark-mode-toggle-component.vue'
 import textData from '../assets/texts.json'
+import { ref } from 'vue'
+
+const hamburgerBtnMenu = ref(null)
+const hideHamburgerMenu = () => {
+  if (window.innerWidth < 768)
+    hamburgerBtnMenu.value.click()
+}
 </script>
 
 <template>
@@ -27,6 +34,7 @@ import textData from '../assets/texts.json'
           {{ textData.fr.navbar.CV }}
           </a>
           <button
+            ref="hamburgerBtnMenu"
             data-collapse-toggle="navbar-sticky"
             type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -68,10 +76,10 @@ import textData from '../assets/texts.json'
               </a>
             </li>
             <li>
-              <router-link to="/" class="block py-2 px-3 rounded">{{ textData.fr.navbar.home }}</router-link>
+              <router-link @click="hideHamburgerMenu" to="/" class="block py-2 px-3 rounded">{{ textData.fr.navbar.home }}</router-link>
             </li>
             <li>
-              <router-link to="/projects" class="block py-2 px-3 rounded"
+              <router-link @click="hideHamburgerMenu" to="/projects" class="block py-2 px-3 rounded"
                 >{{ textData.fr.navbar.projects }}</router-link
               >
             </li>
