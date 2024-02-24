@@ -66,7 +66,7 @@ onMounted(() => {
               class="grid grid-cols-[repeat(auto-fit,minmax(auto,150px))] gap-4 justify-around p-6 mx-auto text-medium text-gray-700 w-full"
             >
               <div
-                class="flex-1 flex bg-white-500 p-4 rounded shadow-lg w-40 max-h-60"
+                class="flex-1 flex bg-white-500 p-4 rounded shadow-lg w-40 aspect-[5/7]"
                 v-for="skill in skillType.list"
                 :key="skill"
               >
@@ -75,11 +75,9 @@ onMounted(() => {
                   class="flex-1 flex flex-col items-center justify-between gap-4"
                   target="_blank"
                 >
-                  <img
-                    :src="techUsed[skill].src"
-                    :alt="techUsed[skill].title + ' icon'"
-                    class="flex-1"
-                  />
+                  <div class="flex-1 flex w-full">
+                    <img :src="techUsed[skill].src" :alt="techUsed[skill].title + ' icon'" class="object-contain"/>
+                  </div>
                   <p class="pt-2 border-t border-blue-700 w-full text-center">
                     {{ techUsed[skill].title }}
                   </p>
