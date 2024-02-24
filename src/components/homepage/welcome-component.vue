@@ -4,9 +4,8 @@ import textData from '../../assets/texts.json'
 
 <template>
   <section
-    class="flex flex-col justify-between items-center gap-4 p-4 md:p-8 min-h-[calc(100vh-6rem)]"
+    class="flex flex-col justify-center items-center gap-4 p-4 md:p-8 min-h-[calc(100vh-6rem)]"
   >
-    <div></div>
     <div class="flex flex-col items-center justify-between gap-4 md:gap-8 md:flex-row">
       <img
         :src="textData.fr.pages.homepage.welcome.img"
@@ -55,34 +54,6 @@ import textData from '../../assets/texts.json'
           </svg>
         </a>
       </div>
-    </div>
-    <div class="text-black dark:text-white hidden md:block">
-      <svg
-        onclick="document.getElementById('studies').scrollIntoView({ behavior: 'smooth', block: 'center' })"
-        viewBox="0 0 247 390"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        style="
-          fill-rule: evenodd;
-          clip-rule: evenodd;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-          stroke-miterlimit: 1.5;
-        "
-        class="cursor-pointer h-full min-w-10"
-      >
-        <path
-          id="wheel"
-          d="M123.359,79.775l0,72.843"
-          style="fill: none; stroke: currentColor; stroke-width: 20px"
-        />
-        <path
-          id="mouse"
-          d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
-          style="fill: none; stroke: currentColor; stroke-width: 20px"
-        />
-      </svg>
     </div>
   </section>
 </template>
