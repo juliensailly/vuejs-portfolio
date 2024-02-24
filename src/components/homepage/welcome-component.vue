@@ -4,9 +4,8 @@ import textData from '../../assets/texts.json'
 
 <template>
   <section
-    class="flex flex-col justify-between items-center gap-4 p-4 md:p-8 min-h-[calc(100vh-6rem)]"
+    class="flex flex-col justify-center items-center gap-4 p-4 md:p-8 min-h-[calc(100vh-6rem)]"
   >
-    <div></div>
     <div class="flex flex-col items-center justify-between gap-4 md:gap-8 md:flex-row">
       <img
         :src="textData.fr.pages.homepage.welcome.img"
@@ -15,8 +14,8 @@ import textData from '../../assets/texts.json'
       />
 
       <div class="flex flex-col justify-center items-start gap-2">
-        <div class="flex gap-2 mb-4">
-          <h2 class="text-5xl font-extrabold dark:text-white">
+        <div class="flex gap-2 mb-2 md:mb-4">
+          <h2 class="text-4xl md:text-5xl font-extrabold dark:text-white">
             {{ textData.fr.pages.homepage.welcome.title }}
           </h2>
           <img
@@ -25,18 +24,18 @@ import textData from '../../assets/texts.json'
             class="max-h-12"
           />
         </div>
-        <p class="text-3xl font-bold dark:text-white mb-2">
+        <p class="text-2xl md:text-3xl font-bold dark:text-white mb-2">
           <span v-html="textData.fr.pages.homepage.welcome.line1A"></span>
           <span class="text-blue-400 dark:text-blue-600">{{ textData.fr.app_author }}</span>
           <span v-html="textData.fr.pages.homepage.welcome.line1B"></span>
         </p>
         <p
-          class="text-2xl dark:text-white mb-2"
+          class="md:text-2xl dark:text-white mb-2"
           v-html="textData.fr.pages.homepage.welcome.line2"
         ></p>
         <a
           href="/CV_Julien_SAILLY.pdf"
-          class="group inline-flex items-center px-3 py-2 mx-auto md:mx-0 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-500 dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-600"
+          class="group inline-flex items-center px-3 py-2 mt-2 md:mt-0 mx-auto md:mx-0 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-500 dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-600"
           target="_blank"
           >{{ textData.fr.pages.homepage.welcome.cvBtn }}
           <svg
@@ -55,34 +54,6 @@ import textData from '../../assets/texts.json'
           </svg>
         </a>
       </div>
-    </div>
-    <div class="text-black dark:text-white hidden md:block">
-      <svg
-        onclick="document.getElementById('studies').scrollIntoView({ behavior: 'smooth', block: 'center' })"
-        viewBox="0 0 247 390"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        style="
-          fill-rule: evenodd;
-          clip-rule: evenodd;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-          stroke-miterlimit: 1.5;
-        "
-        class="cursor-pointer h-full min-w-10"
-      >
-        <path
-          id="wheel"
-          d="M123.359,79.775l0,72.843"
-          style="fill: none; stroke: currentColor; stroke-width: 20px"
-        />
-        <path
-          id="mouse"
-          d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
-          style="fill: none; stroke: currentColor; stroke-width: 20px"
-        />
-      </svg>
     </div>
   </section>
 </template>
