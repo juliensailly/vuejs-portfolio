@@ -14,8 +14,8 @@ import textData from '../../assets/texts.json'
       />
 
       <div class="flex flex-col justify-center items-start gap-2">
-        <div class="flex gap-2 mb-4">
-          <h2 class="text-5xl font-extrabold dark:text-white">
+        <div class="flex gap-2 mb-2 md:mb-4">
+          <h2 class="text-4xl md:text-5xl font-extrabold dark:text-white">
             {{ textData.fr.pages.homepage.welcome.title }}
           </h2>
           <img
@@ -24,18 +24,18 @@ import textData from '../../assets/texts.json'
             class="max-h-12"
           />
         </div>
-        <p class="text-3xl font-bold dark:text-white mb-2">
+        <p class="text-2xl md:text-3xl font-bold dark:text-white mb-2">
           <span v-html="textData.fr.pages.homepage.welcome.line1A"></span>
           <span class="text-blue-400 dark:text-blue-600">{{ textData.fr.app_author }}</span>
           <span v-html="textData.fr.pages.homepage.welcome.line1B"></span>
         </p>
         <p
-          class="text-2xl dark:text-white mb-2"
+          class="md:text-2xl dark:text-white mb-2"
           v-html="textData.fr.pages.homepage.welcome.line2"
         ></p>
         <a
           href="/CV_Julien_SAILLY.pdf"
-          class="group inline-flex items-center px-3 py-2 mx-auto md:mx-0 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-500 dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-600"
+          class="group inline-flex items-center px-3 py-2 mt-2 md:mt-0 mx-auto md:mx-0 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-500 dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-600"
           target="_blank"
           >{{ textData.fr.pages.homepage.welcome.cvBtn }}
           <svg
