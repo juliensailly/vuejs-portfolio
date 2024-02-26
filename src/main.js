@@ -10,7 +10,8 @@ import en from './assets/locales/en.json'
 const i18n = createI18n({
   locale: 'fr',
   fallbackLocale: 'en',
-  messages: { fr, en }
+  messages: { fr, en },
+  legacy: false
 })
 
 const app = createApp(App)

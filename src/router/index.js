@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import textData from '../assets/texts.json'
+import values from '../assets/texts.json'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,32 +14,29 @@ const router = createRouter({
       name: 'projects',
       component: () => import('../views/ProjectsView.vue'),
       meta: {
-        title: textData.fr.pages.projects.title
+        title: values.fr.pages.projects.title
       }
     },
     {
       path: '/projects/:id',
       name: 'projectDetails',
-      component: () => import('../views/ProjectDetailsView.vue'),
-      meta: {
-        title: textData.fr.pages.projectDetails.title
-      }
+      component: () => import('../views/ProjectDetailsView.vue')
     },
     {
       path: '/:pathMatch(.*)*',
       name: '404',
       component: () => import('../views/Error404View.vue'),
       meta: {
-        title: textData.fr.pages.error404.title
+        title: values.fr.pages.error404.title
       }
     }
   ]
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = textData.fr.app_title
-  if (to.meta.title)
-    document.title = (to.meta.title + " – " + textData.fr.app_author) || textData.fr.app_title
+  document.title = values.fr.app_title
+  if (to.meta.title && to.name !== 'projects')
+    document.title = (to.meta.title + " – " + values.fr.app_author) || values.fr.app_title
   next()
 })
 

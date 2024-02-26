@@ -4,6 +4,13 @@ import ProjectCard from '../components/project-card-component.vue'
 import textData from '../assets/texts.json'
 import _ from 'lodash'
 import { initFlowbite } from 'flowbite'
+import { useI18n } from "vue-i18n";
+import { watchEffect } from 'vue'
+
+const { t } = useI18n();
+watchEffect(() => {
+  document.title = t('pages.projects.title');
+})
 
 const sortedOption = ref('relevant')
 const sortBtnLabel = ref(
