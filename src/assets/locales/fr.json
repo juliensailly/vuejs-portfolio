@@ -3,26 +3,6 @@
 	"app_description": "Portfolio de Julien Sailly, développeur web et mobile",
 	"app_keywords": "Julien Sailly, portfolio, développeur, web, mobile, javascript, react, react native, nodejs, express, mongodb, mysql, php, html, css, sass, less, bootstrap, materialize, jquery, git, github, bitbucket, docker, jenkins, jira, trello, scrum, agile, freelance, france",
 	"app_title": "Portfolio – Julien Sailly",
-	"footer": {
-		"contactLinks": {
-			"github": {
-				"src": "/technologies/github-white.svg",
-				"title": "Github",
-				"url": "https://github.com/juliensailly"
-			},
-			"linkedin": {
-				"src": "/icons/linkedin.svg",
-				"title": "Linkedin",
-				"url": "https://www.linkedin.com/in/saillyjulien"
-			},
-			"mail": {
-				"src": "/icons/mail.svg",
-				"title": "Mail",
-				"url": "mailto:juliensailly76@gmail.com"
-			}
-		},
-		"name": "Julien Sailly"
-	},
 	"navbar": {
 		"CV": "Mon CV",
 		"home": "Accueil",

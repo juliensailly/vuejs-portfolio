@@ -1,6 +1,6 @@
 <script setup>
 import DarkModeToggle from './dark-mode-toggle-component.vue'
-import textData from '../assets/texts.json'
+import LocaleChanger from './locale-changer-component.vue'
 import { ref } from 'vue'
 
 const hamburgerBtnMenu = ref(null)
@@ -21,7 +21,7 @@ const hideHamburgerMenu = () => {
             alt="Julien Sailly's profile picture"
           />
           <span class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-white"
-            >{{ textData.fr.navbar.name }}</span
+            >{{ $t("navbar.name") }}</span
           >
         </router-link>
         <div class="flex md:order-2 gap-2 rtl:space-x-reverse">
@@ -31,7 +31,7 @@ const hideHamburgerMenu = () => {
             target="_blank"
             class="hover:animate-growing_shadow hidden xxs:block text-white bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-500"
           >
-          {{ textData.fr.navbar.CV }}
+          {{ $t("navbar.CV") }}
           </a>
           <button
             ref="hamburgerBtnMenu"
@@ -72,20 +72,21 @@ const hideHamburgerMenu = () => {
                 target="_blank"
                 class="xxs:hidden block flex-1 text-white focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded px-4 py-2 dark:bg-gray-700 dark:focus:ring-blue-500"
               >
-              {{ textData.fr.navbar.CV }}
+              {{ $t("navbar.CV") }}
               </a>
             </li>
             <li>
-              <router-link @click="hideHamburgerMenu" to="/" class="block py-2 px-3 rounded">{{ textData.fr.navbar.home }}</router-link>
+              <router-link @click="hideHamburgerMenu" to="/" class="block py-2 px-3 rounded">{{ $t("navbar.home") }}</router-link>
             </li>
             <li>
               <router-link @click="hideHamburgerMenu" to="/projects" class="block py-2 px-3 rounded"
-                >{{ textData.fr.navbar.projects }}</router-link
+                >{{ $t("navbar.projects") }}</router-link
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <LocaleChanger></LocaleChanger>
   </header>
 </template>

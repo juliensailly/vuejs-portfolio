@@ -1,4 +1,24 @@
 {
+	"footer": {
+		"contactLinks": {
+			"github": {
+				"src": "/technologies/github-white.svg",
+				"title": "Github",
+				"url": "https://github.com/juliensailly"
+			},
+			"linkedin": {
+				"src": "/icons/linkedin.svg",
+				"title": "Linkedin",
+				"url": "https://www.linkedin.com/in/saillyjulien"
+			},
+			"mail": {
+				"src": "/icons/mail.svg",
+				"title": "Mail",
+				"url": "mailto:juliensailly76@gmail.com"
+			}
+		},
+		"name": "Julien Sailly"
+	},
     "technologies": {
         "php": {
             "title": "PHP",
