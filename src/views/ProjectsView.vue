@@ -2,12 +2,14 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import ProjectCard from '../components/project-card-component.vue'
 import fr from '../assets/locales/fr.json'
+import en from '../assets/locales/en.json'
 import _ from 'lodash'
 import { initFlowbite } from 'flowbite'
 import { useI18n } from "vue-i18n";
 import { watchEffect } from 'vue'
 
 const { t } = useI18n();
+const locale = useI18n().locale.value
 watchEffect(() => {
   document.title = t('pages.projects.title');
 })
@@ -23,14 +25,13 @@ const hideDropdown = () => {
 }
 
 const sortedProjects = computed(() => {
-  // sortingDropdown.value.classList.add('hidden')
-  // sortingDropdown.value.classList.remove('block')
+  let values = (locale == "fr" ? fr.pages.projects.values : en.pages.projects.values)
   if (sortedOption.value === 'alphabetical') {
-    return _.orderBy(fr.pages.projects.values, 'title')
+    return _.orderBy(values, 'title')
   } else if (sortedOption.value === 'recent') {
-    return _.orderBy(fr.pages.projects.values, 'recentScore', ['desc'])
+    return _.orderBy(values, 'recentScore', ['desc'])
   } else {
-    return _.orderBy(fr.pages.projects.values, 'relevantScore', ['desc'])
+    return _.orderBy(values, 'relevantScore', ['desc'])
   }
 })
 
