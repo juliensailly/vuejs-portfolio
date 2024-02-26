@@ -19,6 +19,18 @@
 		},
 		"name": "Julien Sailly"
 	},
+    "skills": {
+        "both": [
+            "english", "law", "management", "communication"
+        ],
+        "soft": [
+            "autonomous",
+            "curious",
+            "creative",
+            "positive_attitude",
+            "team_spirit"
+        ]
+    },
     "technologies": {
         "php": {
             "title": "PHP",

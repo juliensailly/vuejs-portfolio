@@ -1,5 +1,5 @@
 <script setup>
-import textData from '../assets/texts.json'
+import assets from '../assets/assets.json'
 
 const props = defineProps({
     project: {
@@ -17,16 +17,16 @@ const props = defineProps({
       v-for="techKey in props.project.technologies"
     >
       <a
-        :href="textData.fr.assets.technologies[techKey].url"
+        :href="assets.technologies[techKey].url"
         target="_blank"
         class="flex gap-1 items-center"
       >
         <img
           class="max-h-5 w-full"
-          :src="textData.fr.assets.technologies[techKey].src"
-          :alt="textData.fr.assets.technologies[techKey].title"
+          :src="assets.technologies[techKey].src"
+          :alt="assets.technologies[techKey].title"
         />
-        <p class="italic">{{ textData.fr.assets.technologies[techKey].title }}</p>
+        <p class="italic">{{ assets.technologies[techKey].title }}</p>
       </a>
     </div>
   </div>

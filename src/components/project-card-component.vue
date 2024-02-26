@@ -1,5 +1,4 @@
 <script setup>
-import textData from '../assets/texts.json'
 const projectBaseURL = '/projects/'
 const props = defineProps({
   project: {
@@ -36,7 +35,7 @@ const props = defineProps({
         :href="projectBaseURL + props.project.id"
         class="group inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-500 dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-600"
       >
-        {{ textData.fr.pages.projects.seeMore }}
+        {{ $t("pages.projects.seeMore") }}
         <svg
           class="rtl:rotate-180 w-3.5 h-3.5 ms-2 transition-transform group-hover:translate-x-1 group-focus:translate-x-1"
           aria-hidden="true"

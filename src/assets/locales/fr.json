@@ -27,12 +27,12 @@
 			"projectsViewMore": "Voir plus",
 			"skills": {
 				"both": {
-					"list": [
-						"Anglais",
-						"Droit",
-						"Gestion",
-						"Communication"
-					],
+					"list": {
+						"english": "Anglais",
+						"law": "Droit",
+						"management": "Gestion",
+						"communication": "Communication"
+					},
 					"title": "Compétences transversales"
 				},
 				"hard": {
@@ -117,13 +117,13 @@
 					"title": "Compétences techniques"
 				},
 				"soft": {
-					"list": [
-						"Autonome",
-						"Curieux",
-						"Créatif",
-						"Attitude positive",
-						"Esprit d'équipe"
-					],
+					"list": {
+						"autonomous": "Autonome",
+						"curious": "Curieux",
+						"creative": "Créatif",
+						"positive_attitude": "Attitude positive",
+						"team_spirit": "Esprit d'équipe"
+					},
 					"title": "Compétences humaines"
 				}
 			},

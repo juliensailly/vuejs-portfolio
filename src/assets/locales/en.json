@@ -27,12 +27,12 @@
 			"projectsViewMore": "See more",
 			"skills": {
 				"both": {
-					"list": [
-						"English",
-						"Law",
-						"Management",
-						"Communication"
-					],
+					"list": {
+						"english": "English",
+						"law": "Law",
+						"management": "Management",
+						"communication": "Communication"
+					},
 					"title": "Transversal skills"
 				},
 				"hard": {
@@ -117,13 +117,13 @@
 					"title": "Technical skills"
 				},
 				"soft": {
-					"list": [
-						"Autonomous",
-						"Curious",
-						"Creative",
-						"Positive attitude",
-						"Team spirit"
-					],
+					"list": {
+						"autonomous": "Autonomous",
+						"curious": "Curious",
+						"creative": "Creative",
+						"positive_attitude": "Positive attitude",
+						"team_spirit": "Team spirit"
+					},
 					"title": "People skills"
 				}
 			},

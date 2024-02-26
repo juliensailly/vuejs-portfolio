@@ -1,5 +1,5 @@
 <script setup>
-import textData from '../assets/texts.json'
+import assets from '../assets/assets.json'
 
 const props = defineProps({
   contributors: {
@@ -18,7 +18,7 @@ setInterval(() => {
   })
 }, 1000)
 
-const contributorsData = textData.fr.assets.contributors
+const contributorsData = assets.contributors
 </script>
 
 <template>
