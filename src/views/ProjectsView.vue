@@ -33,7 +33,9 @@ const sortedProjects = computed(() => {
   }
 })
 
-watch(sortedOption, (newSort) => {
+watch(sortedOption, (newSort) => updateSortLabel(newSort))
+
+function updateSortLabel(newSort) {
   if (newSort === 'alphabetical') {
     sortBtnLabel.value =
       t('pages.projects.sort.title') + ' : ' + t('pages.projects.sort.alphabetical')
@@ -42,10 +44,10 @@ watch(sortedOption, (newSort) => {
   } else {
     sortBtnLabel.value = t('pages.projects.sort.title') + ' : ' + t('pages.projects.sort.relevant')
   }
-})
+}
 
 watch(locale, () => {
-  sortBtnLabel.value = t('pages.projects.sort.title') + ' : ' + t('pages.projects.sort.relevant')
+  updateSortLabel(sortedOption.value)
 })
 
 onMounted(() => {
@@ -120,7 +122,7 @@ onMounted(() => {
           class="flex-[100%] md:flex-[40%] lg:flex-[25%]"
           v-for="project in sortedProjects"
           :key="project.id"
-          :project="project"
+          :project="project.id"
         ></ProjectCard>
       </div>
     </div>
