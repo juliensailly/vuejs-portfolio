@@ -21,7 +21,7 @@ const projects = projectsKeys.map((key) => values.pages.projects.values[key])
     </div>
     <router-link
       to="/projects"
-      class="flex items-center justify-center flex-1 gap-2 px-4 py-2 text-white bg-gradient-to-r from-blue-300 to-blue-400 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg"
+      class="flex items-center justify-center flex-1 gap-2 px-4 py-2 text-white bg-gradient-to-r from-blue-300 hover:-translate-y-0.5 transition-transform duration-200 to-blue-400 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg"
     >
       <p>{{ $t("pages.homepage.projectsViewMore") }}</p>
       <svg
