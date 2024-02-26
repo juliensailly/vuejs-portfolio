@@ -1,15 +1,16 @@
 <script setup>
 import { initFlowbite } from 'flowbite'
-import textData from '../../assets/texts.json'
+import values from '../../assets/texts.json'
+import assets from '../../assets/assets.json'
 import { onMounted } from 'vue'
 
-const hardSkills = textData.fr.pages.homepage.skills.hard.list
+const hardSkills = values.fr.pages.homepage.skills.hard.list
 var techUsed = {}
 hardSkills.forEach((skillType) => {
   skillType.id = skillType.title.replaceAll(' ', '-').replaceAll('é', 'e').toLowerCase()
 
   skillType.list.forEach((tech) => {
-    techUsed[tech] = textData.fr.assets.technologies[tech]
+    techUsed[tech] = values.fr.assets.technologies[tech]
   })
 })
 
@@ -21,12 +22,12 @@ onMounted(() => {
 <template>
   <section class="flex flex-col gap-4 p-4 md:p-8">
     <h2 class="mb-2 text-3xl font-sans font-semibold">
-      {{ textData.fr.pages.homepage.skillsTitle }}
+      {{ $t("pages.homepage.skillsTitle") }}
     </h2>
     <div class="flex flex-col gap-2 md:gap-4">
       <div class="p-2 md:p-4 bg-blue-900 dark:bg-blue-100 rounded-xl">
         <h3 class="mb-2 md:mb-4 text-xl font-sans font-semibold">
-          {{ textData.fr.pages.homepage.skills.hard.title }}
+          {{ $t("pages.homepage.skills.hard.title") }}
         </h3>
         <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-stretch">
           <ul
@@ -90,29 +91,29 @@ onMounted(() => {
       <div class="flex flex-col md:flex-row justify-between gap-2 md:gap-4">
         <div class="flex-1 p-2 md:p-4 bg-blue-900 dark:bg-blue-100 rounded-xl">
           <h3 class="mb-2 md:mb-4 text-xl font-sans font-semibold">
-            {{ textData.fr.pages.homepage.skills.soft.title }}
+            {{ $t("pages.homepage.skills.soft.title") }}
           </h3>
           <ul class="flex flex-wrap gap-2">
             <li
-              v-for="skill in textData.fr.pages.homepage.skills.soft.list"
+              v-for="skill in assets.skills.soft"
               :key="skill"
               class="bg-white border border-gray-800 dark:border-white-600 text-gray-900 px-1 py-0.5 rounded-md hover:shadow-md transition-shadow duration-200 cursor-default"
             >
-              {{ skill }}
+              {{ $t("pages.homepage.skills.soft.list."+skill) }}
             </li>
           </ul>
         </div>
         <div class="flex-1 p-2 md:p-4 bg-blue-900 dark:bg-blue-100 rounded-xl">
           <h3 class="mb-2 md:mb-4 text-xl font-sans font-semibold">
-            {{ textData.fr.pages.homepage.skills.both.title }}
+            {{ $t("pages.homepage.skills.both.title") }}
           </h3>
           <ul class="flex flex-wrap gap-2">
             <li
-              v-for="skill in textData.fr.pages.homepage.skills.both.list"
+              v-for="skill in assets.skills.both"
               :key="skill"
               class="bg-white border border-gray-800 dark:border-white-600 text-gray-900 px-1 py-0.5 rounded-md hover:shadow-md transition-shadow duration-200 cursor-default"
             >
-              {{ skill }}
+              {{ $t("pages.homepage.skills.both.list."+skill) }}
             </li>
           </ul>
         </div>
