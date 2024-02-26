@@ -1,16 +1,16 @@
 <script setup>
 import { initFlowbite } from 'flowbite'
-import values from '../../assets/texts.json'
+import values from '../../assets/locales/fr.json'
 import assets from '../../assets/assets.json'
 import { onMounted } from 'vue'
 
-const hardSkills = values.fr.pages.homepage.skills.hard.list
+const hardSkills = values.pages.homepage.skills.hard.list
 var techUsed = {}
 hardSkills.forEach((skillType) => {
   skillType.id = skillType.title.replaceAll(' ', '-').replaceAll('é', 'e').toLowerCase()
 
   skillType.list.forEach((tech) => {
-    techUsed[tech] = values.fr.assets.technologies[tech]
+    techUsed[tech] = assets.technologies[tech]
   })
 })
 
