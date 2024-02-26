@@ -1,0 +1,241 @@
+{
+    "technologies": {
+        "php": {
+            "title": "PHP",
+            "src": "/technologies/php.svg",
+            "url": "https://www.php.net/"
+        },
+        "laravel": {
+            "title": "Laravel",
+            "src": "/technologies/laravel.svg",
+            "url": "https://laravel.com/"
+        },
+        "mysql": {
+            "title": "MySQL",
+            "src": "/technologies/mysql.svg",
+            "url": "https://www.mysql.com/"
+        },
+        "html": {
+            "title": "HTML",
+            "src": "/technologies/html.svg",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        "css": {
+            "title": "CSS",
+            "src": "/technologies/css.svg",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        "tailwind": {
+            "title": "Tailwind",
+            "src": "/technologies/tailwind.svg",
+            "url": "https://tailwindcss.com/"
+        },
+        "bootstrap": {
+            "title": "Bootstrap",
+            "src": "/technologies/bootstrap.svg",
+            "url": "https://getbootstrap.com/"
+        },
+        "js": {
+            "title": "JavaScript",
+            "src": "/technologies/js.svg",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        "api": {
+            "title": "API",
+            "src": "/technologies/api.svg",
+            "url": "https://en.wikipedia.org/wiki/REST"
+        },
+        "java": {
+            "title": "Java",
+            "src": "/technologies/java.svg",
+            "url": "https://www.java.com/"
+        },
+        "javafx": {
+            "title": "JavaFX",
+            "src": "/technologies/javafx.png",
+            "url": "https://openjfx.io/"
+        },
+        "python": {
+            "title": "Python",
+            "src": "/technologies/python.svg",
+            "url": "https://www.python.org/"
+        },
+        "discordapi": {
+            "title": "DiscordAPI",
+            "src": "/technologies/discord.svg",
+            "url": "https://discord.com/developers/docs/intro"
+        },
+        "selenium": {
+            "title": "Selenium",
+            "src": "/technologies/selenium.svg",
+            "url": "https://www.selenium.dev/"
+        },
+        "nodejs": {
+            "title": "NodeJS",
+            "src": "/technologies/nodejs.svg",
+            "url": "https://nodejs.org/"
+        },
+        "vuejs": {
+            "title": "VueJS",
+            "src": "/technologies/vuejs.svg",
+            "url": "https://vuejs.org/"
+        },
+        "kotlin": {
+            "title": "Kotlin",
+            "src": "/technologies/kotlin.svg",
+            "url": "https://kotlinlang.org/"
+        },
+        "compose": {
+            "title": "Compose",
+            "src": "/technologies/compose.png",
+            "url": "https://developer.android.com/jetpack/compose"
+        },
+        "material_design": {
+            "title": "Material Design",
+            "src": "/technologies/material_design.svg",
+            "url": "https://material.io/design"
+        },
+        "plsql": {
+            "title": "PL/SQL",
+            "src": "/technologies/plsql.svg",
+            "url": "https://www.oracle.com/database/technologies/appdev/plsql.html"
+        },
+        "sql": {
+            "title": "SQL",
+            "src": "/technologies/sql.svg",
+            "url": "https://en.wikipedia.org/wiki/SQL"
+        },
+        "oraclesql": {
+            "title": "OracleSQL",
+            "src": "/technologies/oraclesql.svg",
+            "url": "https://www.oracle.com/database/"
+        },
+        "sqlite": {
+            "title": "SQLite",
+            "src": "/technologies/sqlite.svg",
+            "url": "https://www.sqlite.org"
+        },
+        "c": {
+            "title": "C",
+            "src": "/technologies/c.svg",
+            "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+        },
+        "c#": {
+            "title": "C#",
+            "src": "/technologies/csharp.svg",
+            "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+        },
+        "git": {
+            "title": "Git",
+            "src": "/technologies/git.svg",
+            "url": "https://git-scm.com/"
+        },
+        "github": {
+            "title": "Github",
+            "src": "/technologies/github.svg",
+            "url": "https://github.com"
+        },
+        "trello": {
+            "title": "Trello",
+            "src": "/technologies/trello.svg",
+            "url": "https://trello.com"
+        },
+        "agile": {
+            "title": "Méthode Agiles",
+            "src": "/technologies/agile.svg",
+            "url": "https://en.wikipedia.org/wiki/Agile_software_development"
+        },
+        "linux": {
+            "title": "Linux",
+            "src": "/technologies/linux.svg",
+            "url": "https://www.linux.org/"
+        },
+        "windows": {
+            "title": "Windows",
+            "src": "/technologies/windows.svg",
+            "url": "https://www.microsoft.com/windows"
+        },
+        "proxmox": {
+            "title": "Proxmox",
+            "src": "/technologies/proxmox.png",
+            "url": "https://www.proxmox.com/"
+        },
+        "docker": {
+            "title": "Docker",
+            "src": "/technologies/docker.svg",
+            "url": "https://www.docker.com/"
+        },
+        "vagrant": {
+            "title": "Vagrant",
+            "src": "/technologies/vagrant.svg",
+            "url": "https://www.vagrantup.com/"
+        },
+        "virtualbox": {
+            "title": "VirtualBox",
+            "src": "/technologies/virtualbox.svg",
+            "url": "https://www.virtualbox.org/"
+        },
+        "cisco-packet-tracer": {
+            "title": "Cisco Packet Tracer",
+            "src": "/technologies/cisco-packet-tracer.svg",
+            "url": "https://www.netacad.com/courses/packet-tracer"
+        }
+    },
+    "contributors": {
+        "clementbaratin": {
+            "name": "Clément Baratin",
+            "github": "https://github.com/waterfox-dev",
+            "avatar": "https://avatars.githubusercontent.com/u/68429041"
+        },
+        "victorfriboulet": {
+            "name": "Victor Friboulet",
+            "github": "https://github.com/SirSoliloque",
+            "avatar": "https://avatars.githubusercontent.com/u/76500451"
+        },
+        "cypriendharambure": {
+            "name": "Cyprien d'Harambure",
+            "github": "https://github.com/Pou-1",
+            "avatar": "https://avatars.githubusercontent.com/u/94851968"
+        },
+        "julienaitazzouzene": {
+            "name": "Julien Ait Azzouzene",
+            "github": "https://github.com/PetitGens",
+            "avatar": "https://avatars.githubusercontent.com/u/76777110"
+        },
+        "guilhemstgaudin": {
+            "name": "Guilhem Saint-Gaudin",
+            "github": "https://github.com/Mehliug-SG",
+            "avatar": "https://avatars.githubusercontent.com/u/46083349"
+        },
+        "lucleveque": {
+            "name": "Luc Leveque",
+            "github": "https://github.com/LucBUTGH",
+            "avatar": "https://avatars.githubusercontent.com/u/123160585"
+        },
+        "juliensailly": {
+            "name": "Julien Sailly",
+            "github": "https://github.com/juliensailly",
+            "avatar": "https://avatars.githubusercontent.com/u/92085668"
+        },
+        "gabrielleharang": {
+            "name": "Gabrielle Harang",
+            "github": "https://github.com/Elrigabel",
+            "avatar": "https://avatars.githubusercontent.com/u/144217050"
+        },
+        "andgelbrissaud": {
+            "name": "Andgel Brissaud",
+            "github": "https://github.com/AndgelBrissaud",
+            "avatar": "https://avatars.githubusercontent.com/u/105484031"
+        },
+        "alensolopes": {
+            "name": "Alenso Lopes",
+            "github": "https://github.com/AlensoLopes",
+            "avatar": "https://avatars.githubusercontent.com/u/46823570"
+        },
+        "guillaumebergerot": {
+            "name": "Guillaume Bergerot",
+            "github": "https://github.com/moustave",
+            "avatar": "https://avatars.githubusercontent.com/u/94120536"
+        }
+    }
+}
