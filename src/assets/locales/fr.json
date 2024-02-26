@@ -401,42 +401,54 @@
 					"id": "gribouille",
 					"img": "/projects/gribouille-1.webp",
 					"technologies": "Java, JavaFX",
-					"title": "Gribouille"
+					"title": "Gribouille",
+					"recentScore": 1,
+					"relevantScore": 1
 				},
 				"instant-weather": {
 					"description": "Application web météo, recherche de ville et affichage des prévisions jusqu'à 14 jours.",
 					"id": "instant-weather",
 					"img": "/projects/instant-weather-1.png",
 					"technologies": "HTML, CSS, JS, API",
-					"title": "Instant-Weather"
+					"title": "Instant-Weather",
+					"recentScore": 2,
+					"relevantScore": 3
 				},
 				"jfa-bot": {
 					"description": "Bot Discord alertant de nouvelles notes sur le dossier étudiant de l'Université de Caen Normandie.",
 					"id": "jfa-bot",
 					"img": "/projects/jfa-bot-2.webp",
 					"technologies": "Python, Discord API, Selenium",
-					"title": "JFA Bot"
+					"title": "JFA Bot",
+					"recentScore": 4,
+					"relevantScore": 4
 				},
 				"nautilus": {
 					"description": "Application de gestion des réservations et descentes d'un club de plongée.",
 					"id": "nautilus",
 					"img": "/projects/nautilus-1.webp",
 					"technologies": "PHP (Laravel), MySQL, HTML, CSS, Tailwind",
-					"title": "Nautilus"
+					"title": "Nautilus",
+					"recentScore": 5,
+					"relevantScore": 6
 				},
 				"portfolio": {
 					"description": "Portfolio web réalisé dans le cadre de ma recherche d'alternance.",
 					"id": "portfolio",
 					"img": "/projects/portfolio.png",
 					"technologies": "VueJS, HTML, JS, Tailwind",
-					"title": "Portfolio (page en construction)"
+					"title": "Portfolio (page en construction)",
+					"recentScore": 6,
+					"relevantScore": 5
 				},
 				"pticuisto": {
 					"description": "Application web collaborative permettant de consulter des recettes de cuisine.",
 					"id": "pticuisto",
 					"img": "/projects/pticuisto-1.webp",
 					"technologies": "PHP, HTML, Bootstrap, JS, MySQL",
-					"title": "Pti'Cuisto"
+					"title": "Pti'Cuisto",
+					"recentScore": 3,
+					"relevantScore": 2
 				}
 			}
 		}

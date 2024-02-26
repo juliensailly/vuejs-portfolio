@@ -401,42 +401,54 @@
 					"id": "gribouille",
 					"img": "/projects/gribouille-1.webp",
 					"technologies": "Java, JavaFX",
-					"title": "Gribouille"
+					"title": "Gribouille",
+					"recentScore": 1,
+					"relevantScore": 1
 				},
 				"instant-weather": {
 					"description": "Web weather application, city search and 14-day forecast.",
 					"id": "instant-weather",
 					"img": "/projects/instant-weather-1.png",
 					"technologies": "HTML, CSS, JS, API",
-					"title": "Instant-Weather"
+					"title": "Instant-Weather",
+					"recentScore": 2,
+					"relevantScore": 3
 				},
 				"jfa-bot": {
 					"description": "Bot Discord alerting new notes on the student file of Université de Caen Normandie.",
 					"id": "jfa-bot",
 					"img": "/projects/jfa-bot-2.webp",
 					"technologies": "Python, Discord API, Selenium",
-					"title": "JFA Bot"
+					"title": "JFA Bot",
+					"recentScore": 4,
+					"relevantScore": 4
 				},
 				"nautilus": {
 					"description": "Application to manage reservations and dives for a diving club.",
 					"id": "nautilus",
 					"img": "/projects/nautilus-1.webp",
 					"technologies": "PHP (Laravel), MySQL, HTML, CSS, Tailwind",
-					"title": "Nautilus"
+					"title": "Nautilus",
+					"recentScore": 5,
+					"relevantScore": 6
 				},
 				"portfolio": {
 					"description": "Web portfolio created as part of my work-study program.",
 					"id": "portfolio",
 					"img": "/projects/portfolio.png",
 					"technologies": "VueJS, HTML, JS, Tailwind",
-					"title": "Portfolio (page en construction)"
+					"title": "Portfolio (work in progress)",
+					"recentScore": 6,
+					"relevantScore": 5
 				},
 				"pticuisto": {
 					"description": "Collaborative web application for consulting recipes.",
 					"id": "pticuisto",
 					"img": "/projects/pticuisto-1.webp",
 					"technologies": "PHP, HTML, Bootstrap, JS, MySQL",
-					"title": "Pti'Cuisto"
+					"title": "Pti'Cuisto",
+					"recentScore": 3,
+					"relevantScore": 2
 				}
 			}
 		}
