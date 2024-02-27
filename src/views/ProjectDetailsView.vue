@@ -18,7 +18,12 @@ const locale = i18nLocale.locale
 const projectID = useRoute().params.id
 var project = getProject()
 
-document.title = project?.title == null ? 'Projet introuvable' : (project.title + ' – ' + i18nLocale.t('app_author'))
+if (project == undefined) {
+  document.title = "Projet introuvable – Julien Sailly"
+} else {
+  document.title = project.title + ' – ' + i18nLocale.t('app_author')
+  document.querySelector('meta[name="description"]').setAttribute('content', project.description)
+}
 
 onMounted(() => {
   initFlowbite()
