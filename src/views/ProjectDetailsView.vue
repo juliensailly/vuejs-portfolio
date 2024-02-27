@@ -18,7 +18,7 @@ const locale = i18nLocale.locale
 const projectID = useRoute().params.id
 var project = getProject()
 
-document.title = project?.title == null ? 'Projet introuvable' : project.title
+document.title = project?.title == null ? 'Projet introuvable' : (project.title + ' – ' + i18nLocale.t('app_author'))
 
 onMounted(() => {
   initFlowbite()

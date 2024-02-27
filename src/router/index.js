@@ -28,7 +28,7 @@ const router = createRouter({
       name: 'projectDetails',
       component: () => import('../views/ProjectDetailsView.vue'),
       meta: {
-        title: 'Détails du projet – Julien Sailly',
+        title: 'Projets – Julien Sailly',
         description:
           'Découvrez les détails de mon projet, mes réalisations et mes compétences en développement web et mobile.'
       }
@@ -45,7 +45,7 @@ const router = createRouter({
   ]
 })
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _, next) => {
   document.title = to.meta.title
   document.querySelector('meta[name="description"]').setAttribute("content", to.meta.description);
   window.scrollTo(0, 0)

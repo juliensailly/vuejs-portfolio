@@ -11,7 +11,7 @@ import { watchEffect } from 'vue'
 const { t } = useI18n()
 const locale = useI18n().locale
 watchEffect(() => {
-  document.title = t('pages.projects.title')
+  document.title = t('pages.projects.title') + ' – ' + t('app_author')
 })
 
 const sortedOption = ref('relevant')
