@@ -37,6 +37,7 @@ router.beforeEach((to, from, next) => {
   document.title = values.fr.app_title
   if (to.meta.title && to.name !== 'projects')
     document.title = (to.meta.title + " – " + values.fr.app_author) || values.fr.app_title
+  window.scrollTo(0, 0)
   next()
 })
 
