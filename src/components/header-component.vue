@@ -1,5 +1,6 @@
 <script setup>
 import DarkModeToggle from './dark-mode-toggle-component.vue'
+import LocaleSwitcher from './locale-switcher-component.vue'
 import LocaleChanger from './locale-changer-component.vue'
 import { ref } from 'vue'
 
@@ -25,6 +26,7 @@ const hideHamburgerMenu = () => {
           >
         </router-link>
         <div class="flex md:order-2 gap-2 rtl:space-x-reverse">
+          <LocaleSwitcher class="hidden xs:block rounded-lg"></LocaleSwitcher>
           <DarkModeToggle class="hidden xs:block rounded-lg"></DarkModeToggle>
           <a
             href="/CV_Julien_SAILLY.pdf"
