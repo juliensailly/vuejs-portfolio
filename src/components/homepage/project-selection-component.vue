@@ -15,7 +15,7 @@ const projects = projectsKeys.map((key) => values.pages.projects.values[key])
       <ProjectCard
         v-for="project in projects"
         :key="project.id"
-        :project="project"
+        :project="project.id"
         class="flex-1"
       ></ProjectCard>
     </div>

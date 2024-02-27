@@ -129,7 +129,7 @@
 			},
 			"skillsTitle": "Skills",
 			"studiesDates": "2022 - 2026",
-			"studiesDescription": "I am currently a 2<sup>th</sup> year student of **BUT Informatique** at the IUT of Caen, Application Development course. This 3-year training is technical through the technologies learned, but also professional through the projects carried out.\n  Particular attention is paid to the use of **Agile Methods**, as well as the quality of development and project management. Essential concepts for working as a team and adapting to customer needs.\n  Finally, the BUT Informatique is also professionalizing since a total of 24 weeks of internship are planned, and **the 3<sup>th</sup> year is work-study**.",
+			"studiesDescription": "I am currently a 2^^^th^^^ year student of **BUT Informatique** at the IUT of Caen, Application Development course. This 3-year training is technical through the technologies learned, but also professional through the projects carried out.\n  Particular attention is paid to the use of **Agile Methods**, as well as the quality of development and project management. Essential concepts for working as a team and adapting to customer needs.\n  Finally, the BUT Informatique is also professionalizing since a total of 24 weeks of internship are planned, and **the 3^^^th^^^ year is work-study**.",
 			"studiesIllustration": "/iut-caen.jpg",
 			"studiesLevel": "2nd Year",
 			"studiesLocation": "IUT of Caen",
@@ -380,7 +380,7 @@
 					"js",
 					"mysql"
 				],
-				"textContent": "## Description\nPti'Cuisto is a web application designed as part of the 2<sup>th</sup> year WEB Development resource of BUT Informatique. It allows you to create and consult cooking recipes.\nIt is also possible to interact with other users by commenting, rating or saving recipes.\nFinally, the application offers a complete administrator function panel to moderate recipes, users or comments.",
+				"textContent": "## Description\nPti'Cuisto is a web application designed as part of the 2^^^th^^^ year WEB Development resource of BUT Informatique. It allows you to create and consult cooking recipes.\nIt is also possible to interact with other users by commenting, rating or saving recipes.\nFinally, the application offers a complete administrator function panel to moderate recipes, users or comments.",
 				"title": "Pti'Cuisto"
 			},
 			"title": "Project details",

@@ -9,18 +9,33 @@ import TechChips from '../components/project-technologies-component.vue'
 import MarkdownConverter from '../components/markdown-converter-component.vue'
 import GithubContributors from '../components/github-contributors-component.vue'
 import Error404 from './Error404View.vue'
-import { useI18n } from "vue-i18n";
-    
-const i18nLocale = useI18n();
+import { useI18n } from 'vue-i18n'
+import { watch } from 'vue'
+
+const i18nLocale = useI18n()
+const locale = i18nLocale.locale
 
 const projectID = useRoute().params.id
-var project = (i18nLocale.locale.value == "fr" ? fr.pages.projectDetails[projectID] : en.pages.projectDetails[projectID])
+var project = getProject()
 
-document.title = project.title
+document.title = project?.title == null ? 'Projet introuvable' : project.title
 
 onMounted(() => {
   initFlowbite()
 })
+
+watch(locale, () => {
+  project = getProject()
+  setTimeout(() => {
+    initFlowbite()
+  }, 100)
+})
+
+function getProject() {
+  return locale.value == 'fr'
+    ? fr.pages.projectDetails[projectID]
+    : en.pages.projectDetails[projectID]
+}
 </script>
 
 <template>
@@ -50,7 +65,7 @@ onMounted(() => {
               class="flex items-center justify-center flex-1 gap-2 px-4 py-2 text-white bg-gradient-to-r from-blue-300 to-blue-400 hover:animate-growing_shadow_dark focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg"
             >
               <img class="w-6" src="/technologies/github-white.svg" alt="Github logo" />
-              <p>{{ $t("pages.projectDetails.github_link") }}</p>
+              <p>{{ $t('pages.projectDetails.github_link') }}</p>
             </a>
             <a
               class="flex items-center justify-center flex-1 gap-2 px-4 py-2 text-white bg-gradient-to-bl from-blue-300 to-blue-400 hover:animate-growing_shadow_dark focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg"
@@ -59,7 +74,7 @@ onMounted(() => {
               v-if="project.links.website != ''"
             >
               <img class="w-6" src="/technologies/link.svg" alt="Web logo" />
-              <p>{{ $t("pages.projectDetails.website_link") }}</p>
+              <p>{{ $t('pages.projectDetails.website_link') }}</p>
             </a>
           </div>
         </div>
@@ -69,7 +84,7 @@ onMounted(() => {
           <MarkdownConverter :md="project.textContent" class="project-card"></MarkdownConverter>
           <div class="project-card" v-if="project.contributors != undefined">
             <h2 class="mb-2 text-2xl font-sans font-semibold dark:text-white">
-              {{ $t("pages.projectDetails.contributorsLabel") }}
+              {{ $t('pages.projectDetails.contributorsLabel') }}
             </h2>
             <GithubContributors :contributors="project.contributors"></GithubContributors>
           </div>
