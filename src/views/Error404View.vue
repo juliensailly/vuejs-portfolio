@@ -1,6 +1,4 @@
 <script setup>
-import textData from '../assets/texts.json'
-
 const checkIfBackUrlIsOnWebsite = () => {
   return window.history.length > 2
 }
@@ -21,16 +19,16 @@ const checkIfBackUrlIsOnWebsite = () => {
           <p
             class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white"
           >
-            {{ textData.fr.pages.error404.message }}
+            {{ $t("pages.error404.message") }}
           </p>
           <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
-            {{ textData.fr.pages.error404.btnLabel }}
+            {{ $t("pages.error404.btnLabel") }}
           </p>
           <p
             @click="checkIfBackUrlIsOnWebsite() ? $router.back() : $router.push('/')"
             class="group inline-flex cursor-pointer text-white bg-blue-400 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg gap-2 text-sm px-5 py-3 text-center dark:focus:ring-blue-700 my-4"
           >
-            {{ textData.fr.pages.error404.button }}
+            {{ $t("pages.error404.button") }}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

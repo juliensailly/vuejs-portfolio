@@ -1,4 +1,13 @@
 <script setup>
+import { watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const locale = useI18n().locale
+
+watch(locale, () => {
+  updateText()
+})
+
 const props = defineProps({
   md: {
     type: String
@@ -9,26 +18,38 @@ const props = defineProps({
   }
 })
 
-var md = props.md
-
-if (md == '' || md == null) md = '# Default Title\n\nDefault text'
-
-md = md.replaceAll(" **", " <strong>").replaceAll("**", "</strong>")
-
-md = md.match(/[^\n]+/g)
 var textIndications = {}
-var index = 0
 
-md.forEach((line) => {
-  if (line.startsWith('##')) {
-    textIndications[index] = { type: 'h2', text: line.replace('##', (props.disableHash ? '' : '#')).trim() }
-  } else if (line.startsWith('#')) {
-    textIndications[index] = { type: 'h1', text: line.replace('#', (props.disableHash ? '' : '#')).trim() }
-  } else {
-    textIndications[index] = { type: 'p', text: line.trim() }
-  }
-  index++
-})
+function updateText() {
+  var md = props.md
+
+  if (md == '' || md == null) md = '# Default Title\n\nDefault text'
+
+  md = md.replaceAll(' **', ' <strong>').replaceAll('**', '</strong>').replaceAll('^^^ ', '</sup> ').replaceAll('^^^', '<sup>')
+
+  md = md.match(/[^\n]+/g)
+  textIndications = {}
+  var index = 0
+
+  md.forEach((line) => {
+    if (line.startsWith('##')) {
+      textIndications[index] = {
+        type: 'h2',
+        text: line.replace('##', props.disableHash ? '' : '#').trim()
+      }
+    } else if (line.startsWith('#')) {
+      textIndications[index] = {
+        type: 'h1',
+        text: line.replace('#', props.disableHash ? '' : '#').trim()
+      }
+    } else {
+      textIndications[index] = { type: 'p', text: line.trim() }
+    }
+    index++
+  })
+}
+
+updateText()
 </script>
 
 <template>

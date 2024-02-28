@@ -1,16 +1,37 @@
 <script setup>
 import { initFlowbite } from 'flowbite'
-import textData from '../../assets/texts.json'
+import fr from '../../assets/locales/fr.json'
+import en from '../../assets/locales/en.json'
+import assets from '../../assets/assets.json'
 import { onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { watch } from 'vue'
 
-const hardSkills = textData.fr.pages.homepage.skills.hard.list
+const locale = useI18n().locale
+
+var hardSkills =
+  locale.value == 'fr' ? fr.pages.homepage.skills.hard.list : en.pages.homepage.skills.hard.list
 var techUsed = {}
 hardSkills.forEach((skillType) => {
   skillType.id = skillType.title.replaceAll(' ', '-').replaceAll('é', 'e').toLowerCase()
 
   skillType.list.forEach((tech) => {
-    techUsed[tech] = textData.fr.assets.technologies[tech]
+    techUsed[tech] = assets.technologies[tech]
   })
+})
+
+watch(locale, () => {
+  hardSkills =
+    locale.value == 'fr' ? fr.pages.homepage.skills.hard.list : en.pages.homepage.skills.hard.list
+  techUsed = {}
+  hardSkills.forEach((skillType) => {
+    skillType.id = skillType.title.replaceAll(' ', '-').replaceAll('é', 'e').toLowerCase()
+
+    skillType.list.forEach((tech) => {
+      techUsed[tech] = assets.technologies[tech]
+    })
+  })
+  setTimeout(() => initFlowbite(), 100)
 })
 
 onMounted(() => {
@@ -21,12 +42,12 @@ onMounted(() => {
 <template>
   <section class="flex flex-col gap-4 p-4 md:p-8">
     <h2 class="mb-2 text-3xl font-sans font-semibold">
-      {{ textData.fr.pages.homepage.skillsTitle }}
+      {{ $t('pages.homepage.skillsTitle') }}
     </h2>
     <div class="flex flex-col gap-2 md:gap-4">
       <div class="p-2 md:p-4 bg-blue-900 dark:bg-blue-100 rounded-xl">
         <h3 class="mb-2 md:mb-4 text-xl font-sans font-semibold">
-          {{ textData.fr.pages.homepage.skills.hard.title }}
+          {{ $t('pages.homepage.skills.hard.title') }}
         </h3>
         <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-stretch">
           <ul
@@ -66,7 +87,7 @@ onMounted(() => {
               class="grid grid-cols-[repeat(auto-fit,minmax(auto,150px))] gap-4 justify-around p-6 mx-auto text-medium text-gray-700 w-full"
             >
               <div
-                class="flex-1 flex bg-white-500 p-4 rounded shadow-lg w-40 aspect-[5/7]"
+                class="flex-1 flex bg-white-500 p-4 rounded shadow-lg w-40 aspect-[5/7] z-20"
                 v-for="skill in skillType.list"
                 :key="skill"
               >
@@ -76,7 +97,11 @@ onMounted(() => {
                   target="_blank"
                 >
                   <div class="flex-1 flex w-full">
-                    <img :src="techUsed[skill].src" :alt="techUsed[skill].title + ' icon'" class="object-contain"/>
+                    <img
+                      :src="techUsed[skill].src"
+                      :alt="techUsed[skill].title + ' icon'"
+                      class="object-contain"
+                    />
                   </div>
                   <p class="pt-2 border-t border-blue-700 w-full text-center">
                     {{ techUsed[skill].title }}
@@ -90,29 +115,29 @@ onMounted(() => {
       <div class="flex flex-col md:flex-row justify-between gap-2 md:gap-4">
         <div class="flex-1 p-2 md:p-4 bg-blue-900 dark:bg-blue-100 rounded-xl">
           <h3 class="mb-2 md:mb-4 text-xl font-sans font-semibold">
-            {{ textData.fr.pages.homepage.skills.soft.title }}
+            {{ $t('pages.homepage.skills.soft.title') }}
           </h3>
           <ul class="flex flex-wrap gap-2">
             <li
-              v-for="skill in textData.fr.pages.homepage.skills.soft.list"
+              v-for="skill in assets.skills.soft"
               :key="skill"
               class="bg-white border border-gray-800 dark:border-white-600 text-gray-900 px-1 py-0.5 rounded-md hover:shadow-md transition-shadow duration-200 cursor-default"
             >
-              {{ skill }}
+              {{ $t('pages.homepage.skills.soft.list.' + skill) }}
             </li>
           </ul>
         </div>
         <div class="flex-1 p-2 md:p-4 bg-blue-900 dark:bg-blue-100 rounded-xl">
           <h3 class="mb-2 md:mb-4 text-xl font-sans font-semibold">
-            {{ textData.fr.pages.homepage.skills.both.title }}
+            {{ $t('pages.homepage.skills.both.title') }}
           </h3>
           <ul class="flex flex-wrap gap-2">
             <li
-              v-for="skill in textData.fr.pages.homepage.skills.both.list"
+              v-for="skill in assets.skills.both"
               :key="skill"
               class="bg-white border border-gray-800 dark:border-white-600 text-gray-900 px-1 py-0.5 rounded-md hover:shadow-md transition-shadow duration-200 cursor-default"
             >
-              {{ skill }}
+              {{ $t('pages.homepage.skills.both.list.' + skill) }}
             </li>
           </ul>
         </div>

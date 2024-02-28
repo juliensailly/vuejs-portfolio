@@ -1,0 +1,456 @@
+{
+	"app_author": "Julien Sailly",
+	"app_description": "Portfolio of Julien Sailly, web and mobile developer",
+	"app_keywords": "Julien Sailly, portfolio, developer, web, mobile, javascript, react, react native, nodejs, express, mongodb, mysql, php, html, css, sass, less, bootstrap, materialize, jquery, git, github, bitbucket, docker, jenkins, jira, trello, scrum, agile, freelance, france",
+	"app_title": "Portfolio – Julien Sailly",
+	"navbar": {
+		"CV": "My CV",
+		"home": "Home",
+		"name": "Julien Sailly",
+		"projects": "Projects"
+	},
+	"pages": {
+		"error404": {
+			"btnLabel": "Click below to go back",
+			"button": "Return",
+			"message": "The page you are looking for does not exist.",
+			"title": "404"
+		},
+		"homepage": {
+			"contactDescription": "## Would you like to contact me for an internship, work-study or freelance mission proposal?\n Do not hesitate to contact me via Linkedin, Github or by email.",
+			"contactTitle": "Contact",
+			"projects": [
+				"nautilus",
+				"pticuisto"
+			],
+			"projectsTitle": "Projects",
+			"projectsViewMore": "See more",
+			"skills": {
+				"both": {
+					"list": {
+						"english": "English",
+						"law": "Law",
+						"management": "Management",
+						"communication": "Communication"
+					},
+					"title": "Transversal skills"
+				},
+				"hard": {
+					"list": [
+						{
+							"iconURL": "/icons/web.svg",
+							"list": [
+								"html",
+								"css",
+								"js",
+								"nodejs",
+								"vuejs",
+								"php",
+								"laravel",
+								"tailwind",
+								"bootstrap"
+							],
+							"title": "Web development"
+						},
+						{
+							"iconURL": "/icons/mobile.svg",
+							"list": [
+								"kotlin",
+								"compose",
+								"material_design"
+							],
+							"title": "Mobile Development"
+						},
+						{
+							"iconURL": "/icons/database.svg",
+							"list": [
+								"oraclesql",
+								"plsql",
+								"mysql",
+								"sqlite"
+							],
+							"title": "Database management"
+						},
+						{
+							"iconURL": "/icons/computer.svg",
+							"list": [
+								"js",
+								"java",
+								"php",
+								"kotlin",
+								"c",
+								"c#",
+								"python"
+							],
+							"title": "Programming languages"
+						},
+						{
+							"iconURL": "/icons/user-group.svg",
+							"list": [
+								"git",
+								"github",
+								"trello",
+								"agile"
+							],
+							"title": "Project Management"
+						},
+						{
+							"iconURL": "/icons/command-line.svg",
+							"list": [
+								"linux",
+								"windows",
+								"cisco-packet-tracer"
+							],
+							"title": "System Administration"
+						},
+						{
+							"iconURL": "/icons/square-stack.svg",
+							"list": [
+								"proxmox",
+								"docker",
+								"vagrant",
+								"virtualbox"
+							],
+							"title": "Virtualization"
+						}
+					],
+					"title": "Technical skills"
+				},
+				"soft": {
+					"list": {
+						"autonomous": "Autonomous",
+						"curious": "Curious",
+						"creative": "Creative",
+						"positive_attitude": "Positive attitude",
+						"team_spirit": "Team spirit"
+					},
+					"title": "People skills"
+				}
+			},
+			"skillsTitle": "Skills",
+			"studiesDates": "2022 - 2026",
+			"studiesDescription": "I am currently a 2^^^th^^^ year student of **BUT Informatique** at the IUT of Caen, Application Development course. This 3-year training is technical through the technologies learned, but also professional through the projects carried out.\n  Particular attention is paid to the use of **Agile Methods**, as well as the quality of development and project management. Essential concepts for working as a team and adapting to customer needs.\n  Finally, the BUT Informatique is also professionalizing since a total of 24 weeks of internship are planned, and **the 3^^^th^^^ year is work-study**.",
+			"studiesIllustration": "/iut-caen.jpg",
+			"studiesLevel": "2nd Year",
+			"studiesLocation": "IUT of Caen",
+			"studiesName": "BUT Informatique",
+			"studiesTitle": "Study",
+			"title": "Home",
+			"welcome": {
+				"cvBtn": "View my CV",
+				"img": "/pp.jpg",
+				"line1A": "I am ",
+				"line1B": ", student in BUT Informatique in Caen.",
+				"line2": "Passionate about web and mobile development, I am actively looking for a work-study program for September 2024.",
+				"title": "Hi",
+				"waveEmoji": "/icons/waving_hand.png"
+			}
+		},
+		"projectDetails": {
+			"contributorsLabel": "Contributors",
+			"github_link": "View on Github",
+			"gribouille": {
+				"description": "Java graphics application for drawing and exporting images like Paint.",
+				"img": [
+					{
+						"alt": "Blank canvas when launching the application",
+						"description": "Blank canvas when launching the application",
+						"src": "/projects/gribouille-1.webp"
+					},
+					{
+						"alt": "Demonstration of drawing on canvas",
+						"description": "Demonstration of drawing on canvas",
+						"src": "/projects/gribouille-2.webp"
+					},
+					{
+						"alt": "Menu of choice of tools, thicknesses and colors available",
+						"description": "Menu showing available tools, thicknesses and colors",
+						"src": "/projects/gribouille-3.webp"
+					},
+					{
+						"alt": "Exported drawing file",
+						"description": "Example of exporting the canvas as an image",
+						"src": "/projects/gribouille-4.webp"
+					}
+				],
+				"links": {
+					"github": "https://github.com/juliensailly/gribouille",
+					"website": ""
+				},
+				"technologies": [
+					"java",
+					"javafx"
+				],
+				"textContent": "## Description\n Gribouille is a drawing software which, like Paint, allows you to draw shapes on a canvas.\n It is possible to choose the color, the thickness of the line, to save your drawing or to load it, and finally to export it as an image.\n Individual project carried out as part of the 1st year Interface Development resource from BUT Informatique, Gribouille was a first approach to object-oriented programming, respect for the Model-View-Controller and the design of interfaces.",
+				"title": "Gribouille"
+			},
+			"instant-weather": {
+				"contributors": [
+					"guillaumebergerot",
+					"lucleveque",
+					"alensolopes",
+					"juliensailly"
+				],
+				"description": "Weather forecast application up to 15 days. Possibility of choosing the location, the preferred location, and the information displayed.",
+				"img": [
+					{
+						"alt": "Application home page",
+						"description": "Application home page",
+						"src": "/projects/instant-weather-1.png"
+					},
+					{
+						"alt": "Research and city auto-completion",
+						"description": "Research and city auto-completion",
+						"src": "/projects/instant-weather-2.png"
+					},
+					{
+						"alt": "Displaying weather forecasts",
+						"description": "Viewing weather forecasts for Paris",
+						"src": "/projects/instant-weather-3.png"
+					},
+					{
+						"alt": "Choice of information to display",
+						"description": "Choice of information to display",
+						"src": "/projects/instant-weather-4.png"
+					}
+				],
+				"links": {
+					"github": "https://github.com/juliensailly/instant-weather",
+					"website": "https://juliensailly.github.io/instant-weather/"
+				},
+				"technologies": [
+					"html",
+					"css",
+					"js",
+					"api"
+				],
+				"textContent": "## Description\n Instant Weather is an application that allows you to search for a city to find out the weather forecast up to 15 days in advance.\n Designed only in vanilla HTML, CSS and JavaScript, particular attention has been paid to the user interface, making its use as intuitive as possible.\n Created by a team of 4 people, I invite you to test the application by clicking on the “Demonstration” link.",
+				"title": "Instant Weather"
+			},
+			"jfa-bot": {
+				"description": "Discord bot alerting new notes on the student file of the University of Caen Normandy.",
+				"img": [
+					{
+						"alt": "University's Digital Work Environment (ENT) web page",
+						"description": "Web page of the Digital Work Environment (ENT) of the University of Caen Normandy where the bot will retrieve the grades",
+						"src": "/projects/jfa-bot-1.webp"
+					},
+					{
+						"alt": "New note announcement message",
+						"description": "Example of new note announcement message on the Discord server",
+						"src": "/projects/jfa-bot-2.webp"
+					},
+					{
+						"alt": "University's Digital Work Environment (ENT) web page",
+						"description": "Web page of the Digital Work Environment (ENT) of the University of Caen Normandy where the bot will retrieve the grades",
+						"src": "/projects/jfa-bot-1.webp"
+					},
+					{
+						"alt": "New note announcement message",
+						"description": "Example of new note announcement message on the Discord server",
+						"src": "/projects/jfa-bot-2.webp"
+					}
+				],
+				"links": {
+					"github": "",
+					"website": ""
+				},
+				"technologies": [
+					"python",
+					"discordapi",
+					"selenium"
+				],
+				"textContent": "## Description\n JFA Bot is a Discord bot designed for the Discord server of the IUT of Caen. It allows the notification of new notes on the ENT.\n Designed in Python, the bot is hosted on a personal server and uses the discord.py library as well as the Selenium library which will allow notes to be retrieved by launching an automated web browser.\n Creating this bot allowed me to learn a lot about virtualization (Tmux) and managing a remote server (SSH, VPS).",
+				"title": "JFA Bot"
+			},
+			"nautilus": {
+				"contributors": [
+					"julienaitazzouzene",
+					"clementbaratin",
+					"andgelbrissaud",
+					"cypriendharambure",
+					"victorfriboulet",
+					"gabrielleharang",
+					"lucleveque",
+					"alensolopes",
+					"guilhemstgaudin",
+					"juliensailly"
+				],
+				"description": "Application for managing reservations and descents from a diving club.",
+				"img": [
+					{
+						"alt": "Site home page",
+						"description": "Application home page",
+						"src": "/projects/nautilus-1.webp"
+					},
+					{
+						"alt": "Login form",
+						"description": "Login form",
+						"src": "/projects/nautilus-2.webp"
+					},
+					{
+						"alt": "Dashboard of a diver administrator",
+						"description": "Dashboard of a diver administrator",
+						"src": "/projects/nautilus-3.webp"
+					},
+					{
+						"alt": "View upcoming dives page",
+						"description": "View and filter upcoming dives",
+						"src": "/projects/nautilus-4.webp"
+					},
+					{
+						"alt": "Form for adding a new dive",
+						"description": "Form for adding a new dive",
+						"src": "/projects/nautilus-5.webp"
+					},
+					{
+						"alt": "Example of a diving safety data sheet",
+						"description": "Example of an automatically generated safety data sheet for a dive",
+						"src": "/projects/nautilus-6.webp"
+					}
+				],
+				"links": {
+					"github": "https://github.com/Tiercas/nautilus",
+					"website": ""
+				},
+				"technologies": [
+					"php",
+					"laravel",
+					"mysql",
+					"html",
+					"css",
+					"tailwind"
+				],
+				"textContent": "## Description\n Nautilus est une application créée dans le cadre d'un projet d'équipe d'une semaine permettant la gestion d'une association de plongée sous-marine.\n Elle permet en tant que membre de s'inscrire aux plongées, de les rechercher, de gérer son profil, et en tant qu'administrateur de gérer les plongées, les membres, les sites de plongée, les bateaux, etc.\n Réalisé avec le framework PHP Laravel et une base de données MySQL, le projet a été finalisé en 5 jours par une équipe de 10 personnes utilisant la méthode Agile.",
+				"title": "Nautilus"
+			},
+			"pticuisto": {
+				"contributors": [
+					"guillaumebergerot",
+					"lucleveque",
+					"alensolopes",
+					"juliensailly"
+				],
+				"description": "Application for consulting, creating and sharing recipes.",
+				"img": [
+					{
+						"alt": "Home page",
+						"description": "Application home page",
+						"src": "/projects/pticuisto-1.webp"
+					},
+					{
+						"alt": "Recipe visualization",
+						"description": "View recipe details (ingredients, steps, photos, comments, etc.)",
+						"src": "/projects/pticuisto-2.webp"
+					},
+					{
+						"alt": "Recipe search by ingredients",
+						"description": "Recipe search based on available ingredients",
+						"src": "/projects/pticuisto-3.webp"
+					},
+					{
+						"alt": "Login form",
+						"description": "Login form",
+						"src": "/projects/pticuisto-4.webp"
+					},
+					{
+						"alt": "User profile page",
+						"description": "User profile page, with access to favorite recipes",
+						"src": "/projects/pticuisto-5.webp"
+					},
+					{
+						"alt": "Form for adding a new recipe",
+						"description": "Form for adding a new recipe",
+						"src": "/projects/pticuisto-6.webp"
+					},
+					{
+						"alt": "Administrator control panel",
+						"description": "Administrator control panel (management of users, recipes, comments, etc.)",
+						"src": "/projects/pticuisto-7.webp"
+					}
+				],
+				"links": {
+					"github": "https://github.com/juliensailly/ptit-cuisto",
+					"website": ""
+				},
+				"technologies": [
+					"php",
+					"html",
+					"bootstrap",
+					"js",
+					"mysql"
+				],
+				"textContent": "## Description\nPti'Cuisto is a web application designed as part of the 2^^^th^^^ year WEB Development resource of BUT Informatique. It allows you to create and consult cooking recipes.\nIt is also possible to interact with other users by commenting, rating or saving recipes.\nFinally, the application offers a complete administrator function panel to moderate recipes, users or comments.",
+				"title": "Pti'Cuisto"
+			},
+			"title": "Project details",
+			"website_link": "Try it"
+		},
+		"projects": {
+			"seeMore": "Learn more",
+			"sort": {
+				"alphabetical": "Alphabetical order",
+				"recent": "Latest",
+				"relevant": "Relevance",
+				"title": "Sort by"
+			},
+			"title": "Projects",
+			"values": {
+				"gribouille": {
+					"description": "Java graphics application for drawing and exporting images, Paint-style.",
+					"id": "gribouille",
+					"img": "/projects/gribouille-1.webp",
+					"technologies": "Java, JavaFX",
+					"title": "Gribouille",
+					"recentScore": 1,
+					"relevantScore": 1
+				},
+				"instant-weather": {
+					"description": "Web weather application, city search and 14-day forecast.",
+					"id": "instant-weather",
+					"img": "/projects/instant-weather-1.png",
+					"technologies": "HTML, CSS, JS, API",
+					"title": "Instant-Weather",
+					"recentScore": 2,
+					"relevantScore": 3
+				},
+				"jfa-bot": {
+					"description": "Bot Discord alerting new notes on the student file of Université de Caen Normandie.",
+					"id": "jfa-bot",
+					"img": "/projects/jfa-bot-2.webp",
+					"technologies": "Python, Discord API, Selenium",
+					"title": "JFA Bot",
+					"recentScore": 4,
+					"relevantScore": 4
+				},
+				"nautilus": {
+					"description": "Application to manage reservations and dives for a diving club.",
+					"id": "nautilus",
+					"img": "/projects/nautilus-1.webp",
+					"technologies": "PHP (Laravel), MySQL, HTML, CSS, Tailwind",
+					"title": "Nautilus",
+					"recentScore": 5,
+					"relevantScore": 6
+				},
+				"portfolio": {
+					"description": "Web portfolio created as part of my work-study program.",
+					"id": "portfolio",
+					"img": "/projects/portfolio.png",
+					"technologies": "VueJS, HTML, JS, Tailwind",
+					"title": "Portfolio (work in progress)",
+					"recentScore": 6,
+					"relevantScore": 5
+				},
+				"pticuisto": {
+					"description": "Collaborative web application for consulting recipes.",
+					"id": "pticuisto",
+					"img": "/projects/pticuisto-1.webp",
+					"technologies": "PHP, HTML, Bootstrap, JS, MySQL",
+					"title": "Pti'Cuisto",
+					"recentScore": 3,
+					"relevantScore": 2
+				}
+			}
+		}
+	}
+}
