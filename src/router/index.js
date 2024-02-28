@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import cyprienUI from '../assets/scripts/cyprien'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,8 +49,16 @@ const router = createRouter({
 router.beforeEach((to, _, next) => {
   document.title = to.meta.title
   document.querySelector('meta[name="description"]').setAttribute("content", to.meta.description);
-  window.scrollTo(0, 0)
   next()
+})
+
+router.afterEach(() => {
+  window.scrollTo(0, 0)
+  if (localStorage.getItem('6p')) {
+    setTimeout(() => {
+      cyprienUI()
+    }, 100)
+  }
 })
 
 export default router
