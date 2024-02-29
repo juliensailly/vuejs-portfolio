@@ -25,7 +25,7 @@ const hideHamburgerMenu = () => {
           >
         </router-link>
         <div class="flex md:order-2 gap-2 rtl:space-x-reverse">
-          <LocaleSwitcher class="hidden xs:block"></LocaleSwitcher>
+          <LocaleSwitcher class="hidden md:block"></LocaleSwitcher>
           <DarkModeToggle class="hidden xs:block rounded-lg"></DarkModeToggle>
           <a
             href="/CV_Julien_SAILLY.pdf"
