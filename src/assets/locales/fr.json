@@ -380,7 +380,7 @@
 					"js",
 					"mysql"
 				],
-				"textContent": "## Description \nPti'Cuisto est une application web conçu dans le cadre de la ressource Développement WEB de 2^^^ème^^^ année de BUT Informatique. Elle permet de créer et consulter des recettes de cuisines. \nIl est également possible d'interagir avec les autres utilisateurs en commentant, en notant ou en enregistrant les recettes. \nFinalement, l'application propose une pannel de fonction administrateur complet pour modérer les recettes, les utilisateurs ou les commentaires.",
+				"textContent": "## Description \nPti'Cuisto est une application web conçu dans le cadre de la ressource Développement WEB de 2^^^ème^^^ année de BUT Informatique. Elle permet de créer et consulter des recettes de cuisines. \nIl est également possible d'interagir avec les autres utilisateurs en commentant, en notant ou en enregistrant les recettes. \nFinalement, l'application propose un pannel de fonction administrateur complet pour modérer les recettes, les utilisateurs ou les commentaires.",
 				"title": "Pti'Cuisto"
 			},
 			"title": "Détails du projet",
