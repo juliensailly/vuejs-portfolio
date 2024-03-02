@@ -321,7 +321,7 @@
 					"css",
 					"tailwind"
 				],
-				"textContent": "## Description\n Nautilus est une application créée dans le cadre d'un projet d'équipe d'une semaine permettant la gestion d'une association de plongée sous-marine.\n Elle permet en tant que membre de s'inscrire aux plongées, de les rechercher, de gérer son profil, et en tant qu'administrateur de gérer les plongées, les membres, les sites de plongée, les bateaux, etc.\n Réalisé avec le framework PHP Laravel et une base de données MySQL, le projet a été finalisé en 5 jours par une équipe de 10 personnes utilisant la méthode Agile.",
+				"textContent": "## Description\n Nautilus is an application created as part of a one-week team project to manage a scuba diving association.\n As a member, you can register for dives, search for dives, manage your profile, and as an administrator, you can manage dives, members, dive sites, boats, and so on.\n Built using the PHP frameword Laravel and a MySQL database, the project was completed in 5 days by a team of 10 people using the Agile method.",
 				"title": "Nautilus"
 			},
 			"pticuisto": {
