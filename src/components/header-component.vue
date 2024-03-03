@@ -80,7 +80,7 @@ const hideHamburgerMenu = () => {
               <router-link @click="hideHamburgerMenu" to="/" class="block py-2 px-3 rounded">{{ $t("navbar.home") }}</router-link>
             </li>
             <li>
-              <router-link @click="hideHamburgerMenu" to="/projects" class="block py-2 px-3 rounded"
+              <router-link @click="hideHamburgerMenu" to="/projects" class="block py-2 px-3 rounded projects_link"
                 >{{ $t("navbar.projects") }}</router-link
               >
             </li>

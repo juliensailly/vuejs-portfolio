@@ -1,16 +1,15 @@
 <script setup>
-import { initFlowbite } from 'flowbite'
 import { useRoute } from 'vue-router'
-import { onMounted } from 'vue'
+import { onMounted, watch } from 'vue'
 import fr from '../assets/locales/fr.json'
 import en from '../assets/locales/en.json'
+import { useI18n } from 'vue-i18n'
 import Carroussel from '../components/carroussel-component.vue'
 import TechChips from '../components/project-technologies-component.vue'
 import MarkdownConverter from '../components/markdown-converter-component.vue'
 import GithubContributors from '../components/github-contributors-component.vue'
 import Error404 from './Error404View.vue'
-import { useI18n } from 'vue-i18n'
-import { watch } from 'vue'
+import { initFlowbite } from 'flowbite'
 
 const i18nLocale = useI18n()
 const locale = i18nLocale.locale
@@ -37,6 +36,9 @@ watch(locale, () => {
 })
 
 function getProject() {
+  console.log(locale.value == 'fr'
+    ? fr.pages.projectDetails[projectID]
+    : en.pages.projectDetails[projectID])
   return locale.value == 'fr'
     ? fr.pages.projectDetails[projectID]
     : en.pages.projectDetails[projectID]

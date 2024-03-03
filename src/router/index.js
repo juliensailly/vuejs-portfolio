@@ -52,12 +52,19 @@ router.beforeEach((to, _, next) => {
   next()
 })
 
-router.afterEach(() => {
+router.afterEach((to) => {
   window.scrollTo(0, 0)
   if (localStorage.getItem('6p')) {
     setTimeout(() => {
       cyprienUI()
     }, 100)
+  }
+  if (to.name == "projectDetails") {
+    setTimeout(() => {
+      document.querySelector("nav .projects_link").ariaCurrent = "page"
+    }, 10)
+  } else if (to.name != "projects") {
+    document.querySelector("nav .projects_link").ariaCurrent = ""
   }
 })
 
