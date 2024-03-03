@@ -1,6 +1,6 @@
 <script setup>
-import DarkModeToggle from './dark-mode-toggle-component.vue'
-import LocaleSwitcher from './locale-switcher-component.vue'
+import DarkModeToggle from '@/components/dark-mode-toggle-component.vue'
+import LocaleSwitcher from '@/components/locale-switcher-component.vue'
 import { ref } from 'vue'
 
 const hamburgerBtnMenu = ref(null)
@@ -25,8 +25,8 @@ const hideHamburgerMenu = () => {
           >
         </router-link>
         <div class="flex md:order-2 gap-2 rtl:space-x-reverse">
-          <LocaleSwitcher class="hidden md:block"></LocaleSwitcher>
-          <DarkModeToggle class="hidden xs:block rounded-lg"></DarkModeToggle>
+          <LocaleSwitcher class="hidden sxs:block"></LocaleSwitcher>
+          <DarkModeToggle class="hidden sxs:block rounded-lg"></DarkModeToggle>
           <a
             href="/CV_Julien_SAILLY.pdf"
             target="_blank"
@@ -67,17 +67,16 @@ const hideHamburgerMenu = () => {
           <ul
             class="flex flex-col gap-2 p-4 md:p-0 mt-4 font-medium rounded-lg bg-blue-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-blue dark:bg-gray-800 md:dark:bg-gray-900"
           >
-            <li class="xs:hidden">
-              <DarkModeToggle class="rounded-lg"></DarkModeToggle>
-            </li>
-            <li>
+            <li class="sxs:hidden flex justify-end">
               <a
                 href="/CV_Julien_SAILLY.pdf"
                 target="_blank"
-                class="xxs:hidden block flex-1 text-white focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded px-4 py-2 dark:bg-gray-700 dark:focus:ring-blue-500"
+                class="sxs:hidden border-b block flex-1 text-white focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded px-3 py-2 mr-1 dark:bg-gray-700 dark:focus:ring-blue-500"
               >
                 {{ $t('navbar.CV') }}
               </a>
+              <LocaleSwitcher></LocaleSwitcher>
+              <DarkModeToggle class="rounded-lg"></DarkModeToggle>
             </li>
             <li>
               <router-link @click="hideHamburgerMenu" to="/" class="block py-2 px-3 rounded">{{

@@ -1,14 +1,14 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import { onMounted, watch } from 'vue'
-import fr from '../assets/locales/fr.json'
-import en from '../assets/locales/en.json'
+import fr from '@/assets/locales/fr.json'
+import en from '@/assets/locales/en.json'
 import { useI18n } from 'vue-i18n'
-import Carroussel from '../components/carroussel-component.vue'
-import TechChips from '../components/project-technologies-component.vue'
-import MarkdownConverter from '../components/markdown-converter-component.vue'
-import GithubContributors from '../components/github-contributors-component.vue'
-import Error404 from './Error404View.vue'
+import Carroussel from '@/components/carroussel-component.vue'
+import TechChips from '@/components/project-technologies-component.vue'
+import MarkdownConverter from '@/components/markdown-converter-component.vue'
+import GithubContributors from '@/components/github-contributors-component.vue'
+import Error404 from '@/views/Error404View.vue'
 import { initFlowbite } from 'flowbite'
 
 const i18nLocale = useI18n()

@@ -11,6 +11,7 @@ export default {
       serif: ['Merriweather', 'serif']
     },
     screens: {
+      'sxs': '470px',
       'xs': '430px',
       'xxs': '385px',
       ...defaultTheme.screens,

@@ -1,12 +1,12 @@
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
-import App from './App.vue'
-import router from './router'
-import './assets/main.css'
-import cyprienUI from './assets/scripts/cyprien'
+import App from '@/App.vue'
+import router from '@/router'
+import '@/assets/main.css'
+import cyprienUI from '@/assets/scripts/cyprien'
 
-import fr from './assets/locales/fr.json'
-import en from './assets/locales/en.json'
+import fr from '@/assets/locales/fr.json'
+import en from '@/assets/locales/en.json'
 
 const i18n = createI18n({
   locale: 'fr',

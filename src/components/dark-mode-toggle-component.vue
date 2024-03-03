@@ -1,5 +1,5 @@
 <script setup>
-import { setTheme, theme } from '@/assets/scripts/localeWatcher'
+import { setTheme, theme } from '@/assets/scripts/parametersLogic'
 import { onMounted } from 'vue'
 
 const toggleDarkMode = () => {

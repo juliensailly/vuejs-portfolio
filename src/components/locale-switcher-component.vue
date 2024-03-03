@@ -1,41 +1,14 @@
 <script setup>
-import { ref, watch } from 'vue'
-
-const isFrench = ref(localStorage.locale === 'fr')
+import { setLocale, locale } from '@/assets/scripts/parametersLogic'
+import { onMounted } from 'vue'
 
 const toggleLocale = () => {
-  isFrench.value = !isFrench.value
-  updateUI()
+  setLocale(localStorage.locale == 'fr' ? 'en' : 'fr')
 }
 
-if (localStorage.locale == null) {
-  isFrench.value = true
-  localStorage.locale = 'fr'
-}
-
-const updateUI = () => {
-  localStorage.locale = isFrench.value ? 'fr' : 'en'
-
-  if (document.querySelector('select') != null) {
-    document.querySelector('select').value = localStorage.locale
-  }
-
-  const toggleElement = document.getElementById(
-    isFrench.value == false ? 'toggleEnglish' : 'toggleFrench'
-  )
-  if (toggleElement != null) {
-    toggleElement.click()
-  } else {
-    setTimeout(() => {
-      document.getElementById(isFrench.value == false ? 'toggleEnglish' : 'toggleFrench').click()
-    }, 100)
-  }
-}
-
-watch(isFrench, () => {
-  updateUI()
+onMounted(() => {
+  setLocale()
 })
-updateUI()
 </script>
 
 <template>
@@ -48,13 +21,13 @@ updateUI()
         src="/icons/england-flag.png"
         alt="United Kingdom flag"
         class="w-6 h-6"
-        v-bind:class="{ hidden: !isFrench }"
+        v-bind:class="{ hidden: locale == 'fr' }"
       />
       <img
         src="/icons/france-flag.png"
         alt="France flag"
         class="w-6 h-6"
-        v-bind:class="{ hidden: isFrench }"
+        v-bind:class="{ hidden: locale == 'en' }"
       />
     </button>
     <span @click="$i18n.locale = 'en'" id="toggleEnglish" class="w-0 h-0 invisible"></span>
