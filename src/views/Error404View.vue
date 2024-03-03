@@ -1,6 +1,6 @@
 <script setup>
 const checkIfBackUrlIsOnWebsite = () => {
-  return window.history.length > 2
+  return window.history.length > 2 && document.referrer.includes(window.location.host)
 }
 </script>
 
