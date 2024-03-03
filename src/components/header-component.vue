@@ -5,8 +5,7 @@ import { ref } from 'vue'
 
 const hamburgerBtnMenu = ref(null)
 const hideHamburgerMenu = () => {
-  if (window.innerWidth < 768)
-    hamburgerBtnMenu.value.click()
+  if (window.innerWidth < 768) hamburgerBtnMenu.value.click()
 }
 </script>
 
@@ -20,8 +19,9 @@ const hideHamburgerMenu = () => {
             class="h-8 rounded-[50%] border border-white"
             alt="Julien Sailly's profile picture"
           />
-          <span class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-white"
-            >{{ $t("navbar.name") }}</span
+          <span
+            class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-white"
+            >{{ $t('navbar.name') }}</span
           >
         </router-link>
         <div class="flex md:order-2 gap-2 rtl:space-x-reverse">
@@ -32,7 +32,7 @@ const hideHamburgerMenu = () => {
             target="_blank"
             class="hover:animate-growing_shadow hidden xxs:block text-white bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-500"
           >
-          {{ $t("navbar.CV") }}
+            {{ $t('navbar.CV') }}
           </a>
           <button
             ref="hamburgerBtnMenu"
@@ -67,21 +67,29 @@ const hideHamburgerMenu = () => {
           <ul
             class="flex flex-col gap-2 p-4 md:p-0 mt-4 font-medium rounded-lg bg-blue-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-blue dark:bg-gray-800 md:dark:bg-gray-900"
           >
+            <li class="xs:hidden">
+              <DarkModeToggle class="rounded-lg"></DarkModeToggle>
+            </li>
             <li>
               <a
                 href="/CV_Julien_SAILLY.pdf"
                 target="_blank"
                 class="xxs:hidden block flex-1 text-white focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded px-4 py-2 dark:bg-gray-700 dark:focus:ring-blue-500"
               >
-              {{ $t("navbar.CV") }}
+                {{ $t('navbar.CV') }}
               </a>
             </li>
             <li>
-              <router-link @click="hideHamburgerMenu" to="/" class="block py-2 px-3 rounded">{{ $t("navbar.home") }}</router-link>
+              <router-link @click="hideHamburgerMenu" to="/" class="block py-2 px-3 rounded">{{
+                $t('navbar.home')
+              }}</router-link>
             </li>
             <li>
-              <router-link @click="hideHamburgerMenu" to="/projects" class="block py-2 px-3 rounded projects_link"
-                >{{ $t("navbar.projects") }}</router-link
+              <router-link
+                @click="hideHamburgerMenu"
+                to="/projects"
+                class="block py-2 px-3 rounded projects_link"
+                >{{ $t('navbar.projects') }}</router-link
               >
             </li>
           </ul>

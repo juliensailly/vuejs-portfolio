@@ -1,34 +1,15 @@
 <script setup>
-import { ref, watch } from 'vue'
-
-const isDarkMode = ref(localStorage.theme === 'dark')
+import { setTheme, theme } from '@/assets/scripts/localeWatcher'
+import { onMounted } from 'vue'
 
 const toggleDarkMode = () => {
-  isDarkMode.value = !isDarkMode.value
-  updateUI()
+  setTheme(localStorage.theme == 'dark' ? 'light' : 'dark')
 }
 
-const updateUI = () => {
-  if (localStorage.theme == null) {
-    isDarkMode.value = true
-    localStorage.theme = 'dark'
-  }
-  if (isDarkMode.value) {
-    document.querySelector('html').classList.add('dark')
-    document.documentElement.style.setProperty('color-scheme', 'dark');
-    localStorage.theme = 'dark'
-  } else {
-    document.querySelector('html').classList.remove('dark')
-    document.documentElement.style.setProperty('color-scheme', 'light');
-    localStorage.theme = 'light'
-  }
-}
-
-watch(isDarkMode, () => {
-  updateUI()
+onMounted(() => {
+  setTheme()
 })
 
-updateUI()
 </script>
 
 <template>
@@ -37,14 +18,13 @@ updateUI()
     @click="toggleDarkMode"
   >
     <svg
-      id="sun-icon-theme"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="w-6 h-6"
-      v-bind:class="{ hidden: !isDarkMode }"
+      class="w-6 h-6 sun-icon-theme"
+      v-bind:class="{ hidden: theme != 'dark' }"
     >
       <path
         stroke-linecap="round"
@@ -59,8 +39,8 @@ updateUI()
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="w-6 h-6"
-      v-bind:class="{ hidden: isDarkMode }"
+      class="w-6 h-6 moon-icon-theme"
+      v-bind:class="{ hidden: theme == 'dark' }"
     >
       <path
         stroke-linecap="round"
