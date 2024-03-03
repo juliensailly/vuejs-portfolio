@@ -36,9 +36,6 @@ watch(locale, () => {
 })
 
 function getProject() {
-  console.log(locale.value == 'fr'
-    ? fr.pages.projectDetails[projectID]
-    : en.pages.projectDetails[projectID])
   return locale.value == 'fr'
     ? fr.pages.projectDetails[projectID]
     : en.pages.projectDetails[projectID]
