@@ -71,13 +71,14 @@ const hideHamburgerMenu = () => {
               <a
                 href="/CV_Julien_SAILLY.pdf"
                 target="_blank"
-                class="sxs:hidden border-b block flex-1 text-white focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded px-3 py-2 mr-1 dark:bg-gray-700 dark:focus:ring-blue-500"
+                class="sxs:hidden block flex-1 text-white focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded px-3 py-2 mr-1 bg-blue-200 dark:bg-gray-700 dark:focus:ring-blue-500"
               >
                 {{ $t('navbar.CV') }}
               </a>
               <LocaleSwitcher></LocaleSwitcher>
               <DarkModeToggle class="rounded-lg"></DarkModeToggle>
             </li>
+            <hr class="sxs:hidden my-1 border-gray-500">
             <li>
               <router-link @click="hideHamburgerMenu" to="/" class="block py-2 px-3 rounded">{{
                 $t('navbar.home')
