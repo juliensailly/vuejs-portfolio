@@ -1,8 +1,8 @@
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue'
-import ProjectCard from '../components/project-card-component.vue'
-import fr from '../assets/locales/fr.json'
-import en from '../assets/locales/en.json'
+import ProjectCard from '@/components/project-card-component.vue'
+import fr from '@/assets/locales/fr.json'
+import en from '@/assets/locales/en.json'
 import _ from 'lodash'
 import { initFlowbite } from 'flowbite'
 import { useI18n } from 'vue-i18n'

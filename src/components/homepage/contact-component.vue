@@ -1,5 +1,5 @@
 <script setup>
-import MarkdownConverter from '../markdown-converter-component.vue'
+import MarkdownConverter from '@/components/markdown-converter-component.vue'
 </script>
 
 <template>

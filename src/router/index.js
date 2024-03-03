@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import cyprienUI from '../assets/scripts/cyprien'
+import cyprienUI from '@/assets/scripts/cyprien'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/HomeView.vue'),
+      component: () => import('@/views/HomeView.vue'),
       meta: {
         title: 'Portfolio – Julien Sailly',
         description:
@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: '/projects',
       name: 'projects',
-      component: () => import('../views/ProjectsView.vue'),
+      component: () => import('@/views/ProjectsView.vue'),
       meta: {
         title: 'Projets – Julien Sailly',
         description:
@@ -27,7 +27,7 @@ const router = createRouter({
     {
       path: '/projects/:id',
       name: 'projectDetails',
-      component: () => import('../views/ProjectDetailsView.vue'),
+      component: () => import('@/views/ProjectDetailsView.vue'),
       meta: {
         title: 'Projets – Julien Sailly',
         description:
@@ -37,7 +37,7 @@ const router = createRouter({
     {
       path: '/:pathMatch(.*)*',
       name: '404',
-      component: () => import('../views/Error404View.vue'),
+      component: () => import('@/views/Error404View.vue'),
       meta: {
         title: 'Erreur 404 – Julien Sailly',
         description: "La page que vous cherchez n'existe pas. Veuillez vérifier l'URL et réessayer."

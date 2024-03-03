@@ -1,5 +1,5 @@
 <script setup>
-import assets from '../assets/assets.json'
+import assets from '@/assets/assets.json'
 
 const props = defineProps({
     project: {

@@ -1,8 +1,8 @@
 <script setup>
 import { initFlowbite } from 'flowbite'
-import fr from '../../assets/locales/fr.json'
-import en from '../../assets/locales/en.json'
-import assets from '../../assets/assets.json'
+import fr from '@/assets/locales/fr.json'
+import en from '@/assets/locales/en.json'
+import assets from '@/assets/assets.json'
 import { onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { watch } from 'vue'

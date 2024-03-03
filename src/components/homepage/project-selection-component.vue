@@ -1,6 +1,6 @@
 <script setup>
-import ProjectCard from '../project-card-component.vue'
-import values from '../../assets/locales/fr.json'
+import ProjectCard from '@/components/project-card-component.vue'
+import values from '@/assets/locales/fr.json'
 
 const projectsKeys = values.pages.homepage.projects
 const projects = projectsKeys.map((key) => values.pages.projects.values[key])
