@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 
 // Theme
 export function setTheme(newTheme = 'no_theme') {
@@ -42,3 +42,7 @@ export function setLocale(newLocale = "no_locale") {
 }
 
 export var locale = ref(localStorage.locale || 'fr')
+
+watch(locale, (_, oldLocale) => {
+  document.querySelector('html').setAttribute("lang", oldLocale);
+})
