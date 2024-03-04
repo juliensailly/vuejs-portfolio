@@ -129,8 +129,8 @@
 			},
 			"skillsTitle": "Skills",
 			"studiesDates": "2022 - 2026",
-			"studiesDescription": "I am currently a 2^^^th^^^ year student of **BUT Informatique** at the IUT of Caen, Application Development course. This 3-year training is technical through the technologies learned, but also professional through the projects carried out.\n  Particular attention is paid to the use of **Agile Methods**, as well as the quality of development and project management. Essential concepts for working as a team and adapting to customer needs.\n  Finally, the BUT Informatique is also professionalizing since a total of 24 weeks of internship are planned, and **the 3^^^th^^^ year is work-study**.",
-			"studiesIllustration": "/iut-caen.jpg",
+			"studiesDescription": "I am currently a 2^^^nd^^^ year student of **BUT Informatique** at the IUT of Caen, Application Development course. This 3-year training is technical through the technologies learned, but also professional through the projects carried out.\n  Particular attention is paid to the use of **Agile Methods**, as well as the quality of development and project management. Essential concepts for working as a team and adapting to customer needs.\n  Finally, the BUT Informatique is also professionalizing since a total of 24 weeks of internship are planned, and **the 3^^^rd^^^ year is work-study**.",
+			"studiesIllustration": "/iut-caen.webp",
 			"studiesLevel": "2nd Year",
 			"studiesLocation": "IUT of Caen",
 			"studiesName": "BUT Informatique",
@@ -321,7 +321,7 @@
 					"css",
 					"tailwind"
 				],
-				"textContent": "## Description\n Nautilus is an application created as part of a one-week team project to manage a scuba diving association.\n As a member, you can register for dives, search for dives, manage your profile, and as an administrator, you can manage dives, members, dive sites, boats, and so on.\n Built using the PHP frameword Laravel and a MySQL database, the project was completed in 5 days by a team of 10 people using the Agile method.",
+				"textContent": "## Description\n Nautilus is an application created as part of a one-week team project to manage a scuba diving association.\n As a member, you can register for dives, search for dives, manage your profile, and as an administrator, you can manage dives, members, dive sites, boats, and so on.\n Built using the PHP framework Laravel and a MySQL database, the project was completed in 5 days by a team of 10 people using the Agile method.",
 				"title": "Nautilus"
 			},
 			"pticuisto": {
@@ -380,7 +380,7 @@
 					"js",
 					"mysql"
 				],
-				"textContent": "## Description\nPti'Cuisto is a web application designed as part of the 2^^^th^^^ year WEB Development resource of BUT Informatique. It allows you to create and consult cooking recipes.\nIt is also possible to interact with other users by commenting, rating or saving recipes.\nFinally, the application offers a complete administrator function panel to moderate recipes, users or comments.",
+				"textContent": "## Description\nPti'Cuisto is a web application designed as part of the 2^^^nd^^^ year WEB Development resource of BUT Informatique. It allows you to create and consult cooking recipes.\nIt is also possible to interact with other users by commenting, rating or saving recipes.\nFinally, the application offers a complete administrator function panel to moderate recipes, users or comments.",
 				"title": "Pti'Cuisto"
 			},
 			"title": "Project details",

@@ -84,7 +84,7 @@
         },
         "javafx": {
             "title": "JavaFX",
-            "src": "/technologies/javafx.png",
+            "src": "/technologies/javafx.webp",
             "url": "https://openjfx.io/"
         },
         "python": {
@@ -119,7 +119,7 @@
         },
         "compose": {
             "title": "Compose",
-            "src": "/technologies/compose.png",
+            "src": "/technologies/compose.webp",
             "url": "https://developer.android.com/jetpack/compose"
         },
         "material_design": {
@@ -189,7 +189,7 @@
         },
         "proxmox": {
             "title": "Proxmox",
-            "src": "/technologies/proxmox.png",
+            "src": "/technologies/proxmox.webp",
             "url": "https://www.proxmox.com/"
         },
         "docker": {
