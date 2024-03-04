@@ -24,7 +24,7 @@
 				"pticuisto"
 			],
 			"projectsTitle": "Projets",
-			"projectsViewMore": "Voir plus",
+			"projectsViewMore": "Consulter tous les projets",
 			"skills": {
 				"both": {
 					"list": {
@@ -387,7 +387,7 @@
 			"website_link": "Démonstration"
 		},
 		"projects": {
-			"seeMore": "En savoir plus",
+			"seeMore": "Consulter le projet",
 			"sort": {
 				"alphabetical": "Ordre alphabétique",
 				"recent": "Plus récent",

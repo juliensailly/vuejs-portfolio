@@ -9,7 +9,6 @@ const toggleDarkMode = () => {
 onMounted(() => {
   setTheme()
 })
-
 </script>
 
 <template>
@@ -25,6 +24,7 @@ onMounted(() => {
       stroke="currentColor"
       class="w-6 h-6 sun-icon-theme"
       v-bind:class="{ hidden: theme != 'dark' }"
+      alt="Sun icon for light mode"
     >
       <path
         stroke-linecap="round"
@@ -41,6 +41,7 @@ onMounted(() => {
       stroke="currentColor"
       class="w-6 h-6 moon-icon-theme"
       v-bind:class="{ hidden: theme == 'dark' }"
+      alt="Moon icon for dark mode"
     >
       <path
         stroke-linecap="round"
