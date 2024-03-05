@@ -22,6 +22,7 @@ app.use(i18n)
 
 app.mount('#app')
 
+// Initialisation
 window.addEventListener('keypress', (e) => {
   if (e.key === 'l') {
     i18n.global.locale.value = i18n.global.locale.value === 'fr' ? 'en' : 'fr'
@@ -42,3 +43,9 @@ window.addEventListener('keypress', (e) => {
     cyprienUI()
   }
 })
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  setTimeout(() => {
+    event.prompt()
+  }, 10000)
+});

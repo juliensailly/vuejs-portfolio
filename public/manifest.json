@@ -19,8 +19,48 @@
     "display": "standalone",
     "dir": "auto",
     "lang": "fr-FR",
-    "name": "Julien Sailly – Portfolio",
-    "short_name": "Julien Sailly",
-    "start_url": "https://juliensailly.com",
-    "scope": "https://juliensailly.com"
+    "name": "Portfolio de Julien Sailly",
+    "short_name": "JS",
+    "start_url": "/",
+    "scope": "/",
+    "shortcuts": [
+        {
+            "name": "Accueil",
+            "short_name": "Accueil",
+            "description": "Visitez la page d'accueil",
+            "url": "/",
+            "icons": [
+                {
+                    "src": "/pp_app.jpg",
+                    "sizes": "512x512"
+                }
+            ]
+        },
+        {
+            "name": "Projets",
+            "short_name": "Projets",
+            "description": "Venez découvrir mes projets",
+            "url": "/projects",
+            "icons": [
+                {
+                    "src": "/pp_app.jpg",
+                    "sizes": "512x512"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+          "src": "/app_screenshot_wide.webp",
+          "type": "image/webp",
+          "sizes": "1000x563",
+          "form_factor": "wide"
+        },
+        {
+          "src": "/public/app_screenshot_narrow.webp",
+          "type": "image/webp",
+          "sizes": "675x1200",
+          "form_factor": "narrow"
+        }
+      ]
 }
