@@ -7,8 +7,7 @@ export default {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      sans: ['Poppins', 'sans-serif'],
-      serif: ['Merriweather', 'serif']
+      sans: ['Poppins', 'sans-serif']
     },
     screens: {
       'sxs': '470px',
