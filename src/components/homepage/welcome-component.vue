@@ -11,9 +11,9 @@
 
       <div class="flex flex-col justify-center items-start gap-2">
         <div class="flex gap-2 mb-2 md:mb-4">
-          <h2 class="text-4xl md:text-5xl font-extrabold dark:text-white">
+          <h1 class="text-4xl md:text-5xl font-extrabold dark:text-white">
             {{ $t("pages.homepage.welcome.title") }}
-          </h2>
+          </h1>
           <img
             :src="$t('pages.homepage.welcome.waveEmoji')"
             alt="Waving hand emoji"

@@ -43,9 +43,3 @@ window.addEventListener('keypress', (e) => {
     cyprienUI()
   }
 })
-
-window.addEventListener('beforeinstallprompt', (event) => {
-  setTimeout(() => {
-    event.prompt()
-  }, 10000)
-});
