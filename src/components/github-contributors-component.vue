@@ -42,7 +42,7 @@ const contributorsData = assets.contributors
         role="tooltip"
         class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-800"
       >
-        {{ contributorsData[contributor].name }}
+        {{ contributorsData[contributor].name == "Luc Leveque" ? "gros caca" : contributorsData[contributor].name }}
         <div class="tooltip-arrow" data-popper-arrow></div>
       </div>
     </a>
