@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://juliensailly.com</loc>
+    </url>
+    <url>
+        <loc>https://juliensailly.com/projects</loc>
+    </url>
+    <url>
+        <loc>https://juliensailly.com/projects/nautilus</loc>
+    </url>
+    <url>
+        <loc>https://juliensailly.com/projects/portfolio</loc>
+    </url>
+    <url>
+        <loc>https://juliensailly.com/projects/jfa-bot</loc>
+    </url>
+    <url>
+        <loc>https://juliensailly.com/projects/pticuisto</loc>
+    </url>
+    <url>
+        <loc>https://juliensailly.com/projects/instant-weather</loc>
+    </url>
+    <url>
+        <loc>https://juliensailly.com/projects/gribouille</loc>
+    </url>
+</urlset>
