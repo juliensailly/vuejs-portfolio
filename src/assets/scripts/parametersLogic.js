@@ -43,6 +43,13 @@ export function setLocale(newLocale) {
 
 export var locale = ref(localStorage.locale == 'en' ? 'en' : 'fr')
 
+const updateWebsiteLanguage = (newLang) => {
+  if (document.querySelector('html')) {
+    document.querySelector('html').setAttribute('lang', newLang)
+  }
+}
+
 watch(locale, (newLocale) => {
-  document.querySelector('html').setAttribute('lang', newLocale)
+  updateWebsiteLanguage(newLocale)
 })
+updateWebsiteLanguage(locale.value)
