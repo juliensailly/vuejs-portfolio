@@ -383,6 +383,48 @@
 				"textContent": "## Description \nPti'Cuisto est une application web conçu dans le cadre de la ressource Développement WEB de 2^^^ème^^^ année de BUT Informatique. Elle permet de créer et consulter des recettes de cuisines. \nIl est également possible d'interagir avec les autres utilisateurs en commentant, en notant ou en enregistrant les recettes. \nFinalement, l'application propose un pannel de fonction administrateur complet pour modérer les recettes, les utilisateurs ou les commentaires.",
 				"title": "Pti'Cuisto"
 			},
+			"portfolio": {
+				"description": "Portfolio web réalisé dans le cadre de ma recherche d'alternance. Il présente mes compétences, mes projets et mon parcours.",
+				"img": [
+					{
+						"alt": "Page d'accueil du portfolio",
+						"description": "Page d'accueil du portfolio",
+						"src": "/projects/portfolio-1.webp"
+					},
+					{
+						"alt": "Panneau d'affichage des compétences techniques et humaines",
+						"description": "Panneau d'affichage des compétences techniques",
+						"src": "/projects/portfolio-2.webp"
+					},
+					{
+						"alt": "Page regroupant les différents projets réalisés",
+						"description": "Page affichant les différents projets réalisés",
+						"src": "/projects/portfolio-3.webp"
+					},
+					{
+						"alt": "Affichage d'un projet en détail",
+						"description": "Affichage d'un projet en détail (ici Nautilus)",
+						"src": "/projects/portfolio-4.webp"
+					},
+					{
+						"alt": "Différentes mises en page possibles",
+						"description": "Différentes mises en pages sont possibles selon les projets",
+						"src": "/projects/portfolio-5.webp"
+					}
+				],
+				"links": {
+					"github": "https://github.com/juliensailly/vuejs-portfolio",
+					"website": "https://juliensailly.com"
+				},
+				"technologies": [
+					"vuejs",
+					"html",
+					"js",
+					"tailwind"
+				],
+				"textContent": "## Description \n Ce portfolio est une application web réalisée dans le but de trouver une alternance. Il présente mes compétences, ma formation mais surtout mes projets. \n Réalisé avec VueJS, TailwindCSS et HTML, ce portfolio est une vitrine de mes compétences en développement web. \n Je vous invite à consulter le code source du portfolio sur Github, ou à le visiter en cliquant sur le lien \"Démonstration\".",
+				"title": "Portfolio"
+			},
 			"title": "Détails du projet",
 			"website_link": "Démonstration"
 		},
@@ -435,9 +477,9 @@
 				"portfolio": {
 					"description": "Portfolio web réalisé dans le cadre de ma recherche d'alternance.",
 					"id": "portfolio",
-					"img": "/projects/portfolio.png",
+					"img": "/projects/portfolio-1.png",
 					"technologies": "VueJS, HTML, JS, Tailwind",
-					"title": "Portfolio (page en construction)",
+					"title": "Portfolio",
 					"recentScore": 6,
 					"relevantScore": 5
 				},

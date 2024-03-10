@@ -383,6 +383,48 @@
 				"textContent": "## Description\nPti'Cuisto is a web application designed as part of the 2^^^nd^^^ year WEB Development resource of BUT Informatique. It allows you to create and consult cooking recipes.\nIt is also possible to interact with other users by commenting, rating or saving recipes.\nFinally, the application offers a complete administrator function panel to moderate recipes, users or comments.",
 				"title": "Pti'Cuisto"
 			},
+			"portfolio": {
+				"description": "Web portfolio created as part of my work-study program. It presents my skills, my projects and my studies.",
+				"img": [
+					{
+						"alt": "Portfolio's homepage",
+						"description": "Portfolio's homepage",
+						"src": "/projects/portfolio-1.webp"
+					},
+					{
+						"alt": "Technical and human skills display panel",
+						"description": "Technical skills display panel",
+						"src": "/projects/portfolio-2.webp"
+					},
+					{
+						"alt": "Page listing the differents projects completed",
+						"description": "Page listing the various projects completed",
+						"src": "/projects/portfolio-3.webp"
+					},
+					{
+						"alt": "Display a project in detail",
+						"description": "Display a project in detail (Nautilus here)",
+						"src": "/projects/portfolio-4.webp"
+					},
+					{
+						"alt": "Different layouts are possible",
+						"description": "Different layouts are possible for different projects",
+						"src": "/projects/portfolio-5.webp"
+					}
+				],
+				"links": {
+					"github": "https://github.com/juliensailly/vuejs-portfolio",
+					"website": "https://juliensailly.com"
+				},
+				"technologies": [
+					"vuejs",
+					"html",
+					"js",
+					"tailwind"
+				],
+				"textContent": "## Description \n This portfolio is a web application designed to help me find a work-study program. It presents my skills, my training and, above all, my projects. \n Made with VueJS, TailwindCSS and HTML, this portfolio is a showcase of my web development skills. \n I invite you to consult the portfolio's source code on Github, or to visit it by clicking on the \"Try it\" link.",
+				"title": "Portfolio"
+			},
 			"title": "Project details",
 			"website_link": "Try it"
 		},
@@ -435,9 +477,9 @@
 				"portfolio": {
 					"description": "Web portfolio created as part of my work-study program.",
 					"id": "portfolio",
-					"img": "/projects/portfolio.png",
+					"img": "/projects/portfolio-1.png",
 					"technologies": "VueJS, HTML, JS, Tailwind",
-					"title": "Portfolio (work in progress)",
+					"title": "Portfolio",
 					"recentScore": 6,
 					"relevantScore": 5
 				},

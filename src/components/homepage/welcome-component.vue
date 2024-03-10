@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col justify-center items-center gap-4 p-4 md:p-8 min-h-[calc(100vh-6rem)]"
+    class="flex flex-col justify-center items-center gap-4 p-4 md:p-8 min-h-[calc(100vh-6rem)] max-w-screen-lg mx-auto"
   >
     <div class="flex flex-col items-center justify-between gap-4 md:gap-8 md:flex-row">
       <img
