@@ -3,11 +3,11 @@ import { setLocale, locale } from '@/assets/scripts/parametersLogic'
 import { onMounted } from 'vue'
 
 const toggleLocale = () => {
-  setLocale(localStorage.locale == 'fr' ? 'en' : 'fr')
+  setLocale(localStorage.locale == 'en' ? 'fr' : 'en')
 }
 
 onMounted(() => {
-  setLocale()
+  setLocale(localStorage.locale || "fr")
 })
 </script>
 
@@ -21,13 +21,13 @@ onMounted(() => {
         src="/icons/england-flag.png"
         alt="United Kingdom flag"
         class="w-6 h-6"
-        v-bind:class="{ hidden: locale == 'fr' }"
+        v-bind:class="{ hidden: locale == 'en' }"
       />
       <img
         src="/icons/france-flag.png"
         alt="France flag"
         class="w-6 h-6"
-        v-bind:class="{ hidden: locale == 'en' }"
+        v-bind:class="{ hidden: locale == 'fr' }"
       />
     </button>
     <span @click="$i18n.locale = 'en'" id="toggleEnglish" class="w-0 h-0 invisible"></span>
