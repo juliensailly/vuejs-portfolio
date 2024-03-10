@@ -57,7 +57,7 @@
           "form_factor": "wide"
         },
         {
-          "src": "/public/app_screenshot_narrow.webp",
+          "src": "/app_screenshot_narrow.webp",
           "type": "image/webp",
           "sizes": "675x1200",
           "form_factor": "narrow"
