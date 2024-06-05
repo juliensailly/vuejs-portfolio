@@ -5,6 +5,14 @@ const props = defineProps({
     required: true
   }
 })
+
+let depth = new URLSearchParams(window.location.search).get('depth');
+let portfolioception = true;
+if (!depth) {
+  depth = 0
+} else if (depth.length > 2) {
+  portfolioception = false;
+}
 </script>
 
 <template>
@@ -19,14 +27,14 @@ const props = defineProps({
         v-for="imgSrc in props.imgs"
       >
         <img
-          v-if="imgSrc.src != '/projects/portfolio-5.webp'"
+          v-if="imgSrc.src != '/projects/portfolio-5.webp' || !portfolioception"
           :src="imgSrc.src"
           class="absolute block w-full rounded-lg aspect-video sm:aspect-[16/7] md:aspect-video object-cover object-top -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           :alt="imgSrc.alt"
         />
         <iframe
           v-else
-          src="/projects/portfolio"
+          :src="'/projects/portfolio?depth=' + (depth + 1)"
           title="julienception"
           style="width: 200%; height: 200%; scale: 0.5; transform-origin: 0 0"
         ></iframe>
