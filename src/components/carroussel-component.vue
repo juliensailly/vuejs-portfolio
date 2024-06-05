@@ -19,10 +19,17 @@ const props = defineProps({
         v-for="imgSrc in props.imgs"
       >
         <img
+          v-if="imgSrc.src != '/projects/portfolio-5.webp'"
           :src="imgSrc.src"
           class="absolute block w-full rounded-lg aspect-video sm:aspect-[16/7] md:aspect-video object-cover object-top -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           :alt="imgSrc.alt"
         />
+        <iframe
+          v-else
+          src="/projects/portfolio"
+          title="julienception"
+          style="width: 200%; height: 200%; scale: 0.5; transform-origin: 0 0"
+        ></iframe>
         <p
           class="absolute bottom-0 bg-gray-900 text-white-500 text-center italic text-sm px-1 py-0.5 w-full"
         >
@@ -37,8 +44,7 @@ const props = defineProps({
       data-carousel-prev
     >
       <span
-        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/80 dark:bg-gray-800/80 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white 
-        dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/80 dark:bg-gray-800/80 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
       >
         <svg
           class="w-4 h-4 text-gray-800 dark:text-white rtl:rotate-180"
