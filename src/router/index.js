@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import cyprienUI from '@/assets/scripts/cyprien'
+import emilyUI from '@/assets/scripts/emily'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,7 +56,7 @@ router.afterEach((to) => {
   window.scrollTo(0, 0)
   if (localStorage.getItem('6p')) {
     setTimeout(() => {
-      cyprienUI()
+      emilyUI()
     }, 100)
   }
   if (to.name == "projectDetails") {

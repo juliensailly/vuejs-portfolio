@@ -1,4 +1,4 @@
-function cyprienUI() {
+function emilyUI() {
   if (localStorage.getItem('6p') == 'true') {
     document.querySelector('html').classList.remove('dark')
     document.documentElement.style.setProperty('color-scheme', 'light');
@@ -21,4 +21,4 @@ function cyprienUI() {
   }
 }
 
-export default cyprienUI
+export default emilyUI

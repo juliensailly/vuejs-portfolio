@@ -3,7 +3,7 @@ import { createI18n } from 'vue-i18n'
 import App from '@/App.vue'
 import router from '@/router'
 import '@/assets/main.css'
-import cyprienUI from '@/assets/scripts/cyprien'
+import emilyUI from '@/assets/scripts/emily'
 
 import fr from '@/assets/locales/fr.json'
 import en from '@/assets/locales/en.json'
@@ -40,6 +40,6 @@ window.addEventListener('keypress', (e) => {
     } else {
       localStorage.setItem('6p', 'true')
     }
-    cyprienUI()
+    emilyUI()
   }
 })
