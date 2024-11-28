@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 /*eslint-env node*/
-const defaultTheme = require('tailwindcss/defaultTheme')
+// const defaultTheme = require('tailwindcss/defaultTheme')
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   content: ['./index.html', './src/**/*.{vue,js}', './node_modules/flowbite/**/*.js'],
