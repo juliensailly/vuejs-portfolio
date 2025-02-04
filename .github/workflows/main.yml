@@ -1,21 +1,25 @@
-name: Deploy to Staging
+name: Deployment
 
-on: 
+on:
   push:
     branches:
       - main
-jobs:
-  build:
+  workflow_dispatch:
 
+jobs:
+  run_script:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Executing remote command via ssh
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        port: ${{ secrets.PORT }}
-        password: ${{ secrets.PASSWORD }}
-        script: |
-              /home/ubuntu/dev/portfolio/startup.sh
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Deployment script execution
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSHKEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            sudo /home/ubuntu/dev/portfolio/startup.sh
