@@ -22,4 +22,7 @@ jobs:
           key: ${{ secrets.SSHKEY }}
           port: ${{ secrets.PORT }}
           script: |
-            sudo /home/ubuntu/dev/portfolio/startup.sh
+            sudo docker image rm -f portfolio &&
+            sudo docker build --no-cache ~/dev/portfolio -t portfolio &&
+            sudo docker stop portfolio_container &&
+            sudo docker run -dit -p 8080:80 --rm --name portfolio_container portfolio
