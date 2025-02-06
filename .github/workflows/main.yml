@@ -7,14 +7,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  run_script:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout du code
         uses: actions/checkout@v3
 
-      - name: Deployment script execution
+      - name: Déploiement sur le VPS via SSH
         uses: appleboy/ssh-action@v0.1.8
         with:
           host: ${{ secrets.HOST }}
@@ -23,6 +23,17 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ${{ secrets.PROJECT_PATH }}
-            sudo docker-compose down
-            sudo docker-compose build --no-cache
-            sudo docker-compose up -d
+
+            echo "🛑 Arrêt du conteneur existant..."
+            docker-compose down || true
+
+            echo "📦 Construction de l'image..."
+            docker-compose build --no-cache
+
+            echo "🚀 Démarrage du conteneur..."
+            docker-compose up -d
+
+            echo "🧹 Nettoyage des ressources inutilisées..."
+            docker system prune -f
+
+            echo "✅ Déploiement terminé avec succès !"
