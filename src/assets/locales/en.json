@@ -24,14 +24,14 @@
 				"pticuisto"
 			],
 			"projectsTitle": "Projects",
-			"projectsViewMore": "View all projects",
+			"projectsViewMore": "View my projects",
 			"skills": {
 				"both": {
 					"list": {
+						"communication": "Communication",
 						"english": "English",
 						"law": "Law",
-						"management": "Management",
-						"communication": "Communication"
+						"management": "Management"
 					},
 					"title": "Transversal skills"
 				},
@@ -119,8 +119,8 @@
 				"soft": {
 					"list": {
 						"autonomous": "Autonomous",
-						"curious": "Curious",
 						"creative": "Creative",
+						"curious": "Curious",
 						"positive_attitude": "Positive attitude",
 						"team_spirit": "Team spirit"
 					},
@@ -131,7 +131,7 @@
 			"studiesDates": "2022 - 2026",
 			"studiesDescription": "I am currently a 3^^^rd^^^ year student of **BUT Informatique** at the IUT of Caen, Application Development course. This 3-year training is technical through the technologies learned, but also professional through the projects carried out.\n  Particular attention is paid to the use of **Agile Methods**, as well as the quality of development and project management. Essential concepts for working as a team and adapting to customer needs.\n  Finally, the BUT Informatique is also professionalizing since a total of 24 weeks of internship are planned, and **the 3^^^rd^^^ year is work-study**.",
 			"studiesIllustration": "/iut-caen.webp",
-			"studiesLevel": "2nd Year",
+			"studiesLevel": "3rd Year",
 			"studiesLocation": "IUT of Caen",
 			"studiesName": "BUT Informatique",
 			"studiesTitle": "Study",
@@ -141,7 +141,7 @@
 				"img": "/pp.jpg",
 				"line1A": "I am ",
 				"line1B": ", student in BUT Informatique in Caen.",
-				"line2": "Passionate about web and mobile development, I am actively looking for a work-study program for September 2025.",
+				"line2": "Passionate about web and mobile development, I am actively looking for a computer engineering school for September 2025.",
 				"title": "Hi",
 				"waveEmoji": "/icons/waving_hand.png"
 			}
@@ -324,6 +324,48 @@
 				"textContent": "## Description\n Nautilus is an application created as part of a one-week team project to manage a scuba diving association.\n As a member, you can register for dives, search for dives, manage your profile, and as an administrator, you can manage dives, members, dive sites, boats, and so on.\n Built using the PHP framework Laravel and a MySQL database, the project was completed in 5 days by a team of 10 people using the Agile method.",
 				"title": "Nautilus"
 			},
+			"portfolio": {
+				"description": "Web portfolio created as part of my work-study program. It presents my skills, my projects and my studies.",
+				"img": [
+					{
+						"alt": "Portfolio's homepage",
+						"description": "Portfolio's homepage",
+						"src": "/projects/portfolio-1.webp"
+					},
+					{
+						"alt": "Technical and human skills display panel",
+						"description": "Technical skills display panel",
+						"src": "/projects/portfolio-2.webp"
+					},
+					{
+						"alt": "Page listing the differents projects completed",
+						"description": "Page listing the various projects completed",
+						"src": "/projects/portfolio-3.webp"
+					},
+					{
+						"alt": "Display a project in detail",
+						"description": "Display a project in detail (Nautilus here)",
+						"src": "/projects/portfolio-4.webp"
+					},
+					{
+						"alt": "Different layouts are possible",
+						"description": "Different layouts are possible for different projects",
+						"src": "/projects/portfolio-5.webp"
+					}
+				],
+				"links": {
+					"github": "https://github.com/juliensailly/vuejs-portfolio",
+					"website": "https://juliensailly.com"
+				},
+				"technologies": [
+					"vuejs",
+					"html",
+					"js",
+					"tailwind"
+				],
+				"textContent": "## Description \n This portfolio is a web application designed to help me find a work-study program. It presents my skills, my training and, above all, my projects. \n Made with VueJS, TailwindCSS and HTML, this portfolio is a showcase of my web development skills. \n I invite you to consult the portfolio's source code on Github, or to visit it by clicking on the \"Try it\" link.",
+				"title": "Portfolio"
+			},
 			"pticuisto": {
 				"contributors": [
 					"guillaumebergerot",
@@ -383,48 +425,6 @@
 				"textContent": "## Description\nPti'Cuisto is a web application designed as part of the 2^^^nd^^^ year WEB Development resource of BUT Informatique. It allows you to create and consult cooking recipes.\nIt is also possible to interact with other users by commenting, rating or saving recipes.\nFinally, the application offers a complete administrator function panel to moderate recipes, users or comments.",
 				"title": "Pti'Cuisto"
 			},
-			"portfolio": {
-				"description": "Web portfolio created as part of my work-study program. It presents my skills, my projects and my studies.",
-				"img": [
-					{
-						"alt": "Portfolio's homepage",
-						"description": "Portfolio's homepage",
-						"src": "/projects/portfolio-1.webp"
-					},
-					{
-						"alt": "Technical and human skills display panel",
-						"description": "Technical skills display panel",
-						"src": "/projects/portfolio-2.webp"
-					},
-					{
-						"alt": "Page listing the differents projects completed",
-						"description": "Page listing the various projects completed",
-						"src": "/projects/portfolio-3.webp"
-					},
-					{
-						"alt": "Display a project in detail",
-						"description": "Display a project in detail (Nautilus here)",
-						"src": "/projects/portfolio-4.webp"
-					},
-					{
-						"alt": "Different layouts are possible",
-						"description": "Different layouts are possible for different projects",
-						"src": "/projects/portfolio-5.webp"
-					}
-				],
-				"links": {
-					"github": "https://github.com/juliensailly/vuejs-portfolio",
-					"website": "https://juliensailly.com"
-				},
-				"technologies": [
-					"vuejs",
-					"html",
-					"js",
-					"tailwind"
-				],
-				"textContent": "## Description \n This portfolio is a web application designed to help me find a work-study program. It presents my skills, my training and, above all, my projects. \n Made with VueJS, TailwindCSS and HTML, this portfolio is a showcase of my web development skills. \n I invite you to consult the portfolio's source code on Github, or to visit it by clicking on the \"Try it\" link.",
-				"title": "Portfolio"
-			},
 			"title": "Project details",
 			"website_link": "Try it"
 		},
@@ -443,54 +443,42 @@
 					"id": "gribouille",
 					"img": "/projects/gribouille-1.webp",
 					"technologies": "Java, JavaFX",
-					"title": "Gribouille",
-					"recentScore": 1,
-					"relevantScore": 1
+					"title": "Gribouille"
 				},
 				"instant-weather": {
 					"description": "Web weather application, city search and 14-day forecast.",
 					"id": "instant-weather",
 					"img": "/projects/instant-weather-1.png",
 					"technologies": "HTML, CSS, JS, API",
-					"title": "Instant-Weather",
-					"recentScore": 2,
-					"relevantScore": 3
+					"title": "Instant-Weather"
 				},
 				"jfa-bot": {
 					"description": "Bot Discord alerting new notes on the student file of Université de Caen Normandie.",
 					"id": "jfa-bot",
 					"img": "/projects/jfa-bot-2.webp",
 					"technologies": "Python, Discord API, Selenium",
-					"title": "JFA Bot",
-					"recentScore": 4,
-					"relevantScore": 4
+					"title": "JFA Bot"
 				},
 				"nautilus": {
 					"description": "Application to manage reservations and dives for a diving club.",
 					"id": "nautilus",
 					"img": "/projects/nautilus-1.webp",
 					"technologies": "PHP (Laravel), MySQL, HTML, CSS, Tailwind",
-					"title": "Nautilus",
-					"recentScore": 5,
-					"relevantScore": 6
+					"title": "Nautilus"
 				},
 				"portfolio": {
 					"description": "Web portfolio created as part of my work-study program.",
 					"id": "portfolio",
 					"img": "/projects/portfolio-1.png",
 					"technologies": "VueJS, HTML, JS, Tailwind",
-					"title": "Portfolio",
-					"recentScore": 6,
-					"relevantScore": 5
+					"title": "Portfolio"
 				},
 				"pticuisto": {
 					"description": "Collaborative web application for consulting recipes.",
 					"id": "pticuisto",
 					"img": "/projects/pticuisto-1.webp",
 					"technologies": "PHP, HTML, Bootstrap, JS, MySQL",
-					"title": "Pti'Cuisto",
-					"recentScore": 3,
-					"relevantScore": 2
+					"title": "Pti'Cuisto"
 				}
 			}
 		}
