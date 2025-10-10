@@ -1,0 +1,67 @@
+name: Release Vue.js Application
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'  # Déclenche sur les tags version (ex: v1.0.0)
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Nécessaire pour créer des releases
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build application
+        run: npm run build
+      
+      - name: Create source archive
+        run: |
+          zip -r source-code.zip . -x "node_modules/*" ".git/*" "dist/*"
+      
+      - name: Create dist archive
+        run: |
+          cd dist
+          zip -r ../app-dist.zip .
+          cd ..
+      
+      - name: Extract version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ steps.version.outputs.VERSION }}
+          body: |
+            ## Version ${{ steps.version.outputs.VERSION }}
+            
+            ### Fichiers
+            - `source-code.zip` : Code source de l'application
+            - `app-dist.zip` : Application buildée prête à déployer
+            
+            ### Installation
+            ```bash
+            npm install
+            npm run build
+            ```
+          files: |
+            source-code.zip
+            app-dist.zip
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
